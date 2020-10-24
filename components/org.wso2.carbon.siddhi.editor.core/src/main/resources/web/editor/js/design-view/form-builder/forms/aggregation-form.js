@@ -277,7 +277,7 @@ define(['require', 'log', 'jquery', 'lodash', 'aggregateByTimePeriod', 'querySel
                     annotationsWithKeys.concat(annotationsWithoutKeys));
 
                 self.formUtils.renderAnnotationTemplate("define-user-defined-annotations", userDefinedAnnotations);
-                $('.define-user-defined-annotations').find('label:first-child').html('Customized Annotations');
+                $('.define-user-defined-annotations').find('label:first-child').html('自定义注释');
                 self.formUtils.renderPrimaryIndexAnnotations(annotationsWithoutKeys, 'define-index-annotation');
                 $('.define-index-annotation').find('h4').hide();
                 self.formUtils.renderPredefinedAnnotations(annotationsWithKeys,

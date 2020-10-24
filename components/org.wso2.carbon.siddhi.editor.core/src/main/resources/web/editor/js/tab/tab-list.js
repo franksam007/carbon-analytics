@@ -57,7 +57,7 @@ define(['log', 'jquery', 'lodash', 'backbone', './tab', 'bootstrap'],
                     this._closeAllFile = $('<a></a>');
                     this._closeAllFile.attr('href', '#');
                     this._closeAllFile.addClass('close-all pull-right');
-                    this._closeAllFile.text('Close all files');
+                    this._closeAllFile.text('关闭所有文件');
                     this._$parent_el.find(_.get(this.options, 'headers.container')).append(this._closeAllFile);
                     this._$tab_container = tabContainer;
                 },

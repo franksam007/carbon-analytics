@@ -41,12 +41,12 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
 
             container.append(`
                 <div style="font-size: 1.8rem; margin-bottom:15px">
-                    Group output by fields<br/>
+                    根据字段对输出分组<br/>
                     <small style="font-size: 1.3rem">
-                        Group the output records using a set of fields and filter them based on a condition
+                        利用字段集合对输出分组，并基于条件进行过滤
                     </small>
                 </div>
-                Group by attributes
+                分组特性
                 <button style="background-color: #ee6719" class="btn btn-default btn-circle" 
                     id="btn-add-groupby-field" type="button" data-toggle="dropdown">
                     <i class="fw fw-add"></i>
@@ -142,7 +142,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                     .append(`
                         <div style="margin-top: 15px; display: flex">
                             <div style="">
-                                <span>Set having condition : </span>
+                                <span>设置having筛选条件 : </span>
                             </div>
                             <div>
                                <div style="margin-left: 15px">
@@ -319,7 +319,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                                                 leftTypes: ['bool', 'text', 'number'],
                                                 rightTypes: ['bool', 'text', 'number'],
                                                 symbol: '()',
-                                                description: 'Bracket',
+                                                description: '括号',
                                                 isFirst: true,
                                                 scope: true
                                             }
@@ -370,7 +370,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                             leftTypes: ['bool', 'text', 'number'],
                             rightTypes: ['bool', 'text', 'number'],
                             symbol: '()',
-                            description: 'Bracket',
+                            description: '括号',
                             isFirst: true,
                             scope: true
                         }
@@ -392,7 +392,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                         .append(`
                             <a style="color:#323232" id="operand-type-attribute" >
                                 <div style="padding: 15px; border-right: 1px solid rgba(102, 102, 102, 0.6);">
-                                    Attribute
+                                    特性
                                 </div>
                             </a>    
                         `);
@@ -403,7 +403,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                         .append(`
                             <a style="color:#323232" id="operand-type-operator">
                                 <div style="padding: 15px; border-right: 1px solid rgba(102, 102, 102, 0.6);">
-                                    Operator
+                                    操作符
                                 </div>
                             </a>    
                         `);
@@ -428,10 +428,10 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                                             <div class="attribute" style="display: flex; 
                                                 flex-wrap: wrap; padding-bottom: 5px; padding-left: 5px">
                                                 <div class="description" style="width: 100%;">
-                                                    Add a custom value to the expression 
+                                                    向表达式添加自定义值 
                                                 </div>
                                                 <div style="width: 100%;">
-                                                    Custom Value
+                                                    自定义值
                                                     <select name="" id="custom-val-type">
                                                     </select>
                                                     <input style="display: none; width: 45%" 
@@ -442,7 +442,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                                                         <option value="false">false</option>
                                                     </select>
                                                     <button style="background-color: #f47b20; padding: 0 6px 0 6px;" 
-                                                        class="btn btn-primary btn-custom-val-submit">Add</button>
+                                                        class="btn btn-primary btn-custom-val-submit">添加</button>
                                                 </div>
                                             </div>
                                         </a>    

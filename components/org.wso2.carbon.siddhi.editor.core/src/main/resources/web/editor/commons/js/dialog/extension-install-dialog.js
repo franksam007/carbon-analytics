@@ -390,21 +390,21 @@ define(['require', 'lodash', 'jquery', 'constants'],
                         "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>" +
                         "<i class=\"fw fw-cancel  about-dialog-close\"></i>" +
                         "</button>" +
-                        "<h4 class='modal-title file-dialog-title'>Extension Installer</h4>" +
+                        "<h4 class='modal-title file-dialog-title'>扩展安装器</h4>" +
                         "<hr class='style1'>" +
                         "</div>" +
                         "<div class='modal-body'>" +
                         "<div class='container-fluid'>" +
                         "<form class='form-horizontal' onsubmit='return false'>" +
                         "<div class='form-group'>" +
-                        "<label for='locationSearch' class='col-sm-2 file-dialog-label'>Search :</label>" +
-                        "<input type='text' placeholder='enter the extension name'" +
+                        "<label for='locationSearch' class='col-sm-2 file-dialog-label'>搜索 :</label>" +
+                        "<input type='text' placeholder='输入扩展名'" +
                         " class='search-file-dialog-form-control'" +
                         " id='extensionSearchId' autofocus>" +
                         "</div>" +
                         "<div class='form-group'>" +
                         "<div class='file-dialog-form-scrollable-block' style='padding:10px4px; margin-left:35px;'>" +
-                        "<div id='noResults' style='display:none;'>No extensions found.</div>" +
+                        "<div id='noResults' style='display:none;'>未找到扩展。</div>" +
                         "<div id='extensionTableId' class='samples-pane'>" +
                         "</div>" +
                         "<div id='file-browser-error' class='alert alert-danger' style='display: none;'>" +
@@ -413,12 +413,12 @@ define(['require', 'lodash', 'jquery', 'constants'],
                         "</div>" +
                         "<div class='form-group'>" +
                         "<div class='file-dialog-form-btn'>" +
-                        "<button type='button' class='btn btn-default' data-dismiss='modal'>cancel</button>" +
+                        "<button type='button' class='btn btn-default' data-dismiss='modal'>取消</button>" +
                         "</div>" +
                         "</div>" +
                         "</form>" +
                         "<div id='extensionInstallErrorId' class='alert alert-danger'>" +
-                        "<strong>Error!</strong>Something went wrong." +
+                        "<strong>错误！</strong>某处出错。" +
                         "</div>" +
                         "</div>" +
                         "</div>" +

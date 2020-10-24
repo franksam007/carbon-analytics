@@ -22,7 +22,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'event_channel', 'console', '
                 var consoleOptions = {};
                 var options = {};
                 _.set(options, '_type', "CONSOLE");
-                _.set(options, 'title', "Console");
+                _.set(options, 'title', "控制台");
                 _.set(options, 'currentFocusedFile', siddhiAppName);
                 if (null == async) {
                     async = true;
@@ -146,7 +146,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'event_channel', 'console', '
                             var globalConsoleOptions = {};
                             var opts = {};
                             _.set(opts, '_type', "CONSOLE");
-                            _.set(opts, 'title', "Console");
+                            _.set(opts, 'title', "控制台");
                             _.set(opts, 'currentFocusedFile', siddhiAppName);
                             _.set(opts, 'statusForCurrentFocusedFile', "SUCCESS");
                             _.set(opts, 'message', " - Started in Debug mode Successfully!");
@@ -175,7 +175,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'event_channel', 'console', '
                             var globalConsoleOptions = {};
                             var opts = {};
                             _.set(opts, '_type', "CONSOLE");
-                            _.set(opts, 'title', "Console");
+                            _.set(opts, 'title', "控制台");
                             _.set(opts, 'currentFocusedFile', siddhiAppName);
                             _.set(opts, 'statusForCurrentFocusedFile', (JSON.parse(msg.responseText)).status);
                             _.set(opts, 'message', (JSON.parse(msg.responseText)).message);

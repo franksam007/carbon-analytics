@@ -45,19 +45,19 @@ define(['require', 'lodash','jquery', 'log', 'backbone', 'file_browser', 'worksp
                         "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>" +
                         "<i class=\"fw fw-cancel  about-dialog-close\"></i>" +
                         "</button>" +
-                        "<h4 class='modal-title file-dialog-title'>Import Sample</h4>" +
+                        "<h4 class='modal-title file-dialog-title'>导入样例</h4>" +
                         "<hr class='style1'>" +
                         "</div>" +
                         "<div class='modal-body'>" +
                         "<div class='container-fluid'>" +
                         "<form class='form-horizontal' onsubmit='return false'>" +
                         "<div class='form-group'>" +
-                        "<label for='locationSearch' class='col-sm-2 file-dialog-label'>Search :</label>" +
+                        "<label for='locationSearch' class='col-sm-2 file-dialog-label'>搜索 :</label>" +
                         "<input type='text' class='search-file-dialog-form-control' id='locationSearch' autofocus>" +
                         "</div>" +
                         "<div class='form-group'>" +
                         "<div class='file-dialog-form-scrollable-block' style='padding: 10px 4px; margin-left:35px;'>" +
-                        "<div id='noResults' style='display:none;'>No results found</div>" +
+                        "<div id='noResults' style='display:none;'>没有结果</div>" +
                         "<div id='sampleTable' class='samples-pane'>" +
                         "</div>" +
                         "<div id='file-browser-error' class='alert alert-danger' style='display: none;'>" +
@@ -66,12 +66,12 @@ define(['require', 'lodash','jquery', 'log', 'backbone', 'file_browser', 'worksp
                         "</div>" +
                         "<div class='form-group'>" +
                         "<div class='file-dialog-form-btn'>" +
-                        "<button type='button' class='btn btn-default' data-dismiss='modal'>cancel</button>" +
+                        "<button type='button' class='btn btn-default' data-dismiss='modal'>取消</button>" +
                         "</div>" +
                         "</div>" +
                         "</form>" +
                         "<div id='openFileWizardError' class='alert alert-danger'>" +
-                        "<strong>Error!</strong> Something went wrong." +
+                        "<strong>错误！</strong> 某处出错。" +
                         "</div>" +
                         "</div>" +
                         "</div>" +

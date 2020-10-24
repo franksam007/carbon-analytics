@@ -60,7 +60,7 @@ define(['require', 'lodash', 'jquery', 'log', 'backbone', '../../../js/event-sim
                     if (runningFileList.length !== 0) {
                         const template = '<option value="{{dataName}}">{{dataName}}</option>';
                         var options =
-                            '<option selected="selected" value = "-1" disabled>-- Please Select a Siddhi App --</option>';
+                            '<option selected="selected" value = "-1" disabled>-- 请选择一个应用 --</option>';
                         runningFileList.sort();
                         for (var i = 0; i < runningFileList.length; i++) {
                             options += template.replaceAll('{{dataName}}', runningFileList[i]);
@@ -68,8 +68,8 @@ define(['require', 'lodash', 'jquery', 'log', 'backbone', '../../../js/event-sim
                         storeQueryModal.find("select[name='siddhi-app-name']").html(options);
 
                     } else {
-                        errorBox.text("No siddhi apps are running in the workspace. Start a siddhi app to " +
-                            "execute an on-demand query.").show();
+                        errorBox.text("没有应用在运行。启动一个应用后， " +
+                            "执行按需查询").show();
                     }
 
                     appNameSelector.on('change', function (event) {

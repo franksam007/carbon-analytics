@@ -41,7 +41,7 @@ define(['require', 'lodash', 'jquery', 'utils'],
 
             if (self.templatedKeyList.length == 0) {
                 dynamicKeyHTMLContent = dynamicKeyHTMLContent + '<div id="fillTemplateValueError" class="alert">' +
-                    'No values are templated to fill.' +
+                    '没有需要填充的模版值' +
                     '</div>';
             } else {
                 _.forEach(self.templatedKeyList, function(key) {

@@ -30,9 +30,9 @@ define(['require', 'log', 'jquery', 'lodash'],
         AppAnnotationForm.prototype.generatePropertiesForm = function (element, formConsole, formContainer) {
             var self = this;
             var propertyDiv = $('<div class="clearfix form-min-width"> <div class= "siddhi-app-form-container"> ' +
-                '<div id = "define-app-name"> <label> <span class="mandatory-symbol"> * </span> Name </label> ' +
+                '<div id = "define-app-name"> <label> <span class="mandatory-symbol"> * </span> 名称 </label> ' +
                 '<input type="text" id="app-name" class="clearfix name"><label class = "error-message"> </label></div>' +
-                '<div id = "define-app-description"> <label> <span class="mandatory-symbol"> * </span>Description ' +
+                '<div id = "define-app-description"> <label> <span class="mandatory-symbol"> * </span>描述 ' +
                 '</label> <textarea id="app-description" class="clearfix"> </textarea> <label class = "error-message"> ' +
                 '</label> </div> </div>' +
                 '<div class = "siddhi-app-form-container"> <div class = "define-annotation" </div> </div> </div> ');

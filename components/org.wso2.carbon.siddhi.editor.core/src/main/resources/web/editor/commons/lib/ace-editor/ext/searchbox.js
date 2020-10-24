@@ -43,20 +43,20 @@ define(function (require, exports, module) {
     var html = '<div class="ace_search right">\
     <button type="button" action="hide" class="ace_searchbtn_close"></button>\
     <div class="ace_search_form">\
-        <input class="ace_search_field" placeholder="Search for" spellcheck="false"></input>\
+        <input class="ace_search_field" placeholder="搜索" spellcheck="false"></input>\
         <button type="button" action="findNext" class="ace_searchbtn next"></button>\
         <button type="button" action="findPrev" class="ace_searchbtn prev"></button>\
         <button type="button" action="findAll" class="ace_searchbtn" title="Alt-Enter">All</button>\
     </div>\
     <div class="ace_replace_form">\
-        <input class="ace_search_field" placeholder="Replace with" spellcheck="false"></input>\
-        <button type="button" action="replaceAndFindNext" class="ace_replacebtn">Replace</button>\
+        <input class="ace_search_field" placeholder="替换值" spellcheck="false"></input>\
+        <button type="button" action="replaceAndFindNext" class="ace_replacebtn">替换</button>\
         <button type="button" action="replaceAll" class="ace_replacebtn">All</button>\
     </div>\
     <div class="ace_search_options">\
-        <span action="toggleRegexpMode" class="ace_button" title="RegExp Search">.*</span>\
-        <span action="toggleCaseSensitive" class="ace_button" title="CaseSensitive Search">Aa</span>\
-        <span action="toggleWholeWords" class="ace_button" title="Whole Word Search">\\b</span>\
+        <span action="toggleRegexpMode" class="ace_button" title="正则表达式">.*</span>\
+        <span action="toggleCaseSensitive" class="ace_button" title="大小写敏感">Aa</span>\
+        <span action="toggleWholeWords" class="ace_button" title="完整词">\\b</span>\
     </div>\
 </div>'.replace(/>\s+/g, ">");
 

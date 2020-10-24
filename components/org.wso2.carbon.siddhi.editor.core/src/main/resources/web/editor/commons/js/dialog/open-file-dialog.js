@@ -49,14 +49,14 @@ define(['require', 'lodash', 'jquery', 'log', 'backbone', 'file_browser', 'works
                         "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>" +
                         "<span aria-hidden='true'>&times;</span>" +
                         "</button>" +
-                        "<h4 class='modal-title file-dialog-title'>Open File</h4>" +
+                        "<h4 class='modal-title file-dialog-title'>打开文件</h4>" +
                         "<hr class='style1'>" +
                         "</div>" +
                         "<div class='modal-body'>" +
                         "<div class='container-fluid'>" +
                         "<form class='form-horizontal' onsubmit='return false'>" +
                         "<div class='form-group'>" +
-                        "<label for='location' class='col-sm-2 file-dialog-label'>File Name :</label>" +
+                        "<label for='location' class='col-sm-2 file-dialog-label'>文件名 :</label>" +
                         "<div class='col-sm-9'>" +
                         "<input type='text' class='file-dialog-form-control' id='location' readonly>" +
                         "</div>" +
@@ -71,15 +71,15 @@ define(['require', 'lodash', 'jquery', 'log', 'backbone', 'file_browser', 'works
                         "</div>" +
                         "<div class='form-group'>" +
                         "<div class='file-dialog-form-btn'>" +
-                        "<button id='openButton' type='button' class='btn btn-primary'>open" +
+                        "<button id='openButton' type='button' class='btn btn-primary'>打开" +
                         "</button>" +
                         "<div class='divider'/>" +
-                        "<button type='button' class='btn btn-default' data-dismiss='modal'>cancel</button>" +
+                        "<button type='button' class='btn btn-default' data-dismiss='modal'>取消</button>" +
                         "</div>" +
                         "</div>" +
                         "</form>" +
                         "<div id='openFileWizardError' class='alert alert-danger'>" +
-                        "<strong>Error!</strong> Something went wrong." +
+                        "<strong>错误！</strong> 某处出错。" +
                         "</div>" +
                         "</div>" +
                         "</div>" +

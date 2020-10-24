@@ -452,7 +452,7 @@ define(['jquery', 'log', './simulator-rest-client', 'lodash', './open-siddhi-app
                                 var consoleOptions = {};
                                 var options = {};
                                 _.set(options, '_type', "CONSOLE");
-                                _.set(options, 'title', "Console");
+                                _.set(options, 'title', "控制台");
                                 _.set(options, 'statusForCurrentFocusedFile', "simulation");
                                 _.set(options, 'message', message);
                                 _.set(consoleOptions, 'consoleOptions', options);
@@ -941,7 +941,7 @@ define(['jquery', 'log', './simulator-rest-client', 'lodash', './open-siddhi-app
         };
         // create the siddhi app name drop down
         self.refreshSiddhiAppList = function ($siddhiAppSelect, siddhiAppNames) {
-            var initialOptionValue = '<option value = "-1" disabled>-- Please Select a Siddhi App --</option>';
+            var initialOptionValue = '<option value = "-1" disabled>-- 请选择一个应用 --</option>';
             var newSiddhiApps = self.generateOptions(siddhiAppNames, initialOptionValue);
             $siddhiAppSelect.html(newSiddhiApps);
             $siddhiAppSelect.find('option[value="-1"]').attr("selected", true);
@@ -1651,7 +1651,7 @@ define(['jquery', 'log', './simulator-rest-client', 'lodash', './open-siddhi-app
             $sourceConfigForm.find('select[name="stream-name"]').rules('add', {
                 required: true,
                 messages: {
-                    required: "Please select a stream name."
+                    required: "请选择一个数据流"
                 }
             });
             switch (sourceType) {
@@ -2607,7 +2607,7 @@ define(['jquery', 'log', './simulator-rest-client', 'lodash', './open-siddhi-app
                         var consoleOptions = {};
                         var options = {};
                         _.set(options, '_type', "CONSOLE");
-                        _.set(options, 'title', "Console");
+                        _.set(options, 'title', "控制台");
                         _.set(options, 'statusForCurrentFocusedFile', "simulation");
                         _.set(options, 'message', message);
                         _.set(consoleOptions, 'consoleOptions', options);
@@ -2631,7 +2631,7 @@ define(['jquery', 'log', './simulator-rest-client', 'lodash', './open-siddhi-app
                         var consoleOptions = {};
                         var options = {};
                         _.set(options, '_type', "CONSOLE");
-                        _.set(options, 'title', "Console");
+                        _.set(options, 'title', "控制台");
                         _.set(options, 'statusForCurrentFocusedFile', "simulation");
                         _.set(options, 'message', message);
                         _.set(consoleOptions, 'consoleOptions', options);
@@ -2810,7 +2810,7 @@ define(['jquery', 'log', './simulator-rest-client', 'lodash', './open-siddhi-app
                 "</div>" +
                 "</form>" +
                 "<div id='deleteWizardError' class='alert alert-danger'>" +
-                "<strong>Error!</strong> Something went wrong." +
+                "<strong>错误！</strong> 某处出错。" +
                 "</div>" +
                 "</div>" +
                 "</div>" +

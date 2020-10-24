@@ -42,7 +42,7 @@ function (require, $, _, log) {
                 hasLeft: true,
                 hasRight: false,
                 symbol: 'IS NULL',
-                description: 'Null Check',
+                description: '空值检查',
                 isFirst: false,
                 isEnd: true
             },
@@ -53,7 +53,7 @@ function (require, $, _, log) {
                 hasLeft: false,
                 hasRight: true,
                 symbol: 'NOT',
-                description: 'Logical Not',
+                description: '逻辑非',
                 isFirst: true
             },
             multiply: {
@@ -63,7 +63,7 @@ function (require, $, _, log) {
                 symbol: '*',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Multiplication',
+                description: '乘',
                 isFirst: false
             },
             divide: {
@@ -73,7 +73,7 @@ function (require, $, _, log) {
                 symbol: '/',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Division',
+                description: '除',
                 isFirst: false
             },
             modulo: {
@@ -83,7 +83,7 @@ function (require, $, _, log) {
                 symbol: '%',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Modulus',
+                description: '取模',
                 isFirst: false
             },
             addition: {
@@ -93,7 +93,7 @@ function (require, $, _, log) {
                 symbol: '+',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Addition',
+                description: '加',
                 isFirst: false
             },
             subtraction: {
@@ -103,7 +103,7 @@ function (require, $, _, log) {
                 symbol: '-',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Subtraction',
+                description: '减',
                 isFirst: false
             },
             less_than: {
@@ -113,7 +113,7 @@ function (require, $, _, log) {
                 symbol: '<',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Less than',
+                description: '小于',
                 isFirst: false
             },
             less_than_equal: {
@@ -123,7 +123,7 @@ function (require, $, _, log) {
                 symbol: '<=',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Less than or equal',
+                description: '小于等于',
                 isFirst: false
             },
             greater_than: {
@@ -133,7 +133,7 @@ function (require, $, _, log) {
                 symbol: '>',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Greater than',
+                description: '大于',
                 isFirst: false
             },
             greater_than_equal: {
@@ -143,7 +143,7 @@ function (require, $, _, log) {
                 symbol: '>=',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Greater than or equal',
+                description: '大于等于',
                 isFirst: false
             },
             equal: {
@@ -153,7 +153,7 @@ function (require, $, _, log) {
                 symbol: '==',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Equal comparison',
+                description: '等于',
                 isFirst: false
             },
             not_equal: {
@@ -163,7 +163,7 @@ function (require, $, _, log) {
                 symbol: '!=',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Not equal comparison',
+                description: '不等于',
                 isFirst: false
             },
             and: {
@@ -173,7 +173,7 @@ function (require, $, _, log) {
                 symbol: 'AND',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Logical AND',
+                description: '逻辑与',
                 isFirst: false
             },
             or: {
@@ -183,7 +183,7 @@ function (require, $, _, log) {
                 symbol: 'OR',
                 hasLeft: true,
                 hasRight: true,
-                description: 'Logical OR',
+                description: '逻辑或',
                 isFirst: false
             }
         };

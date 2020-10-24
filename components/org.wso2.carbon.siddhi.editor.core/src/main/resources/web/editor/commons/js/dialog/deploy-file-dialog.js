@@ -37,13 +37,13 @@ define(['require', 'lodash', 'jquery', 'log', 'file_browser'],
                 "<i class='fw fw-cancel about-dialog-close'>" +
                 "</i>" +
                 "</button>" +
-                "<h4 class='modal-title file-dialog-title'>Deploy Siddhi Apps To Server</h4>" +
+                "<h4 class='modal-title file-dialog-title'>部署应用到服务器</h4>" +
                 "<hr class='style1'>" +
                 "</div>" +
                 "<div class='modal-body'>" +
                 "<div class='container-fluid'>" +
                 "<form class='form-horizontal' onsubmit='return false'>" +
-                "<button class='servers' id='siddhi-apps'>Siddhi Apps To Deploy" +
+                "<button class='servers' id='siddhi-apps'>拟部署应用" +
                 "</button>" +
                 "<div class='vertical-divider'>" +
                 "</div>" +
@@ -57,7 +57,7 @@ define(['require', 'lodash', 'jquery', 'log', 'file_browser'],
                 "</div>" +
                 "</div>" +
                 "</div>" +
-                "<button class='servers' id='servers'>Servers" +
+                "<button class='servers' id='servers'>服务器" +
                 "</button>" +
                 "<div class='vertical-divider'>" +
                 "</div>" +
@@ -70,23 +70,23 @@ define(['require', 'lodash', 'jquery', 'log', 'file_browser'],
                 "</div>" +
                 "</div>" +
                 "<div class='new-server' id='new-server'>" +
-                "<div class='add-new-server-title'>Add New Server" +
+                "<div class='add-new-server-title'>添加新服务器" +
                 "</div>" +
                 "<div class='vertical-divider'>" +
                 "</div>" +
                 "<div class='form-group'>" +
                 "<div class='file-dialog-form-new-sever-container'>" +
                 "<div class='clearfix'>" +
-                "<div class='server-property'> <label class='clearfix'> Host </label> <input class='add-new-server-input'" +
+                "<div class='server-property'> <label class='clearfix'> 主机 </label> <input class='add-new-server-input'" +
                 " id='new_host' placeholder='localhost'> </div>" +
-                "<div class='server-property'> <label class='clearfix'> HTTPS Port </label> <input class='add-new-server-input'" +
+                "<div class='server-property'> <label class='clearfix'> HTTPS端口 </label> <input class='add-new-server-input'" +
                 " id='new_port' placeholder='9443'> </div>" +
-                "<div class='server-property'> <label class='clearfix'> User Name </label> <input " +
+                "<div class='server-property'> <label class='clearfix'> 用户名 </label> <input " +
                 "class='add-new-server-input' id='new_user_name' placeholder='admin'> </div>" +
-                "<div class='server-property'> <label class='clearfix'> Password </label> <input " +
+                "<div class='server-property'> <label class='clearfix'> 密码 </label> <input " +
                 "class='file-dialog-form-toggle-password' id='new_password' placeholder='admin' type='password'> </div>" +
                 "</div>" +
-                "<button id='addNew' type='button' class='add-new-button'>Add </button>" +
+                "<button id='addNew' type='button' class='add-new-button'>添加 </button>" +
                 "<div class='alert-container' id='alert-container'>" +
                 "</div>" +
                 "</div>" +
@@ -97,10 +97,10 @@ define(['require', 'lodash', 'jquery', 'log', 'file_browser'],
                 "<div class='button-container' id='button-container'>" +
                 "<div class='form-group'>" +
                 "<div class='file-dialog-form-btn'>" +
-                "<button id='deployButton' type='button' class='btn btn-primary'>deploy" +
+                "<button id='deployButton' type='button' class='btn btn-primary'>部署" +
                 "</button>" +
                 "<div class='divider'/>" +
-                "<button type='button' class='btn btn-default' data-dismiss='modal'>cancel</button>" +
+                "<button type='button' class='btn btn-default' data-dismiss='modal'>取消</button>" +
                 "</div>" +
                 "</div>" +
                 "</div>" +
@@ -108,7 +108,7 @@ define(['require', 'lodash', 'jquery', 'log', 'file_browser'],
                 "</div>" +
                 "<div class='deployment-status-title-container' id='deployment-status-title-container' " +
                 "style='display: none'>" +
-                "<div class='deployment-status-title'>Deployment Status" +
+                "<div class='deployment-status-title'>部署状态" +
                 "</div>" +
                 "<div class='vertical-divider'>" +
                 "</div>" +
@@ -118,7 +118,7 @@ define(['require', 'lodash', 'jquery', 'log', 'file_browser'],
                 "</form>" +
                 "<div id='openFileWizardError-container' class='openFileWizardError-container'>" +
                 "<div id='openFileWizardError' class='alert alert-danger'>" +
-                "<strong>Error!</strong> Something went wrong." +
+                "<strong>错误!</strong> 某处出错。" +
                 "</div>" +
                 "</div>" +
                 "</div>" +

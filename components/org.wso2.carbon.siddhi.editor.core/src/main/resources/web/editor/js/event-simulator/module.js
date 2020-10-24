@@ -111,10 +111,10 @@ define(['jquery', 'backbone', 'lodash', 'log', 'dialogs', './simulator', './feed
                 activateBtn.attr("data-placement", "right").attr("data-container", "body");
 
                 if (this.application.isRunningOnMacOS()) {
-                    activateBtn.attr("title", "Event Simulator (" + _.get(self._options,
+                    activateBtn.attr("title", "事件模拟器 (" + _.get(self._options,
                             'command.shortcuts.mac.label') + ") ").tooltip();
                 } else {
-                    activateBtn.attr("title", "Event Simulator  (" + _.get(self._options,
+                    activateBtn.attr("title", "事件模拟器  (" + _.get(self._options,
                             'command.shortcuts.other.label') + ") ").tooltip();
                 }
 

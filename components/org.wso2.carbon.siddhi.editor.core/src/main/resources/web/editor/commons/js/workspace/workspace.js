@@ -306,7 +306,7 @@ define(['ace/ace', 'jquery', 'lodash', 'log', 'dialogs', './service-client', 'we
                         if (fileEditor.isInSourceView()) {
                             findMenuItem.enable();
                             findAndReplaceMenuItem.enable();
-                            formatMenuItem.updateLabel('Reformat Code');
+                            formatMenuItem.updateLabel('格式化代码');
                             formatMenuItem.enable();
 
                             var undoManager = fileEditor.getUndoManager();
@@ -331,7 +331,7 @@ define(['ace/ace', 'jquery', 'lodash', 'log', 'dialogs', './service-client', 'we
                             redoMenuItem.disable();
                             findMenuItem.disable();
                             findAndReplaceMenuItem.disable();
-                            formatMenuItem.updateLabel('Auto-Align');
+                            formatMenuItem.updateLabel('自动对齐');
                             formatMenuItem.enable();
                         }
                     }

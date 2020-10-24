@@ -277,8 +277,8 @@ define(['require', 'log', 'lodash', 'jquery', 'appData', 'initialiseData', 'json
 
             $(this.container).find('.dialog-heading').text('');
             $(this.container).find('.dialog-heading')
-                .append(`Create expression for 
-                            <b>${this.currenOutputElement}</b> of <b>${config.output.stream.name}</b>`);
+                .append(`为<b>${config.output.stream.name}</b>的 
+                            <b>${this.currenOutputElement}</b>创建表达式`);
 
             // render the main Expression
             expressionContainer.empty();
@@ -506,7 +506,7 @@ define(['require', 'log', 'lodash', 'jquery', 'appData', 'initialiseData', 'json
                                             leftTypes: ['bool', 'text', 'number'],
                                             rightTypes: ['bool', 'text', 'number'],
                                             symbol: '()',
-                                            description: 'Bracket',
+                                            description: '括号',
                                             isFirst: true,
                                             scope: true
                                         }
@@ -562,7 +562,7 @@ define(['require', 'log', 'lodash', 'jquery', 'appData', 'initialiseData', 'json
                         leftTypes: ['bool', 'text', 'number'],
                         rightTypes: ['bool', 'text', 'number'],
                         symbol: '()',
-                        description: 'Bracket',
+                        description: '括号',
                         isFirst: true,
                         scope: true
                     }
@@ -625,7 +625,7 @@ define(['require', 'log', 'lodash', 'jquery', 'appData', 'initialiseData', 'json
                     <li>
                         <a>
                              <div class="attribute-category">
-                                 Input Attributes
+                                 输入特性
                              </div>
                          </a>
                      </li>
@@ -638,7 +638,7 @@ define(['require', 'log', 'lodash', 'jquery', 'appData', 'initialiseData', 'json
                     <li>
                         <a>
                              <div class="function-category">
-                                 Function
+                                 函数
                              </div>
                          </a>
                      </li>
@@ -651,7 +651,7 @@ define(['require', 'log', 'lodash', 'jquery', 'appData', 'initialiseData', 'json
                     <li>
                         <a>
                              <div class="operator-category">
-                                 Operators
+                                 操作符
                              </div>
                          </a>
                      </li>
@@ -685,19 +685,19 @@ define(['require', 'log', 'lodash', 'jquery', 'appData', 'initialiseData', 'json
                             <a id="custom_val_input_container" style="color: #333">
                                 <div class="attribute" style="display: flex; flex-wrap: wrap;">
                                     <div class="description" style="width: 100%;">
-                                       Add constant to the expression
+                                       向表达式添加常量
                                     </div>
                                     <div style="width: 100%;">
-                                        Custom Value
+                                        自定义值
                                         <select name="" id="custom_val_type">
                                         </select>
                                         <input style="display: none; width: 65%" id="custom_value_input_txt" type="text">
                                         <select style="display: none; width: 65%" id="custom_value_input_bool" >
-                                            <option value="true">True</option>
-                                            <option value="false">false</option>
+                                            <option value="true">是</option>
+                                            <option value="false">否</option>
                                         </select>
                                         <button style="background-color: #007eff; padding: 0 6px 0 6px;" 
-                                            class="btn btn-primary btn-custom-val-submit">Add</button>
+                                            class="btn btn-primary btn-custom-val-submit">添加</button>
                                     </div>
                                 </div>
                             </a>

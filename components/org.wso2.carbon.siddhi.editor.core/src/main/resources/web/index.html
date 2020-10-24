@@ -67,7 +67,7 @@
     <link rel="stylesheet" type="text/css" href="editor/commons/lib/smartWizard/css/smart_wizard.css"/>
     <link rel="stylesheet" type="text/css" href="editor/css/export-docker-kubernetes.css"/>
     <link rel="stylesheet" type="text/css" href="editor/css/cron-generator.css"/>
-    <title>Streaming Integrator Tooling</title>
+    <title>3Golden Stream Web</title>
 </head>
 
 <body class="sticky-footer">
@@ -78,21 +78,21 @@
     <div id="header-container" class="container-fluid">
         <div class="pull-left brand float-remove-xs text-center-xs">
             <a href="#">
-                <img src="/editor/commons/lib/theme-wso2-2.0.0/images/logo-inverse.svg" alt="WSO2" title="WSO2"
+                <img src="/editor/commons/lib/theme-wso2-2.0.0/images/logo-inverse.svg" alt="GSW" title="GSW"
                      class="logo">
-                <h1>Streaming Integrator Tooling</h1>
+                <h1>3Golden Stream Web</h1>
             </a>
         </div>
         <div id="menu-bar-container" class="menu-bar pull-left">
         </div>
         <div id="tool-bar-container" class="tool-bar pull-left">
-            <a href="#" data-placement="bottom" data-toggle="tooltip" title="Start" class="run_btn">
+            <a href="#" data-placement="bottom" data-toggle="tooltip" title="启动" class="run_btn">
                 <i class="fw fw-start"></i>
             </a>
-            <a href="#" data-placement="bottom" data-toggle="tooltip" title="Stop" class="stop_btn">
+            <a href="#" data-placement="bottom" data-toggle="tooltip" title="停止" class="stop_btn">
                 <i class="fw fw-stop"></i>
             </a>
-            <a href="#" data-placement="bottom" data-toggle="tooltip" title="Revert Changes" class="revert_btn">
+            <a href="#" data-placement="bottom" data-toggle="tooltip" title="恢复修改" class="revert_btn">
                 <i class="fw fw-undo"></i>
             </a>
         </div>
@@ -164,7 +164,7 @@
                         <div class="init-loading-screen" style="display: block;">
                             <i class="fw fw-wso2-logo fw-pulse fw-2x"></i>
                             <p></p>
-                            <p>Loading...</p>
+                            <p>正在加载...</p>
                         </div>
                         <div class="tab-headers tab-headers-bar" style="display: none;"></div>
                         <div id="tab-content-wrapper" class="grid-background" style="display: none;">
@@ -185,14 +185,14 @@
                             <div class="consoleToolbar">
                                 <div class="consoleIcon">
                                     <a href="#" class="clear-console-btn" data-placement="right" data-toggle="tooltip"
-                                       title="Clear">
+                                       title="清除">
                                         <i class="fw fw-clear"></i>
                                     </a>
                                 </div>
                                 <div class="consoleIcon">
                                     <a href="#" class="reload-console-btn console-sync-btn-disable" aria-disabled="true"
                                        data-placement="right" data-toggle="tooltip"
-                                       title="Reload">
+                                       title="刷新">
                                         <i class="fw fw-sync"></i>
                                     </a>
                                 </div>
@@ -246,7 +246,7 @@
             </div>
             <div class="debuggerContent">
                 <div class="col-md-6 event-state">
-                    <h4>Event State</h4>
+                    <h4>事件状态</h4>
                     <div class="panel-body panel-state-body">
                         <div class="nano">
                             <div class="nano-content" id="event-state">
@@ -255,7 +255,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 query-state">
-                    <h4>Query State</h4>
+                    <h4>查询状态</h4>
                     <div class="panel-body panel-state-body">
                         <div class="nano">
                             <div class="nano-content" id="query-state">
@@ -304,13 +304,13 @@
             <div class="hide pop-over">
                 <div class="popover-body">
                     <div class="popover-alert-icon"><i class="fw fw-alert"></i></div>
-                    <div class="popover-body-message"><span>Are you sure you want to delete this element?<br>This
-                        cannot be undone.</span>
+                    <div class="popover-body-message"><span>是否确认删除此元素？<br>此操作
+                        无法撤销。</span>
                     </div>
                 </div>
                 <div class="popover-footer">
-                    <button type="button" class="btn btn-xs btn_yes" tabindex="-1">Yes</button>
-                    <button type="button" class="btn btn-xs btn_no" tabindex="-1">No</button>
+                    <button type="button" class="btn btn-xs btn_yes" tabindex="-1">是</button>
+                    <button type="button" class="btn btn-xs btn_no" tabindex="-1">否</button>
                 </div>
             </div>
             <!-- End: pop-over-design-view -->
@@ -339,7 +339,7 @@
                         <div class="hide">
                             <div class="popover-content">
                                 <a href="#">
-                                    <i class="fw fw-clear"></i> Clear expression
+                                    <i class="fw fw-clear"></i> 清除表达式
                                 </a>
                             </div>
                         </div>
@@ -348,7 +348,7 @@
                         </div>
                         <div class="generation-content" style="">
                             <div style="width: 100%; margin-bottom: 10px; color: rgb(71,71,71);">
-                                Select operand to add to expression
+                                选择添加到表达式的操作数
                             </div>
                             <div class="node-container" style="">
                                 <ul class="node-category">
@@ -358,7 +358,7 @@
                             <div class="att-fun-op-container" style="">
                                 <div class="select-function-operator-attrib" style="display: none">
                                     <div style="border-bottom: 1px solid #333;" class="input-group">
-                                        <input placeholder="Type here to search" class="att-fun-op-search-box" style="background-color: #fff; color: #555; border-color: #c5c5c5; width: 100%; border: none; outline: none; background-color: transparent; line-height: 30px;" type="text" class="form-control"/>
+                                        <input placeholder="输入查询" class="att-fun-op-search-box" style="background-color: #fff; color: #555; border-color: #c5c5c5; width: 100%; border: none; outline: none; background-color: transparent; line-height: 30px;" type="text" class="form-control"/>
                                         <span style="background: transparent; padding: 3px 12px; border: none;" class="input-group-addon">
                                             <i class="fw fw-search"></i>
                                         </span>
@@ -374,15 +374,15 @@
                         </div>
                     </div>
                     <div style="text-align: right" class="btn-tray">
-                        <button style="" class="btn btn-default">Cancel</button>
-                        <button style="" class="btn btn-primary btn-expression-submit">Submit</button>
+                        <button style="" class="btn btn-default">取消</button>
+                        <button style="" class="btn btn-primary btn-expression-submit">提交</button>
                     </div>
                 </div>
             </div>
             <div class="etl-task-wizard-canvas">
                 <div class="listContainer inputs" style="">
                     <div class="heading" style="">
-                        Input Attributes
+                        输入属性
                     </div>
                     <div>
                         <ul class="attributeList">
@@ -392,7 +392,7 @@
                 <div class="listContainer outputs" style="">
                     <div class="heading" style="">
                         <div style="width: 100%">
-                            Output Attributes
+                            输出属性
                         </div>
                         <div class="btn-select-all" style="display: none">
                             Select *
@@ -409,9 +409,9 @@
         <div class="toggle-controls-container">
             <div class="btn toggle-view-button">
                 <i class="fw fw-design-view fw-rotate-90"></i>
-                <span class="toggle-button-text" id="design_view_btn">Design View</span>
+                <span class="toggle-button-text" id="design_view_btn">设计视图</span>
             </div>
-            <button class="btn wizard-view-button" id="btn-wizard-view">Wizard View</button>
+            <button class="btn wizard-view-button" id="btn-wizard-view">向导视图</button>
         </div>
         <!-- End: Toggle Controls Container  -->
     </div>
@@ -423,19 +423,19 @@
         <div class="siddhi_app_mode_config clearfix">
             <div class="clearfix">
                 <div class="col-md-6">
-                    <h5>Siddhi Apps</h5>
+                    <h5>应用</h5>
                 </div>
                 <div class="col-md-6">
-                    <h5>Run/Debug Mode</h5>
+                    <h5>运行/调试模式</h5>
                 </div>
             </div>
             <div class="clearfix">
                 <label class="siddhi_app_name col-md-6">SmartHomePlan</label>
                 <div class="switch-toggle switch-ios col-md-6">
                     <input id="week11" name="view10" checked="" type="radio">
-                    <label for="week11" onclick="">Run</label>
+                    <label for="week11" onclick="">运行</label>
                     <input id="month13" name="view10" type="radio">
-                    <label for="month13" onclick="">Debug</label>
+                    <label for="month13" onclick="">调试</label>
                     <a></a>
                 </div>
             </div>
@@ -451,7 +451,7 @@
                 <button type="button" class="close" onclick="onFileBrowserClose();" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title">Select root folder</h4>
+                <h4 class="modal-title">选择根目录</h4>
             </div>
             <div class="modal-body">
                 <div class="container-fluid  .file-browser-container">
@@ -461,8 +461,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" id="cancelBtn">Cancel</button>
-                <button type="button" class="btn btn-primary" id="selectBtn">Select</button>
+                <button type="button" class="btn btn-default" id="cancelBtn">取消</button>
+                <button type="button" class="btn btn-primary" id="selectBtn">选择</button>
             </div>
         </div>
     </div>
@@ -476,10 +476,10 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title" style="color:lightgoldenrodyellow">Warning!</h4>
+                <h4 class="modal-title" style="color:lightgoldenrodyellow">警告！</h4>
             </div>
             <div class="modal-body">
-                <p>Only one endpoint per resource is supported in this version.</p>
+                <p>本版本每个资源仅支持一个端点。</p>
             </div>
         </div>
     </div>
@@ -494,38 +494,38 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="newConfigModalLabel">Streaming Integrator Configuration Wizard</h4>
+                <h4 class="modal-title" id="newConfigModalLabel">配置向导</h4>
             </div>
             <div class="modal-body">
                 <div class="container-fluid">
                     <form class="form-horizontal">
                         <div class="form-group">
-                            <label for="location" class="control-label col-sm-2">Location</label>
+                            <label for="location" class="control-label col-sm-2">位置</label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="location"
-                                       placeholder="eg: /home/user/wso2-integration-server/siddhi-configs">
+                                       placeholder="eg: /home/user/integration-server/configs">
                             </div>
                             <div class="col-sm-2" style="float: right">
-                                <button type="button" class="btn btn-primary" id="openFileBrowserBtn">Select Folder
+                                <button type="button" class="btn btn-primary" id="openFileBrowserBtn">选择目录
                                 </button>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="configName" class="control-label col-sm-2">File Name</label>
+                            <label for="configName" class="control-label col-sm-2">文件名</label>
                             <div class="col-sm-10">
                                 <input class="form-control" id="configName" placeholder="eg: hotel-check-in.xyz">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="button" class="btn btn-primary" id="createBtn">create
+                                <button type="button" class="btn btn-primary" id="createBtn">创建
                                 </button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">cancel</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
                             </div>
                         </div>
                     </form>
                     <div id="newWizardError" class="alert alert-danger">
-                        <strong>Error!</strong> Something went wrong.
+                        <strong>错误！</strong> 出错了！
                     </div>
                 </div>
             </div>
@@ -541,12 +541,12 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Set Service Parameters</h4>
+                <h4 class="modal-title">设置服务参数</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" role="form" style="margin-top: 25px">
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="basePath">Base Path</label>
+                        <label class="col-md-4 control-label" for="basePath">基础路径</label>
                         <div class="col-md-8">
                             <input id="basePath" name="basePath" type="text" placeholder="/basepath"
                                    class="form-control input-md">
@@ -554,7 +554,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="produces">Produces</label>
+                        <label class="col-md-4 control-label" for="produces">产出</label>
                         <div class="col-md-8">
                             <input id="produces" name="produces" type="text" placeholder="MediaType.APPLICATION_JSON"
                                    class="form-control input-md">
@@ -563,7 +563,7 @@
 
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="packageName">Package Name</label>
+                        <label class="col-md-4 control-label" for="packageName">包名</label>
                         <div class="col-md-8">
                             <input id="packageName" name="packageName" type="text" placeholder="com.sample"
                                    class="form-control input-md">
@@ -572,16 +572,16 @@
 
                     <!-- Textarea -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="description">Description</label>
+                        <label class="col-md-4 control-label" for="description">描述</label>
                         <div class="col-md-8">
-                            <input id="description" name="description" type="text" placeholder="Your Description Here"
+                            <input id="description" name="description" type="text" placeholder="自有描述"
                                    class="form-control input-md">
                         </div>
                     </div>
 
                     <!-- Textarea -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="tags">Tags</label>
+                        <label class="col-md-4 control-label" for="tags">标签</label>
                         <div class="col-md-8">
                             <input id="tags" name="tags" type="text" placeholder="tag1,tag2"
                                    class="form-control input-md">
@@ -590,8 +590,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="saveServiceProperties()">Save</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="saveServiceProperties()">保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
             </div>
         </div>
     </div>
@@ -605,12 +605,12 @@
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active">
                 <a href="#single-event-configs" aria-controls="single-event-configs" role="tab" data-toggle="tab">
-                    Single Simulation
+                    单次模拟
                 </a>
             </li>
             <li role="presentation">
                 <a href="#event-feed-configs" aria-controls="event-feed-configs" role="tab" data-toggle="tab">
-                    Feed Simulation
+                    输入源模拟
                 </a>
             </li>
         </ul>
@@ -636,19 +636,19 @@
                         <span class="icon fw-stack fw-lg">
                           <i class="fw fw-circle-outline fw-stack-2x"></i>
                           <i class="fw fw-add fw-stack-1x"></i>
-                        </span> Create
+                        </span> 创建
                     </button>
                     <div class="notifications" id="createFeedSimulationNotification"
-                         style="display: none;">No Saved Siddhi Apps Available!
+                         style="display: none;">没有已保存的应用可用！
                     </div>
                     <div class="nano">
                         <div class="simulation-list nano-content">
                             <div id="active-simulation-list" class="nano-content" style="display: none;">
-                                <h5>Active Feed Simulations</h5>
+                                <h5>活动输入源模拟</h5>
                             </div>
                             <div id="inactive-simulation-list" class="nano-content inactive-simulation-list"
                                  style="display: none;">
-                                <h5>Inactive Feed Simulations</h5>
+                                <h5>非活动输入源模拟</h5>
                             </div>
                         </div>
                     </div>
@@ -666,22 +666,22 @@
               data-loading-style="overlay" data-loading-text="Sending event">
             <div class="form-group">
                 <label>
-                    Siddhi App Name
+                    应用名称
                 </label>
                 <select name="single-event-siddhi-app-name" class="form-control" id="siddhi-app-name">
                 </select>
             </div>
             <div class="form-group">
                 <label>
-                    Stream Name
+                    数据流名称
                 </label>
                 <select name="stream-name" class="form-control" id="stream-name">
                 </select>
             </div>
             <div class="form-group">
                 <label>
-                    Timestamp(ms)<span class="optional"> - optional</span></label>
-                <input type="text" class="form-control" name="sim-timestamp" placeholder="Current System Time">
+                    时间戳(ms)<span class="optional"> - 可选</span></label>
+                <input type="text" class="form-control" name="sim-timestamp" placeholder="当前系统时间">
             </div>
             <div class="form-group" data-name="attributes" id="attribute-table">
             </div>
@@ -691,7 +691,7 @@
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" name="send" id="start-and-send">
-                    Send
+                    发送
                 </button>
             </div>
         </form>
@@ -714,13 +714,13 @@
                           data-loading-style="overlay" data-loading-text="Sending event">
                         <div class="form-group">
                             <label>
-                                Simulation Name
+                                模拟名称
                             </label>
                             <input type="text" class="form-control" name="simulation-name">
                         </div>
                         <div class="form-group">
                             <label>
-                                Description
+                                描述
                             </label>
                             <textarea class="form-control" rows="2" name="feed-description"></textarea>
                         </div>
@@ -728,7 +728,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        Time Interval(ms)
+                                        时间间隔(ms)
                                     </label>
                                     <input type="text" class="form-control" id="timeInterval" name="time-interval">
                                 </div>
@@ -737,21 +737,21 @@
 
                         <div class="clearfix">
                             <a href="#" class="advanceConfigs pull-right"
-                               id="feedAdvanceConfigToggle">Advanced Configurations</a>
+                               id="feedAdvanceConfigToggle">高级配置</a>
                         </div>
                         <div class="feedAdvanceContent" id="feedAdvanceContent" style="display: none;">
                             <div class="form-group">
                                 <label>
-                                    Event's Timestamp
+                                    事件时间戳
                                 </label>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <input type="text" class="form-control" name="start-timestamp">
-                                        <span class="dark text-muted">Starting</span>
+                                        <span class="dark text-muted">开始</span>
                                     </div>
                                     <div class="col-md-6">
                                         <input type="text" class="form-control" name="end-timestamp">
-                                        <span class="dark text-muted">Ending</span>
+                                        <span class="dark text-muted">结束</span>
                                     </div>
                                 </div>
                             </div>
@@ -759,7 +759,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>
-                                            No. of Events
+                                            事件数量
                                         </label>
                                         <input type="text" class="form-control col-md-6" id="noOfEvents"
                                                name="no-of-events">
@@ -777,25 +777,25 @@
                         <div class="form-inline">
                             <div class="form-group">
                                 <label>
-                                    Simulation Source
+                                    模拟源
                                 </label>
                                 <select class="form-control sources" name="sources">
-                                    <option value="Random">Random</option>
-                                    <option value="CSV file">CSV file</option>
-                                    <option value="Database">Database</option>
+                                    <option value="Random">随机</option>
+                                    <option value="CSV file">CSV文件</option>
+                                    <option value="Database">数据库</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <button type="button" class="btn btn-link addNewSource">Add Simulation Source</button>
+                                <button type="button" class="btn btn-link addNewSource">添加模拟源</button>
                             </div>
                         </div>
-                        <div id="addNewSourceError" class="hidden">Please Add a Simulation Source</div>
+                        <div id="addNewSourceError" class="hidden">请选择一个模拟源</div>
 
                         <hr>
                         <div class="form-group feed-btn-panel" id="buttons">
-                            <button type="submit" class="btn btn-primary" name="save">Save</button>
+                            <button type="submit" class="btn btn-primary" name="save">保存</button>
                             <button type="button" class="btn btn-default" name="cancel" data-handle="close"
-                                    rel="createPage">Cancel
+                                    rel="createPage">取消
                             </button>
                         </div>
                     </form>
@@ -812,7 +812,7 @@
      style="display:none;">
     <div class="form-group">
         <label>
-            Siddhi App Name<span class="required_astrix"> *</span>
+            应用名称<span class="required_astrix"> *</span>
         </label>
         <select id="siddhi-app-name_{{dynamicId}}" name="siddhi-app-name" class="form-control">
         </select>
@@ -823,7 +823,7 @@
     <div class="dynamicToggleFormContent" style="display: none;">
         <div class="form-group">
             <label>
-                Stream Name<span class="required_astrix"> *</span>
+                数据流名称<span class="required_astrix"> *</span>
             </label>
             <select name="stream-name" class="form-control">
             </select>
@@ -831,23 +831,23 @@
 
         <div class="form-group">
             <label>
-                CSV file<span class="required_astrix"> *</span>
+                CSV文件<span class="required_astrix"> *</span>
             </label>
             <select id="file-name_{{dynamicId}}" name="file-name" class="form-control"></select>
             <button type="button" class="btn btn-secondary" id="upload-csv-file_{{dynamicId}}" name="upload-csv-file">
-                Upload
+                上传
             </button>
         </div>
 
         <div class="form-group">
-            <label>Delimiter<span class="required_astrix"> *</span>
+            <label>分隔符<span class="required_astrix"> *</span>
                 <input type="text" value="," class="form-control" name="delimiter">
             </label>
         </div>
 
         <div class="clearfix">
             <a href="#" class="advanceConfigs pull-right" id="csvAdvanceConfigToggle_{{dynamicId}}">Advance
-                Configuration</a>
+                配置</a>
         </div>
         <div class="feedAdvanceContent clearfix" id="csvAdvanceContent_{{dynamicId}}" style="display: none;">
             <div class="form-inline clearfix">
@@ -862,22 +862,22 @@
                 <div class="form-group col-md-6">
                     <label class="custom-radio two-line-radio">
                         <input type="radio" name="timestamp-option" value="interval" checked>
-                        <span class="helper">Increment event time by(ms)</span>
+                        <span class="helper">事件时间增量(ms)</span>
                     </label>
                     <input class="form-control" name="timestamp-interval" value="1000" style="width: 100%">
                 </div>
             </div>
 
             <div class="form-group col-md-12 add-margin-top-3x">
-                <label>CSV file is ordered by timestamp</label>
+                <label>CSV文件是按照时间戳排序</label>
                 <div class="form-group">
                     <label class="custom-radio">
                         <input type="radio" name="ordered" value="ordered" checked disabled>
-                        <span class="helper">Yes</span>
+                        <span class="helper">是</span>
                     </label>
                     <label class="custom-radio">
                         <input type="radio" name="ordered" value="not-ordered" disabled>
-                        <span class="helper">No</span>
+                        <span class="helper">否</span>
                     </label>
                 </div>
             </div>
@@ -892,7 +892,7 @@
 
     <div class="form-group">
         <label>
-            Siddhi App Name<span class="required_astrix"> *</span>
+            应用名称<span class="required_astrix"> *</span>
         </label>
         <select id="siddhi-app-name_{{dynamicId}}" name="siddhi-app-name" class="form-control">
         </select>
@@ -902,7 +902,7 @@
 
     <div class="form-group">
         <label>
-            Stream Name<span class="required_astrix"> *</span>
+            数据流名称<span class="required_astrix"> *</span>
 
         </label>
         <select name="stream-name" class="form-control">
@@ -911,7 +911,7 @@
     <!--todo remove the values of dataSourceLocation, driver, username, password-->
     <div class="form-group">
         <label>
-            Data Source<span class="required_astrix"> *</span>
+            数据源<span class="required_astrix"> *</span>
         </label>
         <input type="text" class="form-control required-for-db-connection" id="dataSourceLocation_{{dynamicId}}"
                name="data-source-location"
@@ -920,7 +920,7 @@
 
     <div class="form-group">
         <label>
-            Driver Class<span class="required_astrix"> *</span>
+            驱动类<span class="required_astrix"> *</span>
         </label>
         <input type="text" class="form-control required-for-db-connection"
                name="driver-class" value="com.mysql.jdbc.Driver">
@@ -928,7 +928,7 @@
 
     <div class="form-group">
         <label>
-            Username<span class="required_astrix"> *</span>
+            用户名<span class="required_astrix"> *</span>
         </label>
         <input type="text" class="form-control required-for-db-connection"
                name="username" value="root">
@@ -936,7 +936,7 @@
 
     <div class="form-group">
         <label>
-            Password<span class="required_astrix"> *</span>
+            密码<span class="required_astrix"> *</span>
         </label>
         <input type="password" class="form-control required-for-db-connection"
                name="password" value="root">
@@ -944,14 +944,14 @@
 
     <div class="form-group">
         <button type="button" class="btn btn-secondary" name="loadDbConnection">
-            Connect to database
+            连接到数据库
         </button>
         <span class="helper connectionSuccessMsg"></span>
     </div>
 
     <div class="form-group">
         <label>
-            Table name<span class="required_astrix"> *</span>
+            表名<span class="required_astrix"> *</span>
         </label>
         <select name="table-name" class="form-control">
         </select>
@@ -962,7 +962,7 @@
         <div class="form-group">
             <label class="custom-radio">
                 <input type="radio" name="timestamp-option" value="attribute">
-                <span class="helper">Timestamp Attribute</span>
+                <span class="helper">时间戳属性</span>
                 <select name="timestamp-attribute" class="form-control feed-attribute-db" disabled></select>
                 <!--<input type="text" class="form-control" name="timestamp-attribute" disabled>-->
             </label>
@@ -970,7 +970,7 @@
         <div class="form-group">
             <label class="custom-radio">
                 <input type="radio" name="timestamp-option" value="interval" checked>
-                <span class="helper">Timestamp Interval</span>
+                <span class="helper">时间戳间隔</span>
                 <input class="form-control" name="timestamp-interval" value="1000">
             </label>
         </div>
@@ -985,7 +985,7 @@
     <div class="sourceConfigForm" id="randomSourceConfig_dynamicId" data-type="random" data-uuid="{{dynamicId}}">
         <div class="form-group">
             <label>
-                Siddhi App Name<span class="required_astrix"> *</span>
+                应用名称<span class="required_astrix"> *</span>
             </label>
             <select id="siddhi-app-name_{{dynamicId}}" name="siddhi-app-name" class="form-control">
             </select>
@@ -996,19 +996,19 @@
         <div class="dynamicToggleFormContent" style="display: none;">
             <div class="form-group">
                 <label>
-                    Stream Name<span class="required_astrix"> *</span>
+                    数据流名称<span class="required_astrix"> *</span>
                 </label>
                 <select name="stream-name" class="form-control">
                 </select>
             </div>
             <div class="clearfix">
                 <a href="#" class="advanceConfigs pull-right"
-                   id="randomAdvanceConfigToggle_{{dynamicId}}">Advanced Configurations</a>
+                   id="randomAdvanceConfigToggle_{{dynamicId}}">高级配置</a>
             </div>
             <div class="feedAdvanceContent" id="randomAdvanceContent_dynamicId" style="display: none;">
                 <div class="form-group">
                     <label>
-                        Increment Event’s Timestamp by(ms)
+                        事件时间戳增量(ms)
                     </label>
                     <input type="text" class="form-control" name="timestamp-interval"
                            value="1000">
@@ -1027,7 +1027,7 @@
 
         <div class="form-group">
             <label for="single_executionPlanName_{{dynamicId}}">
-                Siddhi App Name
+                应用名称
                 <span class="required_astrix"> *</span></label>
             <select id="single_executionPlanName_{{dynamicId}}" name="single_executionPlanName_{{dynamicId}}"
                     class="form-control">
@@ -1036,7 +1036,7 @@
 
         <div class="form-group">
             <label for="single_streamName_{{dynamicId}}">
-                Stream Name
+                数据流名称
                 <span class="required_astrix"> *</span>
             </label>
             <select id="single_streamName_{{dynamicId}}" name="single_streamName_{{dynamicId}}" class="form-control">
@@ -1045,8 +1045,8 @@
 
         <div class="form-group">
             <label for="single_timestamp_{{dynamicId}}">
-                Timestamp
-                <span class="optional"> - optional</span>
+                时间戳
+                <span class="optional"> - 可选</span>
             </label>
             <input type="text" class="form-control" id="single_timestamp_{{dynamicId}}"
                    name="single_timestamp_{{dynamicId}}">
@@ -1061,7 +1061,7 @@
 
         <div class="form-group">
             <button type="submit" class="btn btn-default" id="send_singleEvent_{{dynamicId}}" name="send">
-                Send
+                发送
             </button>
         </div>
     </div>
@@ -1075,7 +1075,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Upload CSV</h4>
+                    <h4 class="modal-title">上传CSV</h4>
                 </div>
                 <div class="modal-body">
 
@@ -1084,8 +1084,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary upload-csv">Upload</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary upload-csv">上传</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                 </div>
             </form>
         </div>
@@ -1098,14 +1098,14 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Warning</h4>
+                <h4 class="modal-title">警告</h4>
             </div>
             <div class="modal-body">
-                <p>The entered values will be discarded. Are you sure?&hellip;</p>
+                <p>输入值将被丢弃，是否确认？&hellip;</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" name="confirm">Confirm</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal" name="cancel">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" name="confirm">确认</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" name="cancel">取消</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -1117,14 +1117,14 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Warning</h4>
+                <h4 class="modal-title">警告</h4>
             </div>
             <div class="modal-body">
-                <p>The entered values will be discarded. Are you sure?&hellip;</p>
+                <p>输入值将被丢弃，是否确认？&hellip;</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" name="confirm">Confirm</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal" name="cancel">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" name="confirm">确认</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" name="cancel">取消</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -1137,16 +1137,16 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Start the Siddhi Application</h4>
+                <h4 class="modal-title">启动应用</h4>
             </div>
             <div class="modal-body">
-                <p>Following Siddhi apps needs to start to simulate.&hellip;</p>
+                <p>下列应用将启动模拟？&hellip;</p>
                 <div class="siddhi-app-list"></div>
             </div>
             <div class="modal-footer" style="clear:both;">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" name="confirm">Start Simulation
+                <button type="button" class="btn btn-primary" data-dismiss="modal" name="confirm">启动模拟
                 </button>
-                <button type="button" class="btn btn-default" data-dismiss="modal" name="cancel">Cancel</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" name="cancel">取消</button>
             </div>
             </div>
     </div>
@@ -1154,7 +1154,7 @@
 
 <script id="attribute-form-template" type="text/x-handlebars-template">
     <div class="attributes-container">
-        <label>Attributes</label>
+        <label>特性</label>
         <ul>
             <div id="attribute-div">
                 {{#each this}}
@@ -1179,12 +1179,12 @@
                 {{/each}}
             </div>
         </ul>
-        <button id="btn-add-attribute" class="btn btn-default"> + Attribute</button>
+        <button id="btn-add-attribute" class="btn btn-default"> + 特性</button>
     </div>
 </script>
 
 <script id="annotation-form-template" type="text/x-handlebars-template">
-    <label>Annotations</label>
+    <label>注释</label>
     <div id="annotation-div">
         {{#if this}}
         <ul>
@@ -1194,9 +1194,9 @@
         </ul>
         {{/if}}
     </div>
-    <button id="btn-add-annotation" class="btn btn-default"> + Annotation</button>
-    <button id="btn-add-key-val" class="btn btn-default" style="display: none"> + Property</button>
-    <button id="btn-del-annotation" class="btn btn-default" style="display: none"> Delete</button>
+    <button id="btn-add-annotation" class="btn btn-default"> + 注释</button>
+    <button id="btn-add-key-val" class="btn btn-default" style="display: none"> + 属性</button>
+    <button id="btn-del-annotation" class="btn btn-default" style="display: none"> 删除</button>
 </script>
 
 <script id="recursiveAnnotationPartial" type="text/template">
@@ -1288,14 +1288,14 @@
 
 <script id="type-selection-form-template" type="text/template">
     {{#ifSourceOrSinkOrStoreOrWindow id}}
-    <label class="clearfix"> <span class="mandatory-symbol"> * </span> {{addTitle id}} Type </label>
+    <label class="clearfix"> <span class="mandatory-symbol"> * </span> {{addTitle id}} 类型 </label>
     {{else}}
-    <label class="clearfix"> {{addTitle id}} Type </label>
+    <label class="clearfix"> {{addTitle id}} 类型 </label>
     {{/ifSourceOrSinkOrStoreOrWindow}}
 
     {{#ifSourceOrSink id}}
     <select id="{{id}}-type">
-        <option style="display:none" disabled selected value> -- select a type --</option>
+        <option style="display:none" disabled selected value> -- 选择类型 --</option>
         {{else}}
         <select id="{{id}}-type">
             {{/ifSourceOrSink}}
@@ -1309,7 +1309,7 @@
 
 <script id="source-sink-store-options-template" type="text/template">
     {{#if options}}
-    <h4> Options </h4>
+    <h4> 选项 </h4>
     <div id="{{id}}-options">
         {{#ifSourceOrSinkOrStore id}}
         <div class="sub-{{id}}-options-div">
@@ -1378,17 +1378,17 @@
         {{/if}}
     </div>
     <div class="customized-options" id="customized-{{id}}-options">
-        <h4> Customized Options </h4>
+        <h4> 自定义选项 </h4>
         <ul class="cust-options">
             {{#each customizedOptions}}
             <li class="option">
                 <div class="clearfix">
-                    <label> option.key </label>
+                    <label> 选项 - 键 </label>
                     <input type="text" class="cust-option-key" value="{{name}}">
                 </div>
                 <label class="error-message"> </label>
                 <div class="clearfix">
-                    <label> option.value </label>
+                    <label> 选项 - 值 </label>
                     <input type="text" class="cust-option-value" value="{{value}}">
                     <a class="btn-del-option"> <i class="fw fw-delete"> </i></a>
                 </div>
@@ -1406,8 +1406,8 @@
         <div class="clearfix" id="stream-attributes"></div>
         {{/ifId}}
         <div class="attribute-labels clearfix">
-            {{#if attributes.0.key }} <label class="attribute-mapping-label"> Key </label> {{/if}}
-            <label class="attribute-mapping-label"> Value </label>
+            {{#if attributes.0.key }} <label class="attribute-mapping-label"> 键 </label> {{/if}}
+            <label class="attribute-mapping-label"> 值 </label>
         </div>
         <div id="attributes">
             {{#each attributes}}
@@ -1428,13 +1428,13 @@
             </div>
             {{/each}}
         </div>
-        <button type="button" class="btn btn-default" id="btn-add-payload-map" style="display:none"> + Key Value
+        <button type="button" class="btn btn-default" id="btn-add-payload-map" style="display:none"> + 键值
         </button>
     </div>
 </script>
 
 <script id="primary-index-annotation-template" type="text/template">
-    <h4> Annotations </h4>
+    <h4> 注释 </h4>
     <div id="primary-index-annotations">
         {{#each this}}
         <div class="clearfix annotation">
@@ -1463,7 +1463,7 @@
                         </li>
                         {{/each}}
                     </ul>
-                    <button type="button" class="btn btn-default btn-add-annot-value"> + Value</button>
+                    <button type="button" class="btn btn-default btn-add-annot-value"> + 数值</button>
                 </div>
             </div>
             {{/each}}
@@ -1476,7 +1476,7 @@
     <div class="display-predefined-parameters">
         <div class="clearfix collapse-div" data-toggle="collapse" href="#predefined-param-content"
              aria-controls="join-{{type}}-content" aria-expanded="false">
-            <label class="parameter-label"> Supported Parameters </label>
+            <label class="parameter-label"> 支持的参数 </label>
             <a class="collapse-icon"> </a>
         </div>
         <div class="collapse" id="predefined-param-content">
@@ -1484,11 +1484,11 @@
             <div class="predefined-param">
                 {{#if optional}}
                 <label class="predefined-param-name clearfix"> {{name}}
-                    <span class="optional-label"> (optional) </span>
+                    <span class="optional-label"> (可选) </span>
                 </label>
                 {{else}}
                 <label class="clearfix predefined-param-name"> {{name}}
-                    <span class="optional-label"> (mandatory)</span>
+                    <span class="可选-label"> (必填)</span>
                 </label>
                 {{/if}}
                 <label class="clearfix predefined-param-desc"> {{description}} </label>
@@ -1499,7 +1499,7 @@
     {{/if}}
 
     {{#if parameters}}
-    <h4> Parameters </h4>
+    <h4> 参数 </h4>
     <div id="{{id}}-unknown-parameters">
         <div class="sub-{{id}}-parameter-div">
             {{#each parameters}}
@@ -1542,7 +1542,7 @@
 
 <script id="window-function-parameters-template" type="text/template">
     {{#if parameters}}
-    <h4> Parameters </h4>
+    <h4> 参数 </h4>
     <div id="{{id}}-parameters">
         <div class="sub-{{id}}-parameter-div">
             {{#each parameters}}
@@ -1592,10 +1592,10 @@
 </script>
 
 <script id="partition-by-template" type="text/template">
-    <label> Partition By </label>
+    <label> 分区 </label>
     <div class="clearfix">
-        <label class="partition-by-label"> Expression </label>
-        <label class="partition-by-label"> Stream Name </label>
+        <label class="partition-by-label"> 表达式 </label>
+        <label class="partition-by-label"> 数据流名称 </label>
     </div>
     <div id="partition-by-content">
         {{#each this}}
@@ -1613,13 +1613,13 @@
 </script>
 
 <script id="aggregate-projection-template" type="text/template">
-    <label class="clearfix"> <span class="mandatory-symbol"> * </span> Select </label>
+    <label class="clearfix"> <span class="mandatory-symbol"> * </span> 选择 </label>
     <select class="attribute-selection-type clearfix">
-        <option style="display:none" disabled selected value> -- select a value --</option>
-        <option value="all"> All Attributes</option>
-        <option value="user_defined"> User Defined Attributes</option>
+        <option style="display:none" disabled selected value> -- 选择数值 --</option>
+        <option value="all">所有</option>
+        <option value="user_defined">用户自定义特性</option>
     </select>
-    <label class="error-message"> Value is required </label>
+    <label class="error-message">需要数值</label>
     <div class="define-user-defined-attributes">
         <ul class="user-defined-attributes">
             {{#each this}}
@@ -1634,22 +1634,22 @@
             </li>
             {{/each}}
         </ul>
-        <button class="btn btn-default btn-add-user-defined-attribute"> + Attribute</button>
+        <button class="btn btn-default btn-add-user-defined-attribute"> + 特性</button>
     </div>
 </script>
 
 <script id="query-projection-template" type="text/template">
-    <label class="clearfix"> <span class="mandatory-symbol"> * </span> Select </label>
+    <label class="clearfix"> <span class="mandatory-symbol"> * </span> 选择 </label>
     <select class="attribute-selection-type clearfix">
-        <option style="display:none" disabled selected value> ---- select a value ----</option>
-        <option value="all"> All Attributes</option>
-        <option value="user_defined"> User Defined Attributes</option>
+        <option style="display:none" disabled selected value> ---- 选择数值 ----</option>
+        <option value="all"> 所有特性</option>
+        <option value="user_defined"> 用户自定义特性</option>
     </select>
-    <label class="error-message"> Value is required </label>
+    <label class="error-message"> 需要数值 </label>
     <div class="define-user-defined-attributes">
         <div class="clearfix">
-            <label class="projection-expression-label"> Expression </label>
-            <label class="projection-as-label"> As </label>
+            <label class="projection-expression-label"> 表达式 </label>
+            <label class="projection-as-label"> 别名 </label>
         </div>
         <ul class="user-defined-attributes">
             {{#each this}}
@@ -1669,7 +1669,7 @@
 
 <script id="drop-down-template" type="text/template">
     <select class="{{id}}-selection">
-        <option style="display:none" disabled selected value> -- select a value --</option>
+        <option style="display:none" disabled selected value> -- 选择数值 --</option>
         {{#each options}}
         <option value="{{this}}"> {{this}}</option>
         {{/each}}
@@ -1677,7 +1677,7 @@
 </script>
 
 <script id="group-by-template" type="text/template">
-    <label> <input type="checkbox" class="group-by-checkbox"> Group By Attributes </label>
+    <label> <input type="checkbox" class="group-by-checkbox"> 分组特性 </label>
     <div class="group-by-content order-group-by-content">
         <ul class="group-by-attributes">
             {{#each groupBy}}
@@ -1694,12 +1694,12 @@
             </li>
             {{/each}}
         </ul>
-        <button class="btn btn-default btn-add-group-by-attribute"> + Attribute</button>
+        <button class="btn btn-default btn-add-group-by-attribute"> + 特性</button>
     </div>
 </script>
 
 <script id="order-by-template" type="text/template">
-    <label> <input type="checkbox" class="order-by-checkbox"> Order By Attributes </label>
+    <label> <input type="checkbox" class="order-by-checkbox"> 排序特性 </label>
     <div class="order-by-content order-group-by-content">
         <ul class="order-by-attributes">
             {{#each orderBy}}
@@ -1722,7 +1722,7 @@
             </li>
             {{/each}}
         </ul>
-        <button class="btn btn-default btn-add-order-by-attribute"> + Attribute</button>
+        <button class="btn btn-default btn-add-order-by-attribute"> + 特性</button>
     </div>
 </script>
 
@@ -1745,18 +1745,18 @@
 
 <script id="aggregation-form-template" type="text/template">
     <div class="aggregation-form-container">
-        <h3> Aggregation Meta Information </h3>
+        <h3> 聚合元信息 </h3>
         <div id="aggregation-name-div" class="aggregation-info">
-            <label> <span class="mandatory-symbol"> * </span> Name </label>
+            <label> <span class="mandatory-symbol"> * </span> 名称 </label>
             <input type="text" id="aggregationName" class="clearfix name" value="{{name}}">
             <label class="error-message" id="aggregationNameErrorMessage"> </label>
         </div>
         <div id="aggregation-from-div" class="aggregation-info">
-            <label> From </label>
+            <label> 来源 </label>
             <input type="text" id="aggregation-from" class="clearfix name" value="{{from}}" readonly>
         </div>
         <div id="define-aggregate-annotations">
-            <h4> Annotations </h4>
+            <h4> 注解 </h4>
             <div class="define-store-annotation">
                 <label><input type="checkbox" class="store-annotation-checkbox"> @store </label>
                 <div class="store-content">
@@ -1771,32 +1771,32 @@
         </div>
     </div>
     <div class="aggregation-form-container">
-        <h3> Projection </h3>
+        <h3> 投影 </h3>
         <div class="define-select"></div>
         <div class="define-group-by-attributes"></div>
     </div>
     <div class="aggregation-form-container">
         <div id="define-aggregate-by">
-            <h3> Aggregation Criteria </h3>
+            <h3> 聚合规则 </h3>
             <div id="aggregate-by-time-period" class="aggregate-by-content">
-                <h4><span class="mandatory-symbol"> * </span> By Time Period </h4>
+                <h4><span class="mandatory-symbol"> * </span> 按照时间区间 </h4>
                 <select class="aggregate-by-time-period-selection">
-                    <option value="interval"> Interval</option>
-                    <option value="range"> Range</option>
+                    <option value="interval"> 时间间隔</option>
+                    <option value="range"> 时间范围</option>
                 </select>
             </div>
             <div class="aggregate-by-time-period-content"></div>
             <div id="aggregate-by-attribute" class="aggregate-by-content">
                 <div class="clearfix">
                     <label>
-                        <input type="checkbox" id="aggregate-by-attribute-checkbox"> By Attribute
+                        <input type="checkbox" id="aggregate-by-attribute-checkbox"> 通过特性
                     </label>
                     <i class="fw fw-info">
-                        <span style="display:none"> Attribute of timestamp is required </span>
+                        <span style="display:none"> 需要时间戳特性 </span>
                     </i>
                 </div>
                 <div class="aggregate-by-attribute-content clearfix">
-                    <label class="clearfix"> Attribute Name </label>
+                    <label class="clearfix"> 特性名称 </label>
                 </div>
                 <label class="error-message"> </label>
             </div>
@@ -1806,33 +1806,33 @@
 
 <script id="join-query-form-template" type="text/template">
     <div class="join-query-form-container">
-        <h3> Query Meta Information </h3>
+        <h3> 查询元信息 </h3>
         <div class="query-name-div">
-            <label> Name </label>
+            <label> 名称 </label>
             <input type="text" class="clearfix query-name name" value="{{name}}">
             <label class="error-message"> </label>
         </div>
         <div class="define-annotations">
-            <h4> Annotations </h4>
+            <h4> 注解 </h4>
             <div class="define-predefined-annotations"></div>
             <div class="define-user-defined-annotations"></div>
         </div>
     </div>
     <div class="join-query-form-container">
-        <h3> Input </h3>
+        <h3> 输入 </h3>
         <div class="query-input-container">
             <div class="define-left-source define-source"></div>
             <div class="define-join-type">
                 <div class="join-type-div">
-                    <label class="clearfix"> Join Type </label>
+                    <label class="clearfix"> 连接类型 </label>
                     <div class="define-join-type-selection clearfix"></div>
-                    <label class="error-message"> Value is required </label>
+                    <label class="error-message"> 需要数值 </label>
                 </div>
             </div>
             <div class="define-right-source define-source"></div>
             <div class="define-on-condition define-content">
                 <label>
-                    <input type="checkbox" class="on-condition-checkbox query-checkbox"> On Condition
+                    <input type="checkbox" class="on-condition-checkbox query-checkbox"> 连接条件
                 </label>
                 <div class="on-condition-content query-content">
                     <input type="text"
@@ -1844,12 +1844,12 @@
         </div>
     </div>
     <div class="join-query-form-container">
-        <h3> Projection </h3>
+        <h3> 投影 </h3>
         <div class="define-select"></div>
         <div class="define-group-by-attributes"></div>
         <div class="define-having-condition define-content">
             <label>
-                <input type="checkbox" class="having-checkbox query-checkbox"> Having condition
+                <input type="checkbox" class="having-checkbox query-checkbox"> Having条件
             </label>
             <div class="having-condition-content query-content">
                 <input type="text"
@@ -1864,7 +1864,7 @@
 </script>
 
 <script id="query-output-template" type="text/template">
-    <h3> Output </h3>
+    <h3> 输出 </h3>
     <div class="define-order-by-attributes"></div>
     {{#each outputConfig}}
     <div class="define-{{name}} define-content">
@@ -1883,10 +1883,10 @@
     </div>
     {{/each}}
     <div class="define-query-operation define-output-content">
-        <label class="clearfix"> Operation </label>
+        <label class="clearfix"> 操作 </label>
     </div>
     <div class="define-query-into define-output-content">
-        <label> Into </label>
+        <label> 存入 </label>
         <input type="text" class="clearfix name query-into" value="{{into}}" readonly>
     </div>
     <div class="define-output-events define-output-content"></div>
@@ -1898,11 +1898,11 @@
     </div>
 
     <div class="define-operation-set-condition define-output-content">
-        <label> <input type="checkbox" class="set-checkbox"> Set </label>
+        <label> <input type="checkbox" class="set-checkbox"> 设置 </label>
         <div class="set-content">
             <div class="clearfix">
-                <label class="set-attribute-label"> Attribute </label>
-                <label class="set-attribute-label"> Value </label>
+                <label class="set-attribute-label"> 特性 </label>
+                <label class="set-attribute-label"> 值 </label>
             </div>
             <ul class="set-condition">
                 {{#each set}}
@@ -1916,12 +1916,12 @@
                 </li>
                 {{/each}}
             </ul>
-            <button class="btn btn-default btn-add-set"> + Set</button>
+            <button class="btn btn-default btn-add-set"> + 设置</button>
         </div>
     </div>
 
     <div class="define-operation-on-condition define-content">
-        <label> On </label>
+        <label> 连接 </label>
         <input type="text" class="clearfix name query-content-value symbol-syntax-required-value" value="{{on}}">
         <label class="error-message"> </label>
     </div>
@@ -1935,12 +1935,12 @@
     </div>
     <div class="{{type}}-source-content collapse join-source-content" id="join-{{type}}-content">
         <div class="input-from">
-            <label class="clearfix"> <span class="mandatory-symbol"> * </span> Input From </label>
+            <label class="clearfix"> <span class="mandatory-symbol"> * </span> 输入源 </label>
             <div class="input-from-drop-down"></div>
         </div>
         <div class="define-as define-content">
             <label>
-                <input type="checkbox" class="source-as-checkbox query-checkbox"> As
+                <input type="checkbox" class="source-as-checkbox query-checkbox"> 别名
             </label>
             <div class="source-as-content query-content">
                 <input type="text" class="clearfix as-content-value query-content-value">
@@ -1949,17 +1949,17 @@
         </div>
         <div class="define-unidirectional">
             <label class="clearfix">
-                <input type="checkbox" class="is-unidirectional-checkbox"> Is Unidirectional
+                <input type="checkbox" class="is-unidirectional-checkbox"> 单向连接
             </label>
             <label class="error-message"></label>
         </div>
         <div class="define-stream-handler">
-            <label> <input type="checkbox" class="stream-handler-checkbox"> Stream Handler </label>
+            <label> <input type="checkbox" class="stream-handler-checkbox"> 流处理器 </label>
             <div class="define-stream-handler-section"></div>
             <div class="define-stream-handler-buttons">
-                <button class="btn btn-default btn-add-filter"> + Filter</button>
-                <button class="btn btn-default btn-add-function"> + Function</button>
-                <button class="btn btn-default btn-add-window"> + Window</button>
+                <button class="btn btn-default btn-add-filter"> + 过滤器</button>
+                <button class="btn btn-default btn-add-function"> + 函数</button>
+                <button class="btn btn-default btn-add-window"> + 分窗</button>
             </div>
         </div>
     </div>
@@ -1967,30 +1967,30 @@
 
 <script id="pattern-sequence-query-form-template" type="text/template">
     <div class="pattern-sequence-query-form-container">
-        <h3> Query Meta Information</h3>
+        <h3> 查询元信息</h3>
         <div class="query-name-div">
-            <label> Name </label>
+            <label> 名称 </label>
             <input type="text" class="clearfix query-name name" value="{{name}}">
             <label class="error-message"> </label>
         </div>
         <div class="define-annotations">
-            <h4> Annotations </h4>
+            <h4> 注释 </h4>
             <div class="define-predefined-annotations"></div>
             <div class="define-user-defined-annotations"></div>
         </div>
     </div>
     <div class="pattern-sequence-query-form-container">
-        <h3> Input </h3>
+        <h3> 输入 </h3>
         <div class="input-container">
             <div class="define-conditions">
-                <label class="clearfix"> <span class="mandatory-symbol"> * </span> Conditions </label>
+                <label class="clearfix"> <span class="mandatory-symbol"> * </span> 条件 </label>
                 <div class="condition-container">
                     <ul class="nav nav-tabs"></ul>
                     <div class="tab-content"></div>
                 </div>
             </div>
             <div class="define-logic-statement define-content">
-                <label class="clearfix"> <span class="mandatory-symbol"> * </span> Logic Statement </label>
+                <label class="clearfix"> <span class="mandatory-symbol"> * </span> 逻辑表达式 </label>
                 <div class="query-content">
                     <input type="text" class="clearfix logic-statement name">
                     <label class="error-message"> </label>
@@ -1999,12 +1999,12 @@
         </div>
     </div>
     <div class="pattern-sequence-query-form-container">
-        <h3> Projection </h3>
+        <h3> 投影 </h3>
         <div class="define-select"></div>
         <div class="define-group-by-attributes"></div>
         <div class="define-having-condition define-content">
             <label>
-                <input type="checkbox" class="having-checkbox query-checkbox"> Having condition
+                <input type="checkbox" class="having-checkbox query-checkbox"> Having条件
             </label>
             <div class="having-condition-content query-content">
                 <input type="text"
@@ -2026,7 +2026,7 @@
                 <div class="collapse-div" href="#{{@index}}-{{../className}}-stream-handler-content"
                      data-toggle="collapse" aria-expanded="false">
                     <label class="clearfix">
-                        <span class="mandatory-symbol"> * </span> Type <a class="collapse-icon"> </a>
+                        <span class="mandatory-symbol"> * </span> 类型 <a class="collapse-icon"> </a>
                     </label>
                     <div class="define-stream-handler-type"> {{> renderDropDown ../types}}</div>
                 </div>
@@ -2057,20 +2057,20 @@
 <script id="pattern-sequence-condition-content-form-template" type="text/template">
     <div class="ws-tab-pane condition-content define-source define-{{condition.conditionId}}-source">
         <div class="define-source">
-            <label class="clearfix"> Condition ID </label>
+            <label class="clearfix"> 条件ID </label>
             <input type="text" class="condition-id clearfix name" value="{{condition.conditionId}}" min="1">
             <label class="error-message"></label>
             <div class="define-stream">
-                <label class="clearfix"> Stream </label>
+                <label class="clearfix"> 数据流 </label>
                 <div class="clearfix">{{> renderDropDown inputStreamNames}}</div>
                 <label class="error-message"></label>
             </div>
             <div class="define-stream-handler">
-                <label> <input type="checkbox" class="stream-handler-checkbox"> Stream Handler </label>
+                <label> <input type="checkbox" class="stream-handler-checkbox"> 流处理器 </label>
                 <div class="define-stream-handler-section"></div>
                 <div class="define-stream-handler-buttons">
-                    <button class="btn btn-default btn-add-filter"> + Filter</button>
-                    <button class="btn btn-default btn-add-function"> + Function</button>
+                    <button class="btn btn-default btn-add-filter"> + 过滤器</button>
+                    <button class="btn btn-default btn-add-function"> + 函数</button>
                 </div>
             </div>
         </div>
@@ -2079,40 +2079,40 @@
 
 <script id="window-filter-projection-query-form-template" type="text/template">
     <div class="query-form-container">
-        <h3> Query Meta Information </h3>
+        <h3> 查询元信息 </h3>
         <div class="query-name-div">
-            <label> Name </label>
+            <label> 名称 </label>
             <input type="text" class="clearfix query-name name" value="{{name}}">
             <label class="error-message"> </label>
         </div>
         <div class="query-from-div">
-            <label> From </label>
+            <label> 来源 </label>
             <input type="text" class="clearfix name query-from" value="{{from}}" readonly>
         </div>
         <div class="define-query-source define-source">
             <div class="define-stream-handler">
-                <label> <input type="checkbox" class="stream-handler-checkbox"> Stream Handler </label>
+                <label> <input type="checkbox" class="stream-handler-checkbox"> 流处理器 </label>
                 <div class="define-stream-handler-section"></div>
                 <div class="define-stream-handler-buttons">
-                    <button class="btn btn-default btn-add-filter"> + Filter</button>
-                    <button class="btn btn-default btn-add-function"> + Function</button>
-                    <button class="btn btn-default btn-add-window"> + Window</button>
+                    <button class="btn btn-default btn-add-filter"> + 过滤器</button>
+                    <button class="btn btn-default btn-add-function"> + 函数</button>
+                    <button class="btn btn-default btn-add-window"> + 分窗</button>
                 </div>
             </div>
         </div>
         <div class="define-annotations">
-            <h4> Annotations </h4>
+            <h4> 注释 </h4>
             <div class="define-predefined-annotations"></div>
             <div class="define-user-defined-annotations"></div>
         </div>
     </div>
     <div class="query-form-container">
-        <h3> Projection </h3>
+        <h3> 投影 </h3>
         <div class="define-select"></div>
         <div class="define-group-by-attributes"></div>
         <div class="define-having-condition define-content">
             <label>
-                <input type="checkbox" class="having-checkbox query-checkbox"> Having condition
+                <input type="checkbox" class="having-checkbox query-checkbox"> Having条件
             </label>
             <div class="having-condition-content query-content">
                 <input type="text"
@@ -2131,13 +2131,13 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content clearfix">
             <div class="modal-header">
-                <h3 class="modal-title file-dialog-title" id="aboutSettingsLabel">Settings - Source View</h3>
+                <h3 class="modal-title file-dialog-title" id="aboutSettingsLabel">设置 - 数据源视图</h3>
                 <hr class="style1"/>
             </div>
             <div class="modal-body add-margin-top-2x add-margin-bottom-2x">
                 <form>
                     <div class="form-group">
-                        <label for="sourceViewTheme">Theme</label>
+                        <label for="sourceViewTheme">主题</label>
                         <select class="form-control" id="sourceViewTheme">
                             <optgroup label="Bright">
                                 <option value="ace/theme/chrome">Chrome</option>
@@ -2180,7 +2180,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="sourceViewFontSize">Font Size(px)</label>
+                        <label for="sourceViewFontSize">字体尺寸(px)</label>
                         <select class="form-control" id="sourceViewFontSize">
                             <option value="10px">10</option>
                             <option value="11px">11</option>
@@ -2202,7 +2202,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="saveSettingsButton">Close
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="saveSettingsButton">关闭
                 </button>
             </div>
         </div>
@@ -2215,7 +2215,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i
                         class="fw fw-cancel  about-dialog-close"></i></button>
-                <h4 class="modal-title file-dialog-title">On-Demand Query</h4>
+                <h4 class="modal-title file-dialog-title">按需查询</h4>
                 <hr class="style1">
             </div>
             <div class="modal-body">
@@ -2223,7 +2223,7 @@
                     <form id="storeQueryForm" class="form-horizontal" onsubmit="return false">
                         <div class="form-group">
                             <label class="col-sm-12">
-                                Siddhi App Name
+                                应用名称
                             </label>
                             <div class="col-sm-12">
                                 <select name="siddhi-app-name" id="store-query-siddhi-app-name" class="form-control">
@@ -2231,16 +2231,16 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="location" class="col-sm-12">Query</label>
+                            <label for="location" class="col-sm-12">查询</label>
                             <div class="col-sm-12">
                                 <textarea id="curlEditor" class="curl-editor form-control"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="file-dialog-form-btn">
-                                <button id="executeQuery" type="submit" class="btn btn-primary">Execute</button>
+                                <button id="executeQuery" type="submit" class="btn btn-primary">执行</button>
                                 <div class="divider"></div>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                             </div>
                         </div>
                         <div class="form-group" style="padding-left: 15px;">
@@ -2310,28 +2310,28 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fw fw-cancel  about-dialog-close"></i></button>
-                <h4 class="modal-title file-dialog-title" id="sampleEvent">Generate Sample Event</h4>
+                <h4 class="modal-title file-dialog-title" id="sampleEvent">生成样例事件</h4>
                 <hr class="style1">
             </div>
             <div class="modal-body add-margin-top-2x add-margin-bottom-2x">
                 <form id="sampleEventForm">
                     <div class="form-group">
                         <label>
-                            Siddhi App Name
+                            应用名称
                         </label>
                         <select name="siddhi-app-name" id="sample-event-siddhi-app-name" class="form-control">
                         </select>
                     </div>
                     <div class="form-group">
                         <label>
-                            Stream Name
+                            数据流名称
                         </label>
                         <select name="stream-name" class="form-control">
                         </select>
                     </div>
                     <div class="form-group">
                         <label>
-                            Event Format
+                            事件格式
                         </label>
                         <select class="form-control" name="event-format">
                             <option value="json" selected="selected">JSON</option>
@@ -2342,12 +2342,12 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary" name="generateSampleEvent"
                                 id="generateSampleEventButton">
-                            Generate
+                            生成
                         </button>
                     </div>
                     <div class="form-group">
                         <textarea class="form-control" name="generatedSampleEvent"
-                                  style="height: 250px">Select App, Stream and event type to get the sample event here..
+                                  style="height: 250px">在此选择应用、数据流及事件类型来获得样例事件。
                         </textarea>
                     </div>
                 </form>
@@ -2367,10 +2367,10 @@
 <script id="operators-side-panel-template" type="text/x-handlebars-template">
     <div id="operator-finder" role="tabpanel" class="ws-tab-pane operator-finder">
         <div class="content">
-            <h3>Operators</h3>
+            <h3>操作组件</h3>
             <div class="form-group">
                 <input type="text" class="form-control" id="operator-search-input-field"
-                       placeholder="Search operators..."/>
+                       placeholder="搜索组件..."/>
             </div>
             <div class="results nano">
                 <div class="result-content nano-content"></div>
@@ -2384,7 +2384,7 @@
 <script id="template-deploy-side-panel-template" type="text/x-handlebars-template">
     <div id="template-deploy" role="tabpanel" class="ws-tab-pane template-deploy">
         <div class="content">
-            <h3>Templated Variables</h3>
+            <h3>模版变量</h3>
 
             <form role="form" class="single-event-form" data-form-type="single" data-toggle="loading"
                   data-loading-style="overlay" data-loading-text="Sending event">
@@ -2395,12 +2395,12 @@
 
                     <div id="used-template-attr-container" class="form-group hidden">
                         <label>
-                            Template Variables used in Apps
+                            应用中使用的模版变量
                         </label>
                         <table class="table table-responsive" id="template-attr-table">
                             <thead>
                             <th width="100%">
-                                <label>Template Attributes</label>
+                                <label>模版特性</label>
                             </th>
                             </thead>
                             <tbody id="template-attr-table-body">
@@ -2413,9 +2413,9 @@
                     <div id="unused-template-attr-container" class="form-group hidden">
 
                         <label>
-                            Unused Template variables
+                            未使用的模版变量
                         </label>
-                        <a id="template-clear-all" class="pull-right">Clear All</a>
+                        <a id="template-clear-all" class="pull-right">清除所有</a>
                         <table class="table table-responsive" id="unused-template-attr-table">
                             <thead>
                             <th width="85%">
@@ -2439,7 +2439,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td><label style="opacity: 0.6">No template attributes are defined</label></td>
+                                <td><label style="opacity: 0.6">没有定义模版特性。</label></td>
                             </tr>
                             </tbody>
                         </table>
@@ -2467,7 +2467,7 @@
         </div>
         <p class="description">{{{description}}}</p>
         <div class="icon-bar">
-            <a href="#" class="expand-description">More...</a>
+            <a href="#" class="expand-description">更多...</a>
             &nbsp;&nbsp;
 
             <!-- Installed -->
@@ -2546,7 +2546,7 @@
 
             <ul>
                 <li>
-                    <span class="copy-status-msg" style="display: none">Copied to Clipboard!</span>
+                    <span class="copy-status-msg" style="display: none">拷贝到剪切版</span>
                     <a href="#" title="Copy to Clipboard" class="copy-to-clipboard">
                         <i class="fw fw-copy"></i>
                     </a>
@@ -2562,7 +2562,7 @@
     {{/each}}
     {{else}}
     <div class="alert alert-danger">
-        Sorry! No results found.
+        没有发现结果。
     </div>
     {{/if}}
     {{else}}
@@ -2589,7 +2589,7 @@
                 <div class="extension-description">{{{extensionDescription}}}</div>
                 <br/>
                 {{#if hasSyntax}}
-                <h4>Syntax</h4>
+                <h4>语法</h4>
                 <div id="syntax">
                     <table>
                         <tbody>
@@ -2607,21 +2607,21 @@
                 <br/>
                 {{/if}}
                 {{#if hasParameters}}
-                <h4>Parameters </h4>
+                <h4>参数 </h4>
                 <div class="extension-table">
                     {{{ parameterTable }}}
                 </div>
                 <br/>
                 {{/if}}
                 {{#if hasReturnAttributes}}
-                <h4>Return Attributes: </h4>
+                <h4>返回特性: </h4>
                 <div class="extension-table">
                     {{{ returnTable }}}
                 </div>
                 <br/>
                 {{/if}}
                 {{#if hasExamples}}
-                <h4>Examples</h4>
+                <h4>样例</h4>
                 <div class="example scrollbar">
                     {{{combinedExamples}}}
                 </div>
@@ -2631,34 +2631,34 @@
     </div>
     <div class="modal-footer">
         <input type="text" class="copyable-text"/>
-        <span class="copy-status-msg" style="display: none">Copied to Clipboard!</span>
+        <span class="copy-status-msg" style="display: none">拷贝到剪切板</span>
         {{#if enableAddToSource}}
         <button type="button" class="btn btn-primary" id="btn-add-to-source">
-            <i class="fw fw-add"></i> Add to Source
+            <i class="fw fw-add"></i> 添加到源
         </button>
         {{/if}}
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
     </div>
 </script>
 
 <script id="etl-wizard-finalize-template" type="text/x-handlebars-template">
     <div style="padding: 15px;">
         {{#if status}}
-        <h2>Successful!</h2>
+        <h2>成功!</h2>
 
-        <p style="margin-bottom: 15px;">The Siddhi app saved as '{{fileName}}'!</p>
-        <p>Click follow options if you want to test and proceed with deploying the Siddhi app.</p>
+        <p style="margin-bottom: 15px;">应用成功保存为'{{fileName}}'!</p>
+        <p>如欲测试并继续部署应用，请点击下述选项.</p>
 
         <div class="etl-wizard-final-actions">
-            <button class="btn btn-default" id="btn-test">Test...</button>
-            <button class="btn btn-default" id="btn-export-docker">Export as Docker...</button>
-            <button class="btn btn-default" id="btn-export-k8s">Export to Kubernetes...</button>
-            <button class="btn btn-default" id="btn-deploy">Deploy to Worker...</button>
+            <button class="btn btn-default" id="btn-test">测试...</button>
+            <button class="btn btn-default" id="btn-export-docker">导出为Docker...</button>
+            <button class="btn btn-default" id="btn-export-k8s">导出到Kubernetes...</button>
+            <button class="btn btn-default" id="btn-deploy">部署到Worker...</button>
         </div>
         {{else}}
-        <h2>Unable to save the Siddhi app!</h2>
+        <h2>无法保存应用!</h2>
 
-        <p>The following error occurred while saving the Siddhi app.</p>
+        <p>保存应用时发生下列错误。</p>
         <p>{{errorMessage}}</p>
         {{/if}}
 
@@ -2674,31 +2674,31 @@
                 <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
                     <i class='fw fw-cancel about-dialog-close'></i>
                 </button>
-                <h4 class='modal-title export-dialog-title' id='initialHeading'>Exporting Siddhi Apps For Docker</h4>
+                <h4 class='modal-title export-dialog-title' id='initialHeading'>导出应用到Docker</h4>
                 <hr class='export-dialog-hr'>
             </div>
             <div class='modal-body'>
                 <div id='export-form' class="clearfix">
                     <ul id="form-steps" class="docker_export_header">
-                        <li><a href="#step-1" class="link-disabled">Step 1<br/><small>Select Siddhi Apps</small></a>
+                        <li><a href="#step-1" class="link-disabled">步骤 1<br/><small>选择应用</small></a>
                         </li>
-                        <li><a href="#step-2" class="link-disabled">Step 2<br/><small>Template Siddhi Apps</small></a>
+                        <li><a href="#step-2" class="link-disabled">步骤 2<br/><small>应用模版化</small></a>
                         </li>
-                        <li><a href="#step-3" class="link-disabled">Step 3<br/><small>Update Streaming Integrator<br/>Configurations</small></a>
+                        <li><a href="#step-3" class="link-disabled">步骤 3<br/><small>更新系统<br/>配置</small></a>
                         </li>
-                        <li><a href="#step-4" class="link-disabled">Step 4<br/><small>Populate Template
-                            <br/>Arguments</small></a></li>
+                        <li><a href="#step-4" class="link-disabled">步骤 4<br/><small>填充模版
+                            <br/>参数</small></a></li>
                     </ul>
                     <div id="form-containers">
                         <div id="step-1" class="export-selector">
                             <div class='export-siddhi-app-list' id='siddhi-app-list' style='display: block'>
                                 <div class="kube-config-row" id="sp-name-input-row">
-                                    <div class="clearfix">Siddhi Process Name</div>
+                                    <div class="clearfix">进程名称</div>
                                     <input type="text" class="export-file-dialog-form-control siddhi-process-name-input"
-                                           id="sp-name-input-field" placeholder="sample-siddhi-process">
+                                           id="sp-name-input-field" placeholder="样例应用进程">
                                 </div>
                                 <div id='select-siddhi-app' class='step-description openDockerWizardError-container'>
-                                    Select Siddhi Apps to export
+                                    选择导出的应用
                                 </div>
                                 <div class='form-group'>
                                     <div class='export-dialog-form-scrollable-block-list'>
@@ -2722,12 +2722,12 @@
                                 </button>
                                 <ul class="dropdown-menu kube-persistence-right-dropdown" role="menu"
                                     id="siddhi-config-dropdown-id">
-                                    <li><a href="#" id="data-sources" class="dropdown-list-element">Data Sources</a>
+                                    <li><a href="#" id="data-sources" class="dropdown-list-element">数据源</a>
                                     </li>
-                                    <li><a href="#" id="metrics" class="dropdown-list-element">Metrics</a></li>
-                                    <li><a href="#" id="extensions" class="dropdown-list-element">Extensions</a></li>
-                                    <li><a href="#" id="references" class="dropdown-list-element">References</a></li>
-                                    <li><a href="#" id="transports" class="dropdown-list-element">Transports</a></li>
+                                    <li><a href="#" id="metrics" class="dropdown-list-element">监控指标</a></li>
+                                    <li><a href="#" id="extensions" class="dropdown-list-element">扩展</a></li>
+                                    <li><a href="#" id="references" class="dropdown-list-element">参考</a></li>
+                                    <li><a href="#" id="transports" class="dropdown-list-element">传输</a></li>
                                 </ul>
                             </div>
                             <br/>
@@ -2754,7 +2754,7 @@
                 <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
                     <i class='fw fw-cancel about-dialog-close'></i>
                 </button>
-                <h4 class='modal-title cron-generator-title' id='initheading'>Schedule Configuration</h4>
+                <h4 class='modal-title cron-generator-title' id='initheading'>调度配置</h4>
                 <hr class='cron-generator-hr'>
             </div>
             <div class='modal-body'>
@@ -2762,28 +2762,28 @@
                     <div id='corn-form' class="clearfix">
                         <ul class="nav nav-tabs" style="background:#3c3a3a;" id="cronTabs">
                             <li id="basicTab" class="active" style="width:25%;"><a data-toggle="tab" href="#cron-basic">
-                                <strong>Basic</strong></a>
+                                <strong>基本</strong></a>
                             </li>
                             <li id="regularTab" style = "width:25%;"><a data-toggle="tab" href="#cron-regular">
-                                <strong>Regular Interval</strong></a>
+                                <strong>规则间隔</strong></a>
                             </li>
                             <li id="predefineTab" style = "width:25%;"><a data-toggle="tab" href="#cron-predefined">
-                                <strong>Predefined Time</strong></a>
+                                <strong>预定义时间</strong></a>
                             </li>
                             <li id="advancedTab" style = "width:25%;"><a data-toggle="tab" href="#cron-advanced">
-                                <strong>Advanced</strong></a>
+                                <strong>高级</strong></a>
                             </li>
                         </ul>
                         <div class="tab-content">
                             <div id="cron-basic" class="tab-pane" style="margin:20px 0px;">
                                 <div id="basic-content" class="clearfix">
                                     <select id="basic-cron-list" class="form-control" style="width:50%;">
-                                        <option value="0 * * * * ?">Every minute</option>
-                                        <option value="0 0 * * * ?">Every hour</option>
-                                        <option value="0 0 12 * * ?">Every day at noon</option>
-                                        <option value="0 0 12 ? * SUN">Every week on Sunday at noon</option>
-                                        <option value="0 0 12 1 * ?">On the First of every month at noon</option>
-                                        <option value="0 0 12 1 1 ?">On the First of January of every year at noon
+                                        <option value="0 * * * * ?">每分钟</option>
+                                        <option value="0 0 * * * ?">每小时</option>
+                                        <option value="0 0 12 * * ?">每天中午12点</option>
+                                        <option value="0 0 12 ? * SUN">每周日中午12点</option>
+                                        <option value="0 0 12 1 * ?">每月1日中午12点</option>
+                                        <option value="0 0 12 1 1 ?">每年1月1日中午12点
                                         </option>
                                     </select>
                                 </div>
@@ -2793,19 +2793,19 @@
                                     <div class="col-xs-12">
                                         <div id="cronEverySecond" class="col-xs-2" style="padding:0px;width:12%">
                                             <input id="everySecond" type="radio" name="cronRegularButton">
-                                            <label for="everySecond"> Second </label>
+                                            <label for="everySecond"> 秒 </label>
                                         </div>
                                         <div id="cronEveryMinute" class="col-xs-2" style="padding:0px;width:12%">
                                             <input id="everyMinute" type="radio" name="cronRegularButton">
-                                            <label for="everyMinute"> Minute </label>
+                                            <label for="everyMinute"> 分钟 </label>
                                         </div>
                                         <div id="cronEveryHour" class="col-xs-2" style="padding:0px;width:12%">
                                             <input id="everyHour" type="radio" name="cronRegularButton">
-                                            <label for="everyHour"> Hour </label>
+                                            <label for="everyHour"> 小时 </label>
                                         </div>
                                         <div id="cronEveryDay" class="col-xs-2" style="padding:0px;width:12%">
                                             <input id="everyDay" type="radio" name="cronRegularButton">
-                                            <label for="everyDay"> Day </label>
+                                            <label for="everyDay"> 天 </label>
                                         </div>
                                     </div>
                                     <div class = "col-xs-12">
@@ -2817,7 +2817,7 @@
                                         </div>
                                         <div id="TimeForRegularDay" class="col-xs-4">
                                             <div id="timeForDayOption">
-                                                <label> Time </label>
+                                                <label> 时间 </label>
                                                 <i class="fw fw-info" title=" Time in 24hour format "></i>
                                                 <input type="text" id="timeForEveryDay" value="12:00" class="form-control"
                                                        style="margin:0px 15px;width:40%;" readonly/>
@@ -2830,43 +2830,43 @@
                                 <div id="cronPredefined" class="clearfix">
                                     <div id="timeForPredefineTab" class="col-xs-12">
                                         <div id="defineTime">
-                                            <label> Time </label>
+                                            <label> 时间 </label>
                                             <i class="fw fw-info" title=" Time in 24hour format "></i>
                                             <input type="text" id="predefinedtime" value="12:30" class="form-control"
                                                    style="margin:0px 15px;width:15%" readonly/>
                                             <input id="predefineEveryDay" type="checkbox" name="predefineEveryDay"
                                                    style="margin:15px 5px;">&nbsp;&nbsp;
-                                            <label for="predefineEveryDay" > Everyday </label>
+                                            <label for="predefineEveryDay" > 每天 </label>
                                         </div>
                                     </div>
                                     <div id="valuesOfDays" class="col-xs-12" style="margin:10px 0px;">
                                         <div class="col-xs-3" style="width:11%;padding-left:0px;">
                                             <input id="sunday" type="checkbox" name="weekDays" value="SUN">
-                                            <label for="sunday"> Sunday </label>
+                                            <label for="sunday"> 周日 </label>
                                         </div>
                                         <div class="col-xs-3" style="width:13.8%;">
                                             <input id="monday" type="checkbox" name="weekDays" value="MON">
-                                            <label for="monday"> Monday </label>
+                                            <label for="monday"> 周一 </label>
                                         </div>
                                         <div class="col-xs-3" style="width:13.8%;">
                                             <input id="tuesday" type="checkbox" name="weekDays" value="TUE">
-                                            <label for="tuesday"> Tuesday </label>
+                                            <label for="tuesday"> 周二 </label>
                                         </div>
                                         <div class="col-xs-3" style="width:16.5%;">
                                             <input id="wednesday" type="checkbox" name="weekDays" value="WED">
-                                            <label for="wednesday"> Wednesday </label>
+                                            <label for="wednesday"> 周三 </label>
                                         </div>
                                         <div class="col-xs-3" style="width:14.5%;">
                                             <input id="thursday" type="checkbox" name="weekDays" value="THU">
-                                            <label for="thursday"> Thursday </label>
+                                            <label for="thursday"> 周四 </label>
                                         </div>
                                         <div class="col-xs-3" style="width:12.5%;">
                                             <input id="friday" type="checkbox" name="weekDays" value="FRI">
-                                            <label for="friday"> Friday </label>
+                                            <label for="friday"> 周五 </label>
                                         </div>
                                         <div class="col-xs-3" style="width:14.5%;">
                                             <input id="saturday" type="checkbox" name="weekDays" value="SAT">
-                                            <label for="saturday"> Saturday </label>
+                                            <label for="saturday"> 周六 </label>
                                         </div>
                                     </div>
                                 </div>
@@ -2876,37 +2876,37 @@
                                     <div class="col-xs-12">
                                         <div class="col-xs-2" style="text-align:center;padding-left:0px;width:15%;">
                                             <input id="second" class="form-control" type="text" value="*">
-                                            <label for="second"> Second </label>
+                                            <label for="second"> 秒 </label>
                                             <i class="fw fw-info"
                                                title="Allowed characters : 0-59, Special characters : ,/*- "></i>
                                         </div>
                                         <div class="col-xs-2" style="text-align:center">
                                             <input  id="minute" class="form-control" type="text" value="*" >
-                                            <label for="minute"> Minute </label>
+                                            <label for="minute"> 分钟 </label>
                                             <i class="fw fw-info"
                                                title="Allowed characters : 0-59, Special characters : ,/*- "></i>
                                         </div>
                                         <div class="col-xs-2" style="text-align:center">
                                             <input id="hour" class="form-control" type="text" value="*">
-                                            <label for="hour"> Hour </label>
+                                            <label for="hour"> 小时 </label>
                                             <i class="fw fw-info"
                                                title="Allowed characters : 0-23, Special characters : ,/*- "></i>
                                         </div>
                                         <div class="col-xs-2" style="text-align:center">
                                             <input id="dayMonth" class="form-control" type="text" value="*">
-                                            <label for="dayMonth">Day (month)</label>
+                                            <label for="dayMonth">天 (月)</label>
                                             <i class="fw fw-info"
                                                title="Allowed characters : 1-31,L,W,LW,Special characters : ,/*?- "></i>
                                         </div>
                                         <div class="col-xs-2" style="text-align:center">
                                             <input id="month" class="form-control" type="text" value="*">
-                                            <label for="month"> Month </label>
+                                            <label for="month"> 月份 </label>
                                             <i class="fw fw-info"
                                                title=" Allowed characters : 1-12 or JAN-DEC, Special characters : ,/*- "></i>
                                         </div>
                                         <div class="col-xs-2" style="text-align:center">
                                             <input id="dayWeek" class="form-control" type="text" value="?">
-                                            <label for="dayWeek">Day (week)</label>
+                                            <label for="dayWeek">天 (周)</label>
                                             <i class="fw fw-info"
                                                title=" Allowed characters: 1-7 or SUN-SAT, Special characters : ,?/*- "></i>
                                         </div>
@@ -2916,17 +2916,17 @@
                                     </div>
                                     <div class = col-xs-12">
                                         <div class="col-xs-3" style="padding:0px;width:16.8%;">
-                                            <label for="expression"> Expression in Quartz </label>
+                                            <label for="expression"> Quartz表达式 </label>
                                         </div>
                                         <div class="col-xs-8">
                                             <input id="expression" value="* * * * * ?" class="form-control"
                                                    style="margin:10px 0px;width:50%;text-align:left;" />
                                         </div>
                                         <div class="col-xs-3" style="padding:0px;width:16.8%;">
-                                            <label for="output"> Expression in English </label>
+                                            <label for="output"> 英文表达式 </label>
                                         </div>
                                         <div class="col-xs-6">
-                                            <label id="output"> Every second </label>
+                                            <label id="output"> 每秒 </label>
                                         </div>
                                     </div>
                                 </div>
@@ -2937,7 +2937,7 @@
             </div>
             <div class="modal-footer">
                 <div class="footer_btn" id="cronfooter">
-                    <button id="saveButton" type="button" class="btn btn-primary"> Save </button>
+                    <button id="saveButton" type="button" class="btn btn-primary"> 保存 </button>
                 </div>
             </div>
         </div>
@@ -2947,33 +2947,33 @@
 <!-- Common steps for Docker and K8s export -->
 <div id="docker-config-common-step" class="export-selector">
     <div class='docker-config-container' id='docker-config-container-id'>
-        <div class='step-description' id="config-description">Select export mode:</div>
+        <div class='step-description' id="config-description">选择导出模式:</div>
         <div class="docker-config-form">
             <div id='missing-docker-config-error-message' class='alert alert-danger' hidden>
-                Required to fill Docker configurations
+                需要填写Docker配置
             </div>
             <div id='missing-docker-file-name-error-message' class='alert alert-danger' hidden>
-                Required to fill the export file name
+                需要填写导出文件名
             </div>
             <div id='docker-name-upper-error' class='alert alert-danger' hidden>
-                Docker image tag cannot contain uppercase letters.
+                Docker镜像标签不能包含大写字母
             </div>
             <input class="docker-checkbox" type="checkbox" name="download-docker-artifacts"
                    id="download-docker-artifacts" value="download"><label class="label-description"
-                                                                          id="download-docker-artifacts-label">Download
-            artifacts</label><br>
+                                                                          id="download-docker-artifacts-label">下载
+            构件</label><br>
             <div class="docker-details-form" id="file-name-for-docker-parent" hidden>
                 <div class="docker-details-row">
-                    <label class="clearfix">Export file name:</label>
+                    <label class="clearfix">导出文件名:</label>
                     <input class="export-file-dialog-form-control" type="text" name="username"
                            id="file-name-for-docker">
                 </div>
             </div>
             <input class="docker-checkbox" type="checkbox" name="push-docker-image" id="docker-push-checkbox"
-                   value="push"><label class="label-description">Push to Docker registry</label><br>
+                   value="push"><label class="label-description">上传到Docker registry</label><br>
             <div class="docker-details-form" id="docker-details" hidden>
                 <div class="docker-details-row">
-                    <label class="clearfix">* Docker image:</label>
+                    <label class="clearfix">* Docker镜像:</label>
                     <input class="file-dialog-form-control-mini-input" type="text"
                            id="docker-img-name-input-field-registry" placeholder="<DOCKER_REGISTRY_NAME>">
                     &nbsp; / &nbsp;
@@ -2981,11 +2981,11 @@
                            id="docker-img-name-input-field-image" placeholder="<IMAGE_NAME>">
                 </div>
                 <div class="docker-details-row">
-                    <label class="clearfix">* Docker username:</label>
+                    <label class="clearfix">* Docker用户名:</label>
                     <input class="export-file-dialog-form-control" type="text" name="username" id="username">
                 </div>
                 <div class="docker-details-row">
-                    <label class="clearfix">* Docker password:</label>
+                    <label class="clearfix">* Docker密码:</label>
                     <input class="export-file-dialog-form-control" type="password" name="password" id="password">
                 </div>
                 <div class="docker-details-row">
@@ -3001,25 +3001,25 @@
 <!-- K8s export unique steps -->
 <div id="k8s-path-step-5" class="export-selector">
     <div class='docker-config-container' id='docker-image-type-container-id'>
-        <div class='step-description' id="docker-image-type">Select Docker image:</div>
+        <div class='step-description' id="docker-image-type">选择Docker镜像:</div>
         <div class="docker-config-form">
             <div id='k8s-path-missing-docker-build-type-error-message' class='alert alert-danger' hidden>
-                Required to fill Docker Configurations
+                需要填写Docker配置
             </div>
             <div id='k8s-path-missing-docker-build-type-upper-error' class='alert alert-danger' hidden>
-                Docker Image Tag cannot contain uppercase letters.
+                Docker镜像标签不能包含大写字母
             </div>
             <input class="docker-checkbox" type="radio" name="docker-image-type-name" id="docker-image-type-tobuild"
                    value="tobuild" checked="checked">
-            <label class="label-description">Build custom Docker image with extensions and artifacts</label>
+            <label class="label-description">创建用户Docker镜像（包括扩展和构件）</label>
             <br>
             <input class="docker-checkbox" type="radio" name="docker-image-type-name" id="docker-image-type-existing"
                    value="existing">
-            <label class="label-description">Use an existing Docker image</label>
+            <label class="label-description">使用现有Docker镜像</label>
             <br>
             <div class="docker-details-form" id="k8s-path-docker-image-name-form" hidden>
                 <div class="docker-details-row">
-                    <label class="clearfix">* Docker Image:</label>
+                    <label class="clearfix">* Docker镜像:</label>
                     <input class="export-file-dialog-form-control" type="text" id="built-docker-image-name-input-field"
                            placeholder="<DOCKER_REGISTRY_NAME>/<IMAGE_NAME>:<IMAGE_VERSION>">
                 </div>
@@ -3029,7 +3029,7 @@
 </div>
 <div id="k8s-path-step-6" class="export-selector">
     <div class='export-siddhi-app-list' id='k8s-path-additional-bundles-list'>
-        <div class='step-description'>Add additional libraries</div>
+        <div class='step-description'>增加额外库</div>
         <div class='form-group'>
             <div class='export-dialog-form-scrollable-block-list'>
                 <div id='k8s-path-bundles-tree'></div>
@@ -3039,28 +3039,28 @@
 </div>
 <div id="k8s-path-step-8" class="export-selector">
     <div class="export-kube-config-container" id="kubernetes-configuration-step-id">
-        <div class="step-description">Add deployment configuration</div>
+        <div class="step-description">增加部署配置</div>
         <div class="kube-config-form">
             <div class="kube-config-row">
                 <div class="kube-config-sub-row">
-                    <div class="clearfix">Deployment Mode</div>
+                    <div class="clearfix">部署模式</div>
                     <div class="kube-input-group" id="distribution-selection">
-                        <input type="radio" name="distribution" id="non-distributed" value="non-distributed"> Non
-                        distributed deployment<br>
+                        <input type="radio" name="distribution" id="non-distributed" value="non-distributed"> 非
+                        分布式部署<br>
                         <input type="radio" name="distribution" id="distributed-with-nats"
-                               value="distributed-with-nats"> Distributed deployment with NATS<br>
+                               value="distributed-with-nats">利用NATS的分布式部署<br>
                         <input type="radio" name="distribution" id="distributed-with-ext-nats"
-                               value="distributed-with-ext-nats"> Distributed deployment with External NATS<br>
+                               value="distributed-with-ext-nats"> 利用外部NATS的分布式部署<br>
                     </div>
                 </div>
                 <div class="kube-config-sub-row">
-                    <div class="clearfix">Persistence</div>
+                    <div class="clearfix">持久化</div>
                     <div class="kube-input-group" id="persistent-select">
                         <select class="kube-persistence-dropdown" id="kube-persistence-dropdown-id">
-                            <option value="disable-persistence">Disable State Persistence</option>
-                            <option value="file-system-persistence">File System Persistence</option>
-                            <option value="database-persistence">Database Persistence</option>
-                            <option value="amazon-s3-persistence">Amazon S3 Persistence</option>
+                            <option value="disable-persistence">禁用状态持久化</option>
+                            <option value="file-system-persistence">文件系统持久化</option>
+                            <option value="database-persistence">数据库持久化</option>
+                            <!--<option value="amazon-s3-persistence">Amazon S3 Persistence</option>-->
                         </select>
                     </div>
                 </div>
@@ -3073,7 +3073,7 @@
 <!-- Docker export unique steps -->
 <div id="docker-path-step-5" class="export-selector">
     <div class='export-siddhi-app-list' id='docker-additional-bundles-list'>
-        <div class='step-description'>Add additional libraries</div>
+        <div class='step-description'>添加额外库</div>
         <div class='form-group'>
             <div class='export-dialog-form-scrollable-block-list'>
                 <div id='docker-path-bundles-tree'></div>
@@ -3104,34 +3104,34 @@
             <input class="etl-flow-name" id="" type="text" value="UntitledETLTaskFlow"/>
             <div class="header-steps">
                 <div id="step-1" class="step-item">
-                    Step 1
+                    步骤 1
                     <br/>
-                    <small>Configure Source</small>
+                    <small>配置数据源</small>
                 </div>
                 <div id="step-2" class="step-item">
-                    Step 2
+                    步骤 2
                     <br/>
-                    <small>Process Input Data</small>
+                    <small>处理输入数据</small>
                 </div>
                 <div id="step-3" class="step-item">
-                    Step 3
+                    步骤 3
                     <br/>
-                    <small>Configure Destination</small>
+                    <small>配置数据目标</small>
                 </div>
                 <div id="step-4" class="step-item">
-                    Step 4
+                    步骤 4
                     <br/>
-                    <small>Process Output Data</small>
+                    <small>处理输出数据</small>
                 </div>
                 <div id="step-5" class="step-item">
-                    Step 5
+                    步骤 5
                     <br/>
-                    <small>Data Mapping</small>
+                    <small>数据映射</small>
                 </div>
                 <div id="step-6" class="step-item">
-                    Step 6
+                    步骤 6
                     <br/>
-                    <small>Finalize</small>
+                    <small>完成</small>
                 </div>
             </div>
         </div>
@@ -3140,10 +3140,10 @@
         <div class="footer-content">
             <hr style="padding-bottom: 5px" class="form-wizard-hr">
             <div style="position: relative; display: flex;" class="btn-tray">
-                <button class="btn btn-default back-btn">Back</button>
-                <button class="btn btn-default next-btn" style="margin-left: auto;">Next</button>
-                <button class="btn btn-default save-btn" style="margin-left: auto;">Save & Finalize</button>
-                <button class="btn btn-default close-btn" style="margin-left: auto;">Close</button>
+                <button class="btn btn-default back-btn">后退</button>
+                <button class="btn btn-default next-btn" style="margin-left: auto;">前进</button>
+                <button class="btn btn-default save-btn" style="margin-left: auto;">保存 & 完成</button>
+                <button class="btn btn-default close-btn" style="margin-left: auto;">关闭</button>
             </div>
         </div>
     </div>
@@ -3158,7 +3158,7 @@
                     <i class='fw fw-cancel about-dialog-close'>
                     </i>
                 </button>
-                <h4 class='modal-title file-dialog-title'>Generate Stream</h4>
+                <h4 class='modal-title file-dialog-title'>生成数据流</h4>
                 <hr class='style1'>
             </div>
             <div class='modal-body'>
@@ -3172,12 +3172,12 @@
                                     <label class='radio-inline'>
                                         <input type='radio' id='idFromFile' name='selection' value='fromFile'
                                                style='display: block;margin-left: -20px;margin-top: 1;'>
-                                        From File
+                                        从文件
                                     </label>
                                     <label class="radio-inline">
                                         <input type='radio' id='idFromDatabase' name='selection' value='fromFile'
                                                style='display: block;margin-left: -20px;margin-top: 1;'>
-                                        From Database
+                                        从数据库
                                     </label>
                                 </div>
 
@@ -3200,7 +3200,7 @@
                                                 <select id="fileType" name='fileType'
                                                         class='form-control fileType' aria-required='true'
                                                         style="width: calc(30% - 15px)">
-                                                    <option value='-1' selected="selected">Select File Type</option>
+                                                    <option value='-1' selected="selected">选择文件类型</option>
                                                     <option value="text/csv">CSV</option>
                                                     <option value="application/json">JSON</option>
                                                     <option value="text/xml">XML</option>
@@ -3213,7 +3213,7 @@
                                                 <form id="jsonForm">
                                                     <div class='form-group'>
                                                         <label>
-                                                            Stream Name <span class='required_astrix'> *</span>
+                                                            数据流名称 <span class='required_astrix'> *</span>
                                                         </label>
                                                         <input type='text' class='form-control streamName'
                                                                id='streamNameJson'
@@ -3223,7 +3223,7 @@
                                                     </div>
                                                     <div class='form-group'>
                                                         <label>
-                                                            Enclosing Element<span class='required_astrix'> *</span>
+                                                            包含元素<span class='required_astrix'> *</span>
                                                         </label>
                                                         <input type='text' class='form-control'
                                                                id='jsonEnclosingElement'
@@ -3241,7 +3241,7 @@
                                                 <form id="xmlForm">
                                                     <div class='form-group'>
                                                         <label>
-                                                            Stream Name <span class='required_astrix'> *</span>
+                                                            数据流名称 <span class='required_astrix'> *</span>
                                                         </label>
                                                         <input type='text' class='form-control streamName'
                                                                id='streamNameXml'
@@ -3251,7 +3251,7 @@
                                                     </div>
                                                     <div class='form-group'>
                                                         <label>
-                                                            Namespace
+                                                            命名空间
                                                         </label>
                                                         <input type='text' class='form-control'
                                                                id='nameSpaceOfXml'
@@ -3259,7 +3259,7 @@
                                                                aria-required='true'></div>
                                                     <div class='form-group'>
                                                         <label>
-                                                            Enclosing Element<span class='required_astrix'> *</span>
+                                                            包含元素<span class='required_astrix'> *</span>
                                                         </label>
                                                         <input type='text' class='form-control'
                                                                id='enclosingElementXML'
@@ -3277,7 +3277,7 @@
                                                 <form id="csvForm">
                                                     <div class='form-group'>
                                                         <label>
-                                                            Stream Name <span class='required_astrix'> *</span>
+                                                            数据流名称 <span class='required_astrix'> *</span>
                                                         </label>
                                                         <input type='text' class='form-control streamName'
                                                                id='streamNameCsv'
@@ -3287,7 +3287,7 @@
                                                     </div>
                                                     <div class='form-group'>
                                                         <label>
-                                                            Delimiter <span class='required_astrix'> *</span>
+                                                            分隔符 <span class='required_astrix'> *</span>
                                                         </label>
                                                         <input type='text' class='form-control'
                                                                id='delimiterOfCSV'
@@ -3297,12 +3297,12 @@
                                                     </div>
                                                     <div class='form-group'>
                                                         <label>
-                                                            Is Header Exists<span class='required_astrix'>*</span>
+                                                            有标题行<span class='required_astrix'>*</span>
                                                         </label>
                                                         <select id="isHeaderExists" name='isHeaderExists'
                                                                 class='form-control' aria-required='true'>
-                                                            <option value="true">True</option>
-                                                            <option value="false">False</option>
+                                                            <option value="true">是</option>
+                                                            <option value="false">否</option>
                                                         </select>
                                                     </div>
                                                 </form>
@@ -3319,12 +3319,12 @@
                                             <label class='radio-inline'>
                                                 <input type='radio' id='idInline' name='dbConfig' value='fromInline'
                                                        style='display: block'>
-                                                Inline Configuration
+                                                内嵌配置
                                             </label>
                                             <label class='radio-inline'>
                                                 <input type='radio' id='idDatasource' name='dbConfig'
                                                        value='fromDatasource' style='display: block'>
-                                                Provide Datasource
+                                                系统定义数据源（Datasource）
                                             </label>
 
                                         </div>
@@ -3335,7 +3335,7 @@
                                             <form id="inlineForm">
                                                 <div class='form-group'>
                                                     <label>
-                                                        Stream Name <span class='required_astrix'> *</span>
+                                                        数据流名称 <span class='required_astrix'> *</span>
                                                     </label>
                                                     <input type='text' class='form-control streamName'
                                                            id='streamNameInlineDB'
@@ -3345,7 +3345,7 @@
                                                 </div>
                                                 <div class='form-group'>
                                                     <label>
-                                                        Database URL<span class='required_astrix'> *</span>
+                                                        数据库URL<span class='required_astrix'> *</span>
                                                     </label>
                                                     <input type='text'
                                                            class='form-control required-for-db-connection'
@@ -3357,7 +3357,7 @@
                                                 </div>
                                                 <div class='form-group'>
                                                     <label>
-                                                        Username<span class='required_astrix'> *</span>
+                                                        用户名<span class='required_astrix'> *</span>
                                                     </label>
                                                     <input type='text'
                                                            class='form-control required-for-db-connection'
@@ -3366,7 +3366,7 @@
                                                            aria-required='true' required></div>
                                                 <div class='form-group'>
                                                     <label>
-                                                        Password<span class='required_astrix'> *</span>
+                                                        密码<span class='required_astrix'> *</span>
                                                     </label>
                                                     <input type='password'
                                                            id="inlinePass"
@@ -3377,14 +3377,14 @@
                                                     <button id='loadInlineDbConnection' type='button'
                                                             class='btn btn-secondary'
                                                             name='loadDbConnection'>
-                                                        Retrieve Tables
+                                                        读取表
                                                     </button>
                                                     <span class='helper connectionSuccessMsg'></span>
                                                 </div>
                                             </form>
                                             <div class='form-group'>
                                                 <label>
-                                                    Table name<span class='required_astrix'> *</span>
+                                                    表名<span class='required_astrix'> *</span>
                                                 </label>
                                                 <select id="inlineTableSelector" name='table-name'
                                                         class='tableSelector form-control' aria-required='true'>
@@ -3398,7 +3398,7 @@
                                             <form id="datasourceForm">
                                                 <div class='form-group'>
                                                     <label>
-                                                        Stream Name <span class='required_astrix'> *</span>
+                                                        数据流名称 <span class='required_astrix'> *</span>
                                                     </label>
                                                     <input type='text' class='form-control streamName'
                                                            id='streamNameDataSource'
@@ -3408,7 +3408,7 @@
                                                 </div>
                                                 <div class='form-group'>
                                                     <label>
-                                                        Datasource Name<span class='required_astrix'> *</span>
+                                                        数据源名称<span class='required_astrix'> *</span>
                                                     </label>
                                                     <input type='text'
                                                            class='form-control required-for-db-connection'
@@ -3419,13 +3419,13 @@
                                                     <button type='button' class='btn btn-secondary'
                                                             id='loadDatasourceDbConnection'
                                                             name='loadDbConnection'>
-                                                        Retrieve Tables
+                                                        读取表
                                                     </button>
                                                     <span class='helper connectionSuccessMsg'></span>
                                                 </div>
                                                 <div class='form-group'>
                                                     <label>
-                                                        Table name<span class='required_astrix'> *</span>
+                                                        表名<span class='required_astrix'> *</span>
                                                     </label>
                                                     <select id="datasourceTableSelector" name='table-name'
                                                             class='tableSelector form-control' aria-required='true'>
@@ -3443,14 +3443,14 @@
             <div id="modal-error" class='panel-collapse collapse in'>
                 <div id='generateStreamConfigModalError-container' class='generateStreamConfigModalError-container'>
                     <label id="generateStreamConfigModalError-label"
-                           class="alert alert-danger alert_gen"><strong>Error</strong> Something went wrong. </label>
+                           class="alert alert-danger alert_gen"><strong>错误</strong> 出现错误。 </label>
                 </div>
             </div>
             <div class="modal-footer">
                 <div class='footer_btn' id='button-container'>
-                    <button id='generateButton' type='button' class='btn btn-primary' disabled>Generate
+                    <button id='generateButton' type='button' class='btn btn-primary' disabled>生成
                     </button>
-                    <button type='button' class='btn btn-default' data-dismiss='modal'>cancel
+                    <button type='button' class='btn btn-default' data-dismiss='modal'>取消
                     </button>
                 </div>
             </div>

@@ -64,7 +64,7 @@ define(['require', 'jquery', 'log', 'backbone', 'smart_wizard', 'siddhiAppSelect
                     this._exportUrl = options.config.baseUrl + "/export?exportType=" + this._exportType;
                     this._btnExportForm =  $('' +
                         '<form id="submit-form" method="post" enctype="application/x-www-form-urlencoded" target="export-download" >' +
-                        '<button type="button" class="btn btn-primary hidden" id="export-btn" >Export</button>' +
+                        '<button type="button" class="btn btn-primary hidden" id="export-btn" >导出</button>' +
                         '</form>');
 
                 },
@@ -82,17 +82,17 @@ define(['require', 'jquery', 'log', 'backbone', 'smart_wizard', 'siddhiAppSelect
                     var form = exportContainer.find('#export-form');
 
                     if (this._isExportDockerFlow) {
-                        heading.text('Export Siddhi Apps for Docker image');
+                        heading.text('导出为Docker镜像');
                         var dockerStepWidth = 100.0/6;
                         var formSteps = form.find('#form-steps');
                         for (i = 0; i < formSteps.children().length; i++) {
                             formSteps.children()[i].setAttribute("style", "max-width: " + dockerStepWidth.toString() + "%;")
                         }
                         formSteps.append('<li style="max-width: ' + dockerStepWidth.toString()  + '%;"><a href="#docker-path-step-5" ' +
-                            'class="link-disabled">Step 5<br/><small>Configure Custom Docker Image</small>' +
+                            'class="link-disabled">步骤 5<br/><small>配置自定义Docker镜像</small>' +
                             '</a></li>');
                         formSteps.append('<li style="max-width: ' + dockerStepWidth.toString()  + '%;"><a href="#docker-config-common-step" ' +
-                            'class="link-disabled">Step 6<br/><small>Export Custom Docker Image</small>' +
+                            'class="link-disabled">步骤 6<br/><small>导出自定义Docker镜像</small>' +
                             '</a></li>');
                         form.find('#form-containers').append(this._exportDockerStep5Container);
                         form.find('#form-containers').append(this._exportDockerStep6Container);
@@ -104,16 +104,16 @@ define(['require', 'jquery', 'log', 'backbone', 'smart_wizard', 'siddhiAppSelect
                             formSteps.children()[i].setAttribute("style", "max-width: " + k8sStepWidth.toString() + "%;")
                         }
                         formSteps.append('<li style="max-width: ' + k8sStepWidth.toString()  + '%;"><a href="#k8s-path-step-5" ' +
-                            'class="link-disabled">Step 5<br/><small>Select Docker Image</small>' +
+                            'class="link-disabled">步骤 5<br/><small>选择Docker镜像</small>' +
                             '</a></li>');
                         formSteps.append('<li style="max-width: ' + k8sStepWidth.toString()  + '%;"><a href="#k8s-path-step-6" ' +
-                            'class="link-disabled">Step 6<br/><small>Configure Custom Docker Image</small>' +
+                            'class="link-disabled">步骤 6<br/><small>配置自定义Docker镜像</small>' +
                             '</a></li>');
                         formSteps.append('<li style="max-width: ' + k8sStepWidth.toString()  + '%;"><a href="#docker-config-common-step" ' +
-                            'class="link-disabled">Step 7<br/><small>Export Custom Docker Image</small>' +
+                            'class="link-disabled">步骤 7<br/><small>导出Docker镜像</small>' +
                             '</a></li>');
                         formSteps.append('<li style="max-width: ' + k8sStepWidth.toString()  + '%;"><a href="#k8s-path-step-8" ' +
-                            'class="link-disabled">Step 8<br/><small>Add Deployment Configurations</small>' +
+                            'class="link-disabled">步骤 8<br/><small>添加部署配置</small>' +
                             '</a></li>');
                         form.find('#form-containers').append(this._exportKubeStep5Container);
                         form.find('#form-containers').append(this._exportKubeStep6Container);

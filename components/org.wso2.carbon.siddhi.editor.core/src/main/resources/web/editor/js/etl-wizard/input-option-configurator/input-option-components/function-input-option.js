@@ -34,11 +34,11 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'app/source-editor/compl
 
             container.empty();
             container.append(`
-                <h3 style="margin-top: 0;color: #373737">Function configuration</h3>
+                <h3 style="margin-top: 0;color: #373737">函数配置</h3>
                 <div style="color: #373737">
-                    <label for="function-name">Function type&nbsp;:&nbsp;</label>
+                    <label for="function-name">函数类型&nbsp;:&nbsp;</label>
                     <select name="function-name" id="function-name">
-                        <option disabled selected value="0"> -- select an option -- </option>
+                        <option disabled selected value="0"> -- 选择一个选项 -- </option>
                     </select>
                 </div>
                 <div style="padding: 0 5px" class="function-parameter-section">
@@ -146,7 +146,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'app/source-editor/compl
                         .on('focus', function (evt) {
                             var inputId = evt.currentTarget.id.match('function-param-([a-zA-Z\-\.0-9]+)')[1];
                             container.find(`#label-function-param-${inputId}`).removeClass('not-visible');
-                            $(evt.currentTarget).attr('placeholder', 'Type here to input the value');
+                            $(evt.currentTarget).attr('placeholder', '在此输入数值');
                         })
                         .on('focusout', function (evt) {
                             var inputId = evt.currentTarget.id.match('function-param-([a-zA-Z\-\.0-9]+)')[1];

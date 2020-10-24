@@ -4,11 +4,11 @@
 define([], function () {
     var ExportMenu = {
         id: "export",
-        label: "Export",
+        label: "导出",
         items: [
             {
                 id: "export-for-docker",
-                label: "For Docker",
+                label: "导出Docker",
                 command: {
                     id: "export-for-docker",
                     shortcuts: {
@@ -26,7 +26,7 @@ define([], function () {
             },
             {
                 id: "export-for-kubernetes",
-                label: "For Kubernetes",
+                label: "导出Kubernetes",
                 command: {
                     id: "export-for-kubernetes",
                     shortcuts: {

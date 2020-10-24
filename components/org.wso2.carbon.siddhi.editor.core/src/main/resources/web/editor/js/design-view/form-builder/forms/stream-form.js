@@ -52,9 +52,9 @@ define(['require', 'log', 'jquery', 'lodash', 'attribute', 'jsonValidator', 'con
             var streamObject = self.configurationData.getSiddhiAppConfig().getStream(id);
             var previousStreamObject = _.cloneDeep(streamObject);
             this.propertyDiv = $('<div class="clearfix form-min-width"><div id="streamGeneration">' +
-                '<button type="button" class="btn btn-primary">Generate Stream</button></div>' +
+                '<button type="button" class="btn btn-primary">生成数据流</button></div>' +
                 '<div class = "stream-form-container"> <label> ' +
-                '<span class="mandatory-symbol"> *</span> Name </label> <input type="text" id="streamName" ' +
+                '<span class="mandatory-symbol"> *</span> 名称 </label> <input type="text" id="streamName" ' +
                 'class="clearfix name"> <label class="error-message" id="streamNameErrorMessage"> </label>' +
                 '<div id="define-attribute"></div> </div> <div class= "stream-form-container"> ' +
                 '<div class ="define-annotation"> </div> </div>');

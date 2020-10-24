@@ -153,7 +153,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'log', 'design_view', "./sour
 
                         // assume this is from the source view
                         if (application.tabController.getActiveTab().getFile().isDirty()) {
-                            DesignViewUtils.prototype.warnAlert("Please save the file before switching to the Design View");
+                            DesignViewUtils.prototype.warnAlert("切换到设计视图前请保存文件");
                             return;
                         }
 
@@ -163,7 +163,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'log', 'design_view', "./sour
                                 self.JSONObject = JSON.parse(response.responseString);
 
                                 if (!self.canTranslateToWizard(self.JSONObject)) {
-                                    DesignViewUtils.prototype.errorAlert('This Siddhi app cannot be opened in ETL Wizard mode');
+                                    DesignViewUtils.prototype.errorAlert('此应用不能以ETL向导视图打开');
                                     return;
                                 }
 
@@ -187,7 +187,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'log', 'design_view', "./sour
                     toggleViewButton.click(function () {
                         if (sourceContainer.is(':visible')) {
                             if (application.tabController.getActiveTab().getFile().isDirty()) {
-                                DesignViewUtils.prototype.warnAlert("Please save the file before switching to the Design View");
+                                DesignViewUtils.prototype.warnAlert("切换到设计视图前请保存文件");
                                 return;
                             }
 
@@ -217,7 +217,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'log', 'design_view', "./sour
                                         self.trigger("view-switch", { view: 'design' });
                                     }, 100);
                                     toggleViewButton.html("<i class=\"fw fw-code\"></i>" +
-                                        "<span class=\"toggle-button-text\">Source View</span>");
+                                        "<span class=\"toggle-button-text\">源代码视图</span>");
                                 } else if (response.status === "fail") {
                                     loadingScreen.hide();
                                     DesignViewUtils.prototype.errorAlert(response.errorMessage);
@@ -276,7 +276,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'log', 'design_view', "./sour
                                 sourceContainer.show();
                                 self.trigger("view-switch", { view: 'source' });
                                 toggleViewButton.html("<i class=\"fw fw-design-view fw-rotate-90\"></i>" +
-                                    "<span class=\"toggle-button-text\">Design View</span>");
+                                    "<span class=\"toggle-button-text\">设计视图</span>");
                                 return;
                             }
 
@@ -308,7 +308,7 @@ define(['require', 'jquery', 'backbone', 'lodash', 'log', 'design_view', "./sour
                                     self.trigger("view-switch", { view: 'source' });
                                 }, 100);
                                 toggleViewButton.html("<i class=\"fw fw-design-view fw-rotate-90\"></i>" +
-                                    "<span class=\"toggle-button-text\">Design View</span>");
+                                    "<span class=\"toggle-button-text\">设计视图</span>");
                             } else if (response.status === "fail") {
                                 DesignViewUtils.prototype.errorAlert(response.errorMessage);
                             }

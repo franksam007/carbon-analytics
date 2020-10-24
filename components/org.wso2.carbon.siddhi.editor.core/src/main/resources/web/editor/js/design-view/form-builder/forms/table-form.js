@@ -36,7 +36,7 @@ define(['log', 'jquery', 'lodash', 'attribute', 'storeAnnotation', 'handlebar', 
             var previousTableObject = _.cloneDeep(tableObject);
 
             var propertyDiv = $('<div class="clearfix form-min-width"> <div class = "table-form-container table-div"> ' +
-                '<label> <span class="mandatory-symbol"> *</span>Name </label> <input type="text" id="tableName" ' +
+                '<label> <span class="mandatory-symbol"> *</span>名称 </label> <input type="text" id="tableName" ' +
                 'class = "clearfix name"> <label class="error-message" id="tableNameErrorMessage"> </label>' +
                 '<div id = "define-attribute"> </div></div> <div class = "table-form-container store-div"> ' +
                 '<div id = "define-store"> </div> <div id="define-rdbms-type"> </div> <div id="store-options-div"> ' +
@@ -89,7 +89,7 @@ define(['log', 'jquery', 'lodash', 'attribute', 'storeAnnotation', 'handlebar', 
             self.formUtils.renderPrimaryIndexAnnotations(tableAnnotations, 'define-predefined-annotations');
 
             self.formUtils.renderAnnotationTemplate('define-user-defined-annotations', userAnnotations);
-            $('.define-user-defined-annotations').find('label:first-child').html('Customized Annotations');
+            $('.define-user-defined-annotations').find('label:first-child').html('自定义注释');
 
             //render the template to  generate the store types
             self.formUtils.renderSourceSinkStoreTypeDropDown(Constants.STORE, predefinedStores)

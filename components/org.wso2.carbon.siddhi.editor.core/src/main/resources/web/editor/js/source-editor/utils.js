@@ -67,32 +67,32 @@ define(["./constants"], function (constants) {
         }
         if (metaData.parameters) {
             if(paramOverloads === undefined) {
-                description += "Parameters - " + generateAttributeListDescription(metaData.parameters);
+                description += "参数 - " + generateAttributeListDescription(metaData.parameters);
             } else {
-                description += "Parameters - " + generateAttributeListDescriptionForParamOverloads(metaData.parameters,
+                description += "参数 - " + generateAttributeListDescriptionForParamOverloads(metaData.parameters,
                     paramOverloads);
             }
         }
 
         if (metaData.returnAttributes) {
-            description += "Return Attributes - " + generateAttributeListDescription(metaData.returnAttributes);
+            description += "返回特性 - " + generateAttributeListDescription(metaData.returnAttributes);
         }
 
         if (metaData.returnEvent) {
             description += (metaData.returnEvent.length > 0 ? "Additional Attributes in " : "") +
-                "Return Event" +
+                "返回事件" +
                 (metaData.returnEvent.length > 0 ? generateAttributeListDescription(metaData.returnEvent) : "");
         }
 
         if (processorTypeName !== undefined) {
             var processorTypeDisplayText = constants.typeToDisplayNameMap[processorTypeName];
             if (processorTypeDisplayText !== undefined) {
-                description += "Type - " + processorTypeDisplayText;
+                description += "类型 - " + processorTypeDisplayText;
             }
         }
 
         if (metaData.example) {
-            description += "Example - <br><br>" +
+            description += "样例 - <br><br>" +
                 "<span style='margin-left: 1em'>" + self.wordWrap(metaData.example) + "</span>";
         }
         description += "</div>";
@@ -108,10 +108,10 @@ define(["./constants"], function (constants) {
      * @return {string} html string of the description generated from the meta data provided
      */
     self.generateDescriptionForEvalScript = function (evalScriptName, metaData) {
-        return "<div><strong>Eval Script</strong> - " + evalScriptName + "<br><ul>" +
-            "<li>Language - " + metaData.language + "</li>" +
-            "<li>Return Type - " + metaData.returnType.toUpperCase() + "</li>" +
-            "<li>Function Body -" + "<br><br>" + metaData.functionBody + "</li>" +
+        return "<div><strong>执行脚本 </strong> - " + evalScriptName + "<br><ul>" +
+            "<li>语言 - " + metaData.language + "</li>" +
+            "<li>返回类型 - " + metaData.returnType.toUpperCase() + "</li>" +
+            "<li>函数体 -" + "<br><br>" + metaData.functionBody + "</li>" +
             "</ul></div>";
     };
 
@@ -183,7 +183,7 @@ define(["./constants"], function (constants) {
      * @return {string} html string of the description generated from the meta data provided
      */
     self.generateDescriptionForTrigger = function (triggerName, metaData) {
-        return "<div><strong>Trigger</strong> - " + triggerName + "<br><br>" +
+        return "<div><strong>触发器</strong> - " + triggerName + "<br><br>" +
             metaData.type + " - " + metaData.time + "</div>";
     };
 
@@ -197,9 +197,9 @@ define(["./constants"], function (constants) {
      * @return {string} html string of the description generated from the meta data provided
      */
     self.generateDescriptionForWindow = function (windowName, metaData, functionOperationSnippets) {
-        var description = "<div><strong>Window</strong> - " + windowName + "<br><br>";
+        var description = "<div><strong>窗口</strong> - " + windowName + "<br><br>";
         if (metaData.attributes && Object.keys(metaData.attributes).length > 0) {
-            description += "Attributes -<ul>";
+            description += "特性 -<ul>";
             for (var attribute in metaData.attributes) {
                 if (metaData.attributes.hasOwnProperty(attribute)) {
                     description += "<li>" +
@@ -211,10 +211,10 @@ define(["./constants"], function (constants) {
             description += "</ul>";
         }
         if (metaData.functionOperation) {
-            description += "Window - " + metaData.functionOperation + "<br><br>";
+            description += "窗口 - " + metaData.functionOperation + "<br><br>";
         }
         if (metaData.output) {
-            description += "Output - " + metaData.output + "<br><br>";
+            description += "输出 - " + metaData.output + "<br><br>";
         }
         if (metaData.functionOperation && functionOperationSnippets &&
             functionOperationSnippets.inBuilt.windowProcessors) {
@@ -242,14 +242,14 @@ define(["./constants"], function (constants) {
             description += "<ul>";
             for (var j = 0; j < attributeList.length; j++) {
                 description += "<li><b>" +
-                    (attributeList[j].name ? attributeList[j].name : "Attribute " + (j + 1)) + "</b>" +
-                    (attributeList[j].optional ? " (optional)" : "") +
+                    (attributeList[j].name ? attributeList[j].name : "特性 " + (j + 1)) + "</b>" +
+                    (attributeList[j].optional ? " (可选)" : "") +
                     (attributeList[j].type.length > 0 ? " - " + attributeList[j].type.join(" | ").toUpperCase() : "") +
                     (attributeList[j].description ? " - " + attributeList[j].description : "") + "</li>";
             }
             description += "</ul><br>";
         } else {
-            description += "none<br><br>";
+            description += "无<br><br>";
         }
 
         return description;
@@ -263,7 +263,7 @@ define(["./constants"], function (constants) {
                 var attributeName = attributeList[j].name;
                 if(paramOverloads.includes(attributeName)) {
                     description += "<li><b>" + attributeName + "</b>" +
-                        (attributeList[j].optional ? " (optional)" : "") +
+                        (attributeList[j].optional ? " (可选)" : "") +
                         (attributeList[j].type.length > 0 ? " - " + attributeList[j].type.join(" | ").
                         toUpperCase() : "") +
                         (attributeList[j].description ? " - " + attributeList[j].description : "") + "</li>";
@@ -271,7 +271,7 @@ define(["./constants"], function (constants) {
             }
             description += "</ul><br>";
         } else {
-            description += "none<br><br>";
+            description += "无<br><br>";
         }
 
         return description;

@@ -42,7 +42,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                     <div style="padding-top: 10px">
                         <div style="padding-top: 15px" class="attribute-list">
                             <div>
-                              Source Mapper configuration
+                              数据源映射配置
                               ${extensionData.parameters.length !== config.properties.length ? 
                                 `<button 
                                     style="background-color: #ee6719" 
@@ -62,7 +62,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                             <div class="custom-mapping-section">
                                 <div style="display: flex; padding-top:15px">
                                     <div style="padding-top: 5px">
-                                        Enable custom attribute mapping                                        
+                                        启用自定义特性映射                                        
                                     </div>
                                     <div style="margin-left: 15px">
                                         <div id="btn-group-enable-custom-map" class="btn-group btn-group-toggle" 
@@ -190,7 +190,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                 .on('focus', function (evt) {
                     var labelId = `label-${evt.currentTarget.id}`;
                     container.find(`#${labelId}`).removeClass('not-visible');
-                    $(evt.currentTarget).attr('placeholder', 'Type here to enter value');
+                    $(evt.currentTarget).attr('placeholder', '在此输入数值');
                 })
                 .on('focusout', function (evt) {
                     var labelId = `label-${evt.currentTarget.id}`;
@@ -307,7 +307,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                                     class="regex-input-field" 
                                     style="width: 100%; border: none; background-color: transparent; 
                                         border-bottom: 1px solid #333" 
-                                    placeholder="Type regex expression here" 
+                                    placeholder="在此输入正则表达式" 
                                     type="text" value="${config.mapping.properties[key].value}">
                             </div>
                             <div style="cursor: pointer;" class="regex-group-del-section">
@@ -386,8 +386,8 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
             container.find('.sample-payload-submit-section')
                 .append(`
                     <div style="width: 100%; padding-bottom: 10px">
-                        Type the payload in the textarea<br/>
-                        hover over the (+) button to add attributes
+                        在此输入内容<br/>
+                        通过(+)按钮添加特性
                     </div>
                     <div class="components" style="display: flex; width: 100%">
                         <div class="add-attribute-section">

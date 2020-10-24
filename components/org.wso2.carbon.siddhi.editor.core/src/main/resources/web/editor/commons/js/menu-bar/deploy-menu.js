@@ -4,11 +4,11 @@
 define([], function () {
     var DeployMenu = {
         id: "deploy",
-        label: "Deploy",
+        label: "部署",
         items: [
             {
                 id: "deploy-to-server",
-                label: "Deploy To Server",
+                label: "部署到服务器",
                 command: {
                     id: "deploy-to-server",
                     shortcuts: {

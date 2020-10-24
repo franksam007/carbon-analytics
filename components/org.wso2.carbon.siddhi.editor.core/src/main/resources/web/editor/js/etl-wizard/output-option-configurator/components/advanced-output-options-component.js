@@ -43,16 +43,15 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
             container.empty();
             container.append(`
                 <div style="font-size: 1.8rem; margin-bottom: 15px">
-                    Configure output rate & limits<br/>
+                   配置输出速率与数量<br/>
                     <small style="font-size: 1.3rem">
-                        Advanced options to configure output rate and limit where data will be published to 
-                        the destination
+                        高级选项：配置发送到目的地的输出速率和数量
                     </small>
                 </div>
                 <div class="offset-container">
                     <div style="display: flex">
                         <div>
-                            Set offset for batch outputs
+                            设置批量输出的偏移量
                             <span title="${offsetDescription}">
                                 <i class="fw fw-info"></i>
                             </span>
@@ -86,7 +85,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                 <div class="limit-container" style="margin-top: 15px;">
                     <div style="display: flex">
                         <div>
-                            Set limit to batch outputs 
+                            设置批量输出限制 
                             <span title="${limitDescription}"><i class="fw fw-info"></i></span>
                         </div>
                         <div style="margin-left: 15px">
@@ -117,7 +116,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                 <div class="rate-container" style="margin-top: 15px;">
                     <div style="display: flex">
                         <div>
-                            Set rate of output events
+                            设置事件输出速率
                             <span title="${rateDescription}"><i class="fw fw-info"></i></span>
                         </div>
                         <div style="margin-left: 15px">
@@ -186,9 +185,9 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                 container.find('.offset-container')
                     .append(`
                         <div>
-                            <label style="margin-bottom: 0" class="" for="txt-offset">offset index</label>
+                            <label style="margin-bottom: 0" class="" for="txt-offset">偏移索引</label>
                             <input id="txt-offset" style="width: 100%; border: none; background-color: transparent; 
-                            border-bottom: 1px solid #333" placeholder="Type here to enter" 
+                            border-bottom: 1px solid #333" placeholder="在此输入" 
                             type="number" value="${config.query.advanced.offset.value}">
                         </div>
                     `);
@@ -203,9 +202,9 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                 container.find('.limit-container')
                     .append(`
                         <div>
-                            <label style="margin-bottom: 0" class="" for="txt-limit">event limit</label>
+                            <label style="margin-bottom: 0" class="" for="txt-limit">事件数量</label>
                             <input id="txt-limit" style="width: 100%; border: none; background-color: transparent; 
-                                border-bottom: 1px solid #333" placeholder="Type here to enter" 
+                                border-bottom: 1px solid #333" placeholder="在此输入" 
                             type="number" value="${config.query.advanced.limit.value}">
                         </div>
                     `);
@@ -219,12 +218,12 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
             if(Object.keys(config.query.advanced.ratelimit).length > 0) {
                 container.find('.rate-container').append(`
                     <div style="margin-top: 15px">
-                        <label for="rate-limit-type">Select output rate limit type</label>
+                        <label for="rate-limit-type">选择速率限制类型</label>
                         <select id="rate-limit-type">
-                            <option disabled selected value> -- select an option -- </option>
-                            <option value="time-based">Time based</option>
-                            <option value="no-of-events">Number of events</option>
-                            <option value="snapshot">Snapshot based</option>
+                            <option disabled selected value> -- 选择一个选项 -- </option>
+                            <option value="time-based">基于时间</option>
+                            <option value="no-of-events">基于事件数量</option>
+                            <option value="snapshot">基于快照</option>
                         </select>    
                     </div>
                      
@@ -238,26 +237,26 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                             container.find('.rate-container')
                                 .append(`
                                     <div>
-                                        <span>output type</span>
+                                        <span>输出类型</span>
                                         <select id="select-event-type">
-                                            <option value="every">every event</option>
-                                            <option value="first">first event</option>
-                                            <option value="last">last event</option>
+                                            <option value="every">每个事件</option>
+                                            <option value="first">第一个事件</option>
+                                            <option value="last">最后一个事件</option>
                                         </select>
                                         </br>
-                                        <span style="margin-top: 5px">output time limit</span>
+                                        <span style="margin-top: 5px">输出时间限制</span>
                                         <div>
                                             <input id="txt-rate-val" style="width: 75%; border: none; 
                                             background-color: transparent; border-bottom: 1px solid #333" 
-                                            placeholder="Type here to enter" type="number" 
+                                            placeholder="在此输入数值" type="number" 
                                             value="${config.query.advanced.ratelimit['value']}">
                                             <select id="select-granularity">
-                                                <option value="sec">second</option>
-                                                <option value="min">minute</option>
-                                                <option value="hour">hour</option>
-                                                <option value="day">day</option>
-                                                <option value="month">month</option>
-                                                <option value="year">year</option>
+                                                <option value="sec">秒</option>
+                                                <option value="min">分钟</option>
+                                                <option value="hour">小时</option>
+                                                <option value="day">天</option>
+                                                <option value="month">月</option>
+                                                <option value="year">年</option>
                                             </select>    
                                         </div>
                                     </div>
@@ -284,20 +283,20 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                             container.find('.rate-container')
                                 .append(`
                                     <div>
-                                        <span>output type</span>
+                                        <span>输出类型</span>
                                         <select id="select-event-type">
-                                            <option value="every">every event</option>
-                                            <option value="first">first event</option>
-                                            <option value="last">last event</option>
+                                            <option value="every">每个事件</option>
+                                            <option value="first">第一个事件</option>
+                                            <option value="last">最后一个事件</option>
                                         </select>
                                         </br>
-                                        <span>output events every</span>
+                                        <span>输出事件：每</span>
                                         <div>
                                             <input id="txt-rate-val" style="width: 75%; border: none; 
                                                 background-color: transparent; border-bottom: 1px solid #333" 
-                                                placeholder="Type here to enter" type="number" 
+                                                placeholder="在此输入数值" type="number" 
                                                 value="${config.query.advanced.ratelimit['value']}">
-                                            <span>&nbsp;events</span>    
+                                            <span>&nbsp;个事件</span>    
                                         </div>
                                     </div>
                                 `);
@@ -316,19 +315,19 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'operatorM
                             container.find('.rate-container')
                                 .append(`
                                     <div>
-                                        <span>output events every</span>
+                                        <span>输出事件：每</span>
                                         <div>
                                             <input id="txt-rate-val" style="width: 75%; border: none; 
                                             background-color: transparent; border-bottom: 1px solid #333" 
-                                            placeholder="Type here to enter" type="number" 
+                                            placeholder="在此输入数值" type="number" 
                                             value="${config.query.advanced.ratelimit['value']}">
                                             <select id="select-granularity">
-                                                <option value="sec">second</option>
-                                                <option value="min">minute</option>
-                                                <option value="hour">hour</option>
-                                                <option value="day">day</option>
-                                                <option value="month">month</option>
-                                                <option value="year">year</option>
+                                                <option value="sec">秒</option>
+                                                <option value="min">分钟</option>
+                                                <option value="hour">小时</option>
+                                                <option value="day">天</option>
+                                                <option value="month">月</option>
+                                                <option value="year">年</option>
                                             </select>    
                                         </div>
                                     </div>

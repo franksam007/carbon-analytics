@@ -49,7 +49,7 @@ define(['require', 'jquery', 'lodash', './modal-dialog', 'log'], function (requi
             "<div class='container-fluid'>" +
             "<form class='form-horizontal' onsubmit='return false'>" +
             "<div class='form-group'>" +
-            "<label for='item-name' class='col-sm-2 file-dialog-form-label'>Enter Name</label>" +
+            "<label for='item-name' class='col-sm-2 file-dialog-form-label'>输入名称</label>" +
             "<div class='file-dialog-input-field'>" +
             "<input type='text' id='item-name' class='file-dialog-form-control item-name' placeholder='name'>" +
             "</div>" +

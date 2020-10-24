@@ -71,20 +71,20 @@ define(['require', 'lodash', 'log', 'jquery', 'backbone', 'command', 'sample_pre
                 samplesPane.addClass(_.get(this._options, 'cssClass.samplesPane'));
                 quickLinksPane.addClass(_.get(this._options, 'cssClass.quickLinksPane'));
 
-                newButton.text("New");
-                createNewETLFlowButton.text("New ETL Flow");
-                openButton.text("Open");
+                newButton.text("新建");
+                createNewETLFlowButton.text("新ETL处理流");
+                openButton.text("打开");
                 buttonWrap.append(newButton);
                 buttonWrap.append(createNewETLFlowButton);
                 buttonWrap.append(openButton);
 
-                $('#query-guide-link-container').append('<a href="https://siddhi.io/en/v5.1/docs/query-guide/" target="_blank"><i class="fw-info"></i> Siddhi Query Guide</a>');
-                $('#step-2 > div.step-description-text').append('Use ${...} format to template siddhi apps');
-                $('#step-3 > div.step-description-text').append('Use ${...} format to template the configurations');
+                //$('#query-guide-link-container').append('<a href="https://siddhi.io/en/v5.1/docs/query-guide/" target="_blank"><i class="fw-info"></i> Siddhi Query Guide</a>');
+                $('#step-2 > div.step-description-text').append('使用 ${...} 格式 将应用模板化');
+                $('#step-3 > div.step-description-text').append('使用 ${...} 格式 将配置模版化');
 
                 var productNameWrapHeader = $('<h2 style="min-width: 253px;text-align: center;display: table-cell;">' +
                     '<img src="/editor/commons/images/wso2-logo.svg">' +
-                    '<h1>Streaming Integrator Tooling</h1></h2>');
+                    '<h1>3Golden Stream Web</h1></h2>');
                 productNameWrap.append(productNameWrapHeader);
 
 
@@ -93,14 +93,14 @@ define(['require', 'lodash', 'log', 'jquery', 'backbone', 'command', 'sample_pre
 
                 mainWelcomeDiv.append(leftPane);
 
-                var recentFilesHeader = $('<h4>Recently opened</h4>');
+                var recentFilesHeader = $('<h4>最近打开的</h4>');
                 recentFilesPane.append(recentFilesHeader);
 
-                var samplesHeader = $('<h4 class="margin-top-60">Try out samples</h4>');
+                var samplesHeader = $('<h4 class="margin-top-60">试一下样例</h4>');
                 samplesPane.append(samplesHeader)
                 var bodyUlSampleContent = $('<ul class="recent-files clearfix"></ul>');
                 var moreSampleLink = $('<a class="more-samples">' +
-                    '<i class="fw fw-application"></i>More Samples</a>');
+                    '<i class="fw fw-application"></i>更多样例</a>');
                 bodyUlSampleContent.attr('id', "sampleContent");
                 samplesPane.append(bodyUlSampleContent);
                 samplesPane.append(moreSampleLink);
@@ -129,7 +129,8 @@ define(['require', 'lodash', 'log', 'jquery', 'backbone', 'command', 'sample_pre
 
                 quickLinksPane.append(bodyUlQuickLinkContent);
                 scrollInner.append(samplesPane);
-                scrollInner.append(quickLinksPane);
+                // 去掉快速链接，隐藏WSO2
+                // scrollInner.append(quickLinksPane);
                 scrollWrapper.append(scrollInner);
                 contentPane.append(scrollWrapper);
 

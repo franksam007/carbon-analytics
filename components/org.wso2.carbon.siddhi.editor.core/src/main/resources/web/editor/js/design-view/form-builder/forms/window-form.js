@@ -47,7 +47,7 @@ define(['require', 'log', 'jquery', 'lodash', 'attribute', 'constants'],
             var previousWindowObject = _.cloneDeep(windowObject);
 
             var propertyDiv = $('<div class="clearfix form-min-width"><div class = "window-form-container"> <label> ' +
-                '<span class="mandatory-symbol"> * </span>Name </label> <input type="text" id="windowName" class="clearfix name">' +
+                '<span class="mandatory-symbol"> * </span>名称 </label> <input type="text" id="windowName" class="clearfix name">' +
                 '<label class="error-message" id="windowNameErrorMessage"></label> <div id="define-attribute"></div>' +
                 '</div> <div class= "window-form-container"> <div class = "defineFunctionName"> </div> ' +
                 '<div class ="defineFunctionParameters"> </div> </div> <div class = "window-form-container"> ' +

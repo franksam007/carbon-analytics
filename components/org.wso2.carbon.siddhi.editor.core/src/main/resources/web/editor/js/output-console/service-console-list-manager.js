@@ -41,14 +41,14 @@ define(['log', 'jquery', 'lodash', 'output_console_list', 'workspace', 'service_
                         self.initiateLogReader(self._options);
                     });
                     if (this.application.isRunningOnMacOS()) {
-                        this._closeConsoleBtn.attr("title", "Close (" + _.get(self._options,
+                        this._closeConsoleBtn.attr("title", "关闭 (" + _.get(self._options,
                             'command.shortcuts.mac.label') + ") ").tooltip();
-                        this._openConsoleBtn.attr("title", "Open Console (" + _.get(self._options,
+                        this._openConsoleBtn.attr("title", "打开控制台 (" + _.get(self._options,
                             'command.shortcuts.mac.label') + ") ").tooltip();
                     } else {
-                        this._closeConsoleBtn.attr("title", "Close  (" + _.get(self._options,
+                        this._closeConsoleBtn.attr("title", "关闭  (" + _.get(self._options,
                             'command.shortcuts.other.label') + ") ").tooltip();
-                        this._openConsoleBtn.attr("title", "Open Console  (" + _.get(self._options,
+                        this._openConsoleBtn.attr("title", "打开控制台  (" + _.get(self._options,
                             'command.shortcuts.other.label') + ") ").tooltip();
                     }
                     // register command
@@ -173,7 +173,7 @@ define(['log', 'jquery', 'lodash', 'output_console_list', 'workspace', 'service_
                             var consoleOptions = {};
                             var options = {};
                             _.set(options, '_type', "CONSOLE");
-                            _.set(options, 'title', "Console");
+                            _.set(options, 'title', "控制台");
                             _.set(options, 'statusForCurrentFocusedFile', "LOGGER");
                             _.set(options, 'currentFocusedFile', undefined);
                             _.set(consoleOptions, 'consoleOptions', options);
@@ -215,7 +215,7 @@ define(['log', 'jquery', 'lodash', 'output_console_list', 'workspace', 'service_
                             var consoleOptions = {};
                             var options = {};
                             _.set(options, '_type', "CONSOLE");
-                            _.set(options, 'title', "Console");
+                            _.set(options, 'title', "控制台");
                             _.set(options, 'statusForCurrentFocusedFile', "LOGGER");
                             _.set(options, 'currentFocusedFile', undefined);
                             _.set(consoleOptions, 'consoleOptions', options);

@@ -417,16 +417,16 @@ define(['require', 'lodash', 'jquery', 'constants', 'backbone', 'alerts', 'pagin
                         "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>" +
                         "<i class=\"fw fw-cancel  about-dialog-close\"></i>" +
                         "</button>" +
-                        '<h3 class="modal-title file-dialog-title">Server Configurations</h3>' +
+                        '<h3 class="modal-title file-dialog-title">服务器配置</h3>' +
                         '<hr class="style1">' +
                         '</div>' +
                         '<div id="serverConfigurationsModalBody" class="modal-body">' +
                         '</div>' +
                         '<div class="modal-footer" style="padding-right: 20px; margin-right: 30px">' +
                         '<button id="applyWorkerConfigurations" type="button" class="btn btn-primary">' +
-                        "Connect</button>" +
+                        "连接</button>" +
                         "<div class='divider'></div>" +
-                        '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
+                        '<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>' +
                         '</div>' +
                         '</div>' +
                         '</div>' +
@@ -437,22 +437,22 @@ define(['require', 'lodash', 'jquery', 'constants', 'backbone', 'alerts', 'pagin
                             'style="margin-right: 30px; margin-left: 30px; width: auto; overflow: auto"></div>');
                     var serverProperties = $('<div class="server-properties-clearfix"></div>');
                     serverProperties.append('<div class="server-property">' +
-                        '<label class="clearfix">Host</label>' +
+                        '<label class="clearfix">主机</label>' +
                         '<input type="text" id="serverHost" placeholder="localhost" class="configure-server-input" ' +
                         'value="' + (this.serverHost || '') + '">' +
                         '</div>');
                     serverProperties.append('<div class="server-property">' +
-                        '<label class="clearfix">Port</label>' +
+                        '<label class="clearfix">端口</label>' +
                         '<input type="text" id="serverPort" placeholder="9443" class="configure-server-input" ' +
                         'value="' + (this.serverPort || '') + '">' +
                         '</div>');
                     serverProperties.append('<div class="server-property">' +
-                        '<label class="clearfix">Username</label>' +
+                        '<label class="clearfix">用户名</label>' +
                         '<input type="text" id="serverUsername" placeholder="admin" class="configure-server-input" ' +
                         'value="' + (this.serverUsername || '') + '">' +
                         '</div>');
                     serverProperties.append('<div class="server-property">' +
-                        '<label class="clearfix">Password</label>' +
+                        '<label class="clearfix">密码</label>' +
                         '<input type="password" id="serverPassword" placeholder="admin"' +
                         ' class="configure-server-input" value="' + (this.serverPassword || '') + '">' +
                         '</div>');
@@ -535,9 +535,9 @@ define(['require', 'lodash', 'jquery', 'constants', 'backbone', 'alerts', 'pagin
                 generateServerNotConfiguredDisplay: function() {
                     var self = this;
                     var serverNotConfiguredDisplay = $('<div>' +
-                        '<h4>SI Server has not been specified</h4>' +
+                        '<h4>尚未指定服务器</h4>' +
                         '<button id="configureServer" type="button" class="btn btn-primary">' +
-                        'Connect to Server</button>' +
+                        '连接到服务器</button>' +
                         '</div>');
                     serverNotConfiguredDisplay.find("#configureServer").click(function() {
                         self.renderServerConfigurations();
@@ -598,7 +598,7 @@ define(['require', 'lodash', 'jquery', 'constants', 'backbone', 'alerts', 'pagin
                                 self.serverUsername, self.serverPassword);
                         });
                     } else {
-                        siddhiAppSelection.append("<h4 class='description'>No Siddhi apps found</h4>");
+                        siddhiAppSelection.append("<h4 class='description'>未发现应用</h4>");
                     }
                     errorContainer.append(siddhiAppSelection);
                 },
@@ -846,7 +846,7 @@ define(['require', 'lodash', 'jquery', 'constants', 'backbone', 'alerts', 'pagin
                         "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>" +
                         "<i class=\"fw fw-cancel  about-dialog-close\"></i>" +
                         "</button>" +
-                        "<h4 class='modal-title file-dialog-title'>Error Store Explorer</h4>" +
+                        "<h4 class='modal-title file-dialog-title'>错误存储浏览器</h4>" +
                         "<hr class='style1'>" +
                         "</div>" +
                         "<div class='modal-body'>" +
@@ -857,12 +857,12 @@ define(['require', 'lodash', 'jquery', 'constants', 'backbone', 'alerts', 'pagin
                         "</div>" +
                         "<div class='form-group'>" +
                         "<div class='file-dialog-form-btn'>" +
-                        "<button type='button' class='btn btn-default' data-dismiss='modal'>cancel</button>" +
+                        "<button type='button' class='btn btn-default' data-dismiss='modal'>取消</button>" +
                         "</div>" +
                         "</div>" +
                         "</form>" +
                         "<div id='errorHandlerErrorModal' class='alert alert-danger'>" +
-                        "<strong>Error!</strong>Something went wrong." +
+                        "<strong>错误！</strong>某处出错。" +
                         "</div>" +
                         "</div>" +
                         "</div>" +

@@ -38,11 +38,11 @@ define(['require', 'jquery', 'log', 'backbone', '../../../js/event-simulator/sim
                     SimulatorRestClient.retrieveSiddhiAppNames(
                         function (data) {
                             var initialOptionValue = '<option selected="selected" value = "-1" ' +
-                                'disabled>-- Please Select a Siddhi App --</option>';
+                                'disabled>-- 请选择一个应用 --</option>';
                             var siddhiApps = self.generateOptions(data, initialOptionValue, "siddhiAppName");
                             sampleEventModal.find("select[name='siddhi-app-name']").html(siddhiApps);
                             initialOptionValue = '<option selected="selected" value = "-1" ' +
-                                'disabled>-- Please Select a Stream name --</option>';
+                                'disabled>-- 请选择一个数据流 --</option>';
                             var streamNames = self.generateOptions(null, initialOptionValue);
                             sampleEventModal.find("select[name='stream-name']").html(streamNames);
                         },
@@ -57,7 +57,7 @@ define(['require', 'jquery', 'log', 'backbone', '../../../js/event-simulator/sim
                             sampleEventModal.find("select[name='siddhi-app-name'] option:selected").text(),
                             function (data) {
                                 var initialOptionValue = '<option selected="selected" ' +
-                                    'value = "-1" disabled>-- Please Select a Stream name --</option>';
+                                    'value = "-1" disabled>-- 请选择一个数据流 --</option>';
                                 var streamNames = self.generateOptions(data, initialOptionValue);
                                 sampleEventModal.find("select[name='stream-name']").html(streamNames);
                             },

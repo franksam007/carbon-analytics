@@ -233,8 +233,8 @@ define(['require', 'lodash', 'appData', 'log', 'constants', 'handlebar', 'annota
          * @returns {string} HTML string
          */
         FormUtils.prototype.buildFormButtons = function (formConsoleId) {
-            var buttonHtml = '<button type="button" id="btn-submit" class="btn btn-primary">Submit</button>' +
-                '<button type="button" id="btn-cancel" class="btn btn-default">Cancel</button>';
+            var buttonHtml = '<button type="button" id="btn-submit" class="btn btn-primary">提交</button>' +
+                '<button type="button" id="btn-cancel" class="btn btn-default">取消</button>';
             $('#' + formConsoleId).find('.query-form-actions').html(buttonHtml);
         };
 
@@ -781,11 +781,11 @@ define(['require', 'lodash', 'appData', 'log', 'constants', 'handlebar', 'annota
          * @function to render output event types
          */
         FormUtils.prototype.renderOutputEventTypes = function () {
-            var outputEventDiv = '<div class = "clearfix"> <label> Event Type </label> </div>' +
+            var outputEventDiv = '<div class = "clearfix"> <label> 事件类型 </label> </div>' +
                 '<div class = "clearfix"> <select id="event-type">' +
-                '<option value = "current_events"> current events </option>' +
-                '<option value = "all_events"> all events </option>' +
-                '<option value = "expired_events"> expired events </option>' +
+                '<option value = "current_events"> 当前事件 </option>' +
+                '<option value = "all_events"> 所有事件 </option>' +
+                '<option value = "expired_events"> 过期事件 </option>' +
                 '</select> </div>'
             $('.define-output-events').html(outputEventDiv);
         };
@@ -3963,7 +3963,7 @@ define(['require', 'lodash', 'appData', 'log', 'constants', 'handlebar', 'annota
             var handlerList = '<li class="define-stream-handler-content"> <div> ' +
                 '<div class="collapse-div" href="#' + streamHandlerListLength + '-' + id + '-stream-handler-content" ' +
                 'data-toggle="collapse" aria-expanded="true"> <label class="clearfix"> ' +
-                '<span class="mandatory-symbol"> * </span> Type <a class="collapse-icon"> </a> </label> ' +
+                '<span class="mandatory-symbol"> * </span> 类型 <a class="collapse-icon"> </a> </label> ' +
                 '<div class = "define-stream-handler-type"> </div> </div> <div id="' +
                 streamHandlerListLength + '-' + id + '-stream-handler-content" class="collapse in"> <div class="clearfix">' +
                 '<div class = "define-stream-handler-type-content"> </div> <div class = "attr-nav"> </div> ' +
@@ -4233,10 +4233,10 @@ define(['require', 'lodash', 'appData', 'log', 'constants', 'handlebar', 'annota
             var parent = $('#customized-' + id + '-options');
             if (customizedOptionList.length > 0) {
                 parent.find('h4').show();
-                parent.find('.btn-add-options').html('+ More');
+                parent.find('.btn-add-options').html('+ 更多');
             } else {
                 parent.find('h4').hide();
-                parent.find('.btn-add-options').html('+ Customized Option');
+                parent.find('.btn-add-options').html('+ 自定义选项');
             }
         };
 

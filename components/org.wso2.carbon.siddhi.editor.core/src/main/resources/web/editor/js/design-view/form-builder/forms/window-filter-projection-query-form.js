@@ -144,7 +144,7 @@ define(['require', 'log', 'jquery', 'lodash', 'querySelect', 'queryWindowOrFunct
                 var userDefinedAnnotations = self.formUtils.getUserAnnotations(annotationListObjects,
                     predefinedAnnotations);
                 self.formUtils.renderAnnotationTemplate("define-user-defined-annotations", userDefinedAnnotations);
-                $('.define-user-defined-annotations').find('label:first-child').html('Customized Annotations');
+                $('.define-user-defined-annotations').find('label:first-child').html('自定义注释');
                 self.formUtils.mapPredefinedAnnotations(annotationListObjects, predefinedAnnotations);
                 self.formUtils.renderPredefinedAnnotations(predefinedAnnotations,
                     'define-predefined-annotations');

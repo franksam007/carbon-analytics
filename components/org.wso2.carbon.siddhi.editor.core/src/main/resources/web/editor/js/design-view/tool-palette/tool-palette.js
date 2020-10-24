@@ -30,112 +30,128 @@ define(['require', 'log', 'jquery', 'backbone', 'tool_palette/tool', 'tool_palet
                     {
                         id: "stream",
                         className: "stream-drag",
-                        title: "Stream",
+                        //title: "Stream",
+                        title: "数据流",
                         icon: "/editor/images/streams.svg",
                         toolGroupName: "Flow Constructs"
                     },
                     {
                         id: "source",
                         className: "source-drag",
-                        title: "Source",
+                        //title: "Source",
+                        title: "数据源",
                         icon: "/editor/images/source.svg",
                         toolGroupName: "I/O"
                     },
                     {
                         id: "sink",
                         className: "sink-drag",
-                        title: "Sink",
+                        //title: "Sink",
+                        title: "数据汇",
                         icon: "/editor/images/sink.svg",
                         toolGroupName: "I/O"
                     },
                     {
                         id: "table",
                         className: "table-drag",
-                        title: "Table",
+                        //title: "Table",
+                        title: "数据表",
                         icon: "/editor/images/table.svg",
                         toolGroupName: "Collections"
                     },
                     {
                         id: "window",
                         className: "window-drag",
-                        title: "Window",
+                        //title: "Window",
+                        title: "窗口",
                         icon: "/editor/images/window.svg",
                         toolGroupName: "Collections"
                     },
                     {
                         id: "trigger",
                         className: "trigger-drag",
-                        title: "Trigger",
+                        //title: "Trigger",
+                        title: "触发器",
                         icon: "/editor/images/trigger.svg",
                         toolGroupName: "Flow Constructs"
                     },
                     {
                         id: "aggregation",
                         className: "aggregation-drag",
-                        title: "Aggregation",
+                        //title: "Aggregation",
+                        title: "聚合",
                         icon: "/editor/images/aggregate.svg",
                         toolGroupName: "Collections"
                     },
                     {
                         id: "projection-query",
                         className: "projection-query-drag",
-                        title: "Projection",
+                        //title: "Projection",
+                        title: "投影",
                         icon: "/editor/images/query.svg",
                         toolGroupName: "Queries"
                     },
                     {
                         id: "filter-query",
                         className: "filter-query-drag",
-                        title: "Filter",
+                        //title: "Filter",
+                        title: "过滤器",
                         icon: "/editor/images/filter-query.svg",
                         toolGroupName: "Queries"
                     },
                     {
                         id: "window-query",
                         className: "window-query-drag",
-                        title: "Window",
+                        //title: "Window",
+                        title: "窗口查询",
                         icon: "/editor/images/window-query.svg",
                         toolGroupName: "Queries"
                     },
                     {
                         id: "function-query",
                         className: "function-query-drag",
-                        title: "Function",
+                        //title: "Function",
+                        title: "函数查询",
                         icon: "/editor/images/function-query.svg",
                         toolGroupName: "Queries"
                     },
                     {
                         id: "join-query",
                         className: "join-query-drag",
-                        title: "Join",
+                        //title: "Join",
+                        title: "连接查询",
                         icon: "/editor/images/join-query.svg",
                         toolGroupName: "Queries"
                     },
                     {
                         id: "pattern-query",
                         className: "pattern-query-drag",
-                        title: "Pattern",
+                        //title: "Pattern - 模式查询",
+                        title: "模式查询",
                         icon: "/editor/images/pattern-query.svg",
                         toolGroupName: "Queries"
                     },
                     {
                         id: "sequence-query",
                         className: "sequence-query-drag",
-                        title: "Sequence",
+                        //title: "Sequence",
+                        title: "序列查询",
                         icon: "/editor/images/sequence-query.svg",
                         toolGroupName: "Queries"
                     },
                     {
                         id: "partition",
                         className: "partition-drag",
-                        title: "Partition",
+                        //title: "Partition",
+                        title: "分区",
                         icon: "/editor/images/partition.svg",
                         toolGroupName: "Flow Constructs"
                     },
                     {
                         id: "function",
                         className: "function-drag",
-                        title: "Function",
+                        //title: "Function - 函数",
+                        title: "函数",
                         icon: "/editor/images/function.svg",
                         toolGroupName: "Functions"
                     }

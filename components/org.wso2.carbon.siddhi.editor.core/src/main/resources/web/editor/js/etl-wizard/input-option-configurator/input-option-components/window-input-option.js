@@ -40,11 +40,11 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'app/source-editor/compl
 
             container.empty();
             container.append(`
-                <h3 style="margin-top: 0; color: #373737">Window configuration</h3>
+                <h3 style="margin-top: 0; color: #373737">窗口配置</h3>
                 <div style="color: #373737">
-                    <label for="window-type">Window type&nbsp;:&nbsp;</label>
+                    <label for="window-type">窗口类型&nbsp;:&nbsp;</label>
                     <select name="window-type" id="window-type">
-                        <option disabled selected value> -- select an option -- </option>
+                        <option disabled selected value> -- 选择一个选项 -- </option>
                     </select>
                 </div>
                 <div style="padding: 0 5px;color: #373737; margin-top: 15px" class="window-option-section">
@@ -197,7 +197,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'app/source-editor/compl
                     .on('focus', function (evt) {
                         var inputId = evt.currentTarget.id.match('window-op-([a-zA-Z\-]+)')[1];
                         container.find(`#label-window-op-${inputId}`).removeClass('not-visible');
-                        $(evt.currentTarget).attr('placeholder', 'Type here to input the value');
+                        $(evt.currentTarget).attr('placeholder', '在此输入数值');
                     })
                     .on('focusout', function (evt) {
                         var inputId = evt.currentTarget.id.match('window-op-([a-zA-Z\-]+)')[1];

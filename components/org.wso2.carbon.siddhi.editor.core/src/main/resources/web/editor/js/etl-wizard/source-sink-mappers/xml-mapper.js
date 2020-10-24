@@ -42,7 +42,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                     <div style="padding-top: 10px">
                         <div style="padding-top: 15px" class="attribute-list">
                             <div>
-                              Source Mapper configuration
+                              数据源映射配置
                               ${mapperData.parameters.length !== config.properties.length ?
                                 `<button 
                                     style="background-color: #ee6719" 
@@ -62,7 +62,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                             <div class="custom-mapping-section">
                                 <div style="display: flex; padding-top:15px">
                                     <div style="padding-top: 5px">
-                                        Enable custom attribute mapping                                        
+                                        启用自定义特性映射                                        
                                     </div>
                                     <div style="margin-left: 15px">
                                         <div id="btn-group-enable-custom-map" class="btn-group btn-group-toggle" 
@@ -179,7 +179,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                 .on('focus', function (evt) {
                     var labelId = `label-${evt.currentTarget.id}`;
                     container.find(`#${labelId}`).removeClass('not-visible');
-                    $(evt.currentTarget).attr('placeholder', 'Type here to enter value');
+                    $(evt.currentTarget).attr('placeholder', '在此输入数值');
                 })
                 .on('focusout', function (evt) {
                     var labelId = `label-${evt.currentTarget.id}`;
@@ -241,7 +241,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                                     transparent; border: 1px solid #333" 
                                     placeholder="Enter the sample payload here" type="text" value=""></textarea>
                             <div style="margin-left: 5px;">
-                                <button style="background-color: #ee6719" class="btn btn-default btn-add-sample-payload">Submit</button>
+                                <button style="background-color: #ee6719" class="btn btn-default btn-add-sample-payload">提交</button>
                             </div>
                         </div>
                     `);
@@ -265,7 +265,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                                 placeholder="Enter the sample payload here" type="text" value=""></textarea>
                             <div style="margin-left: 5px;">
                                 <button style="background-color: #ee6719" 
-                                    class="btn btn-default btn-add-sample-payload">Submit</button>
+                                    class="btn btn-default btn-add-sample-payload">提交</button>
                             </div>
                         </div>
                     `);

@@ -5787,10 +5787,10 @@
             if (mime) mime = mime[1];
 
             if (!mime) {
-                this.preview.innerHTML = '<em>Invalid data URI</em>';
+                this.preview.innerHTML = '<em>数据URI无效</em>';
             }
             else {
-                this.preview.innerHTML = '<strong>Type:</strong> ' + mime + ', <strong>Size:</strong> ' + Math.floor((this.value.length - this.value.split(',')[0].length - 1) / 1.33333) + ' bytes';
+                this.preview.innerHTML = '<strong>类型:</strong> ' + mime + ', <strong>尺寸:</strong> ' + Math.floor((this.value.length - this.value.split(',')[0].length - 1) / 1.33333) + ' bytes';
                 if (mime.substr(0, 5) === "image") {
                     this.preview.innerHTML += '<br>';
                     var img = document.createElement('img');
@@ -5889,7 +5889,7 @@
 
             var file = this.uploader.files[0];
 
-            this.preview.innerHTML = '<strong>Type:</strong> ' + mime + ', <strong>Size:</strong> ' + file.size + ' bytes';
+            this.preview.innerHTML = '<strong>类型:</strong> ' + mime + ', <strong>尺寸:</strong> ' + file.size + ' bytes';
             if (mime.substr(0, 5) === "image") {
                 this.preview.innerHTML += '<br>';
                 var img = document.createElement('img');

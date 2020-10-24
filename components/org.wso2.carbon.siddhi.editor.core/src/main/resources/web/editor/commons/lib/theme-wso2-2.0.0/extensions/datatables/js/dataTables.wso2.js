@@ -124,7 +124,7 @@
                         });
                     } else if (filterColumn.eq(column.index()).hasClass('text-filter')) {
                         var title = filterColumn.eq(column.index()).attr('data-for');
-                        $(filterColumn.eq(column.index()).empty()).html('<input type="text" class="form-control" placeholder="Search for ' + title + '" />');
+                        $(filterColumn.eq(column.index()).empty()).html('<input type="text" class="form-control" placeholder="搜索 ' + title + '" />');
 
                         filterColumn.eq(column.index()).find('input').on('keyup change', function () {
                             column

@@ -112,7 +112,7 @@ define(['require', 'log', 'jquery', 'lodash', 'constants'],
             var previousTriggerObject = _.cloneDeep(triggerObject);
 
             var propertyDiv = $('<div class="clearfix form-min-width"> <div class ="trigger-form-container"> ' +
-                '<div id="define-trigger-name"> <label><span class="mandatory-symbol"> * </span>Name </label>' +
+                '<div id="define-trigger-name"> <label><span class="mandatory-symbol"> * </span>名称 </label>' +
                 '<input type="text" id="triggerName" class="clearfix name"> <label class="error-message" ' +
                 'id = "triggerNameErrorMessage"> </label> </div> <div id= "define-trigger-criteria"> </div>' +
                 '<div id = "trigger-criteria-content"></div> </div> </div>');

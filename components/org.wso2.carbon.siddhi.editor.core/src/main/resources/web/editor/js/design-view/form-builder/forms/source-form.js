@@ -31,7 +31,7 @@ define(['log', 'jquery', 'lodash', 'sourceOrSinkAnnotation', 'mapAnnotation', 'p
         var renderAttributeMapping = function () {
             if (!$.trim($('#define-attribute').html()).length) {
                 var attributeDiv = $('<div class="clearfix"> <label id="attribute-map-label">' +
-                    '<input type="checkbox" id="attributeMap-checkBox"> Map Attribute As Key/Value Pairs ' +
+                    '<input type="checkbox" id="attributeMap-checkBox"> 将特性映射为键值对 ' +
                     '</label> </div>');
                 $('#define-attribute').html(attributeDiv);
             }

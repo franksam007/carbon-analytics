@@ -141,8 +141,8 @@ define(['jquery', 'lodash', 'log', 'remarkable', 'handlebar', 'designViewUtils',
                 operator.combinedExamples = markDownConvertor.render(operator.combinedExamples);
             }
             if (operator.parameters) {
-                operator.parameterTable = "| Name | Possible DataTypes | Description | " +
-                    "Default Value | Optional | Dynamic | " + "\n" +
+                operator.parameterTable = "| 名称 | 可用数据类型 | 描述 | " +
+                    "默认值 | 可选 | 动态 | " + "\n" +
                     "| ------| ------| -----------|" +
                     " ------| ------| ------|\n";
                 operator.parameters.forEach(function (m) {
@@ -162,7 +162,7 @@ define(['jquery', 'lodash', 'log', 'remarkable', 'handlebar', 'designViewUtils',
 
                 operator.returnAttributes.forEach(function (m) {
                     if(operator.type === "streamProcessors"){
-                        operator.returnTable = "| Name | DataTypes | Description |\n " +
+                        operator.returnTable = "| 名称 | 数据类型 | 描述 |\n " +
                             "| ------| ------| -----------|\n";
                         m.description = sanitiseString(m.description);
                         operator.returnTable += " | " + m.name + " | "
@@ -933,7 +933,7 @@ define(['jquery', 'lodash', 'log', 'remarkable', 'handlebar', 'designViewUtils',
 
             var shortcutPath = 'command.shortcuts.' + (this._application.isRunningOnMacOS() ? 'mac' : 'other') + '.label';
             this._activateBtn
-                .attr('title', 'Operator Finder (' + _.get(self._options, shortcutPath) + ')')
+                .attr('title', '组件查找器 (' + _.get(self._options, shortcutPath) + ')')
                 .tooltip();
         };
         return {

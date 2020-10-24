@@ -26,7 +26,7 @@ define(['require', 'log', 'jquery', 'lodash', 'constants'],
          * @function renders the script types
          */
         var renderScriptType = function () {
-            var scriptDiv = '<h4> Script Type: </h4> <select id = "script-type">' +
+            var scriptDiv = '<h4> 脚本类型: </h4> <select id = "script-type">' +
                 '<option value = "Javascript"> Javascript </option>' +
                 '<option value = "Scala"> Scala </option>' +
                 '<option value = "R"> R </option>' +
@@ -38,7 +38,7 @@ define(['require', 'log', 'jquery', 'lodash', 'constants'],
          * @function renders the return type of the script
          */
         var renderReturnType = function () {
-            var returnDiv = '<h4> Return Type: </h4> <select id = "return-type">' +
+            var returnDiv = '<h4> 返回类型: </h4> <select id = "return-type">' +
                 '<option value = "int"> int </option>' +
                 '<option value = "long"> long </option>' +
                 '<option value = "double"> double </option>' +
@@ -63,11 +63,11 @@ define(['require', 'log', 'jquery', 'lodash', 'constants'],
             var previouseFunctionObject = _.cloneDeep(functionObject);
             var propertyDiv = $('<div class="clearfix form-min-width"> <div class = "function-form-container"> ' +
                 '<div id = "define-function-name"> <label>' +
-                ' <span class="mandatory-symbol"> * </span> Name </label> ' +
+                ' <span class="mandatory-symbol"> * </span> 名称 </label> ' +
                 '<input type="text" id="functionName" class="clearfix name"><label class = "error-message" ' +
                 'id = "functionNameErrorMessage"> </label></div> <div id = "function-script-type"> ' +
                 '</div> <div id= "function-return-type"> </div> </div> <div class = "function-form-container"> ' +
-                '<div id="define-script-body"> <label> <span class="mandatory-symbol"> * </span> Script Body </label> ' +
+                '<div id="define-script-body"> <label> <span class="mandatory-symbol"> * </span> 脚本 </label> ' +
                 '<textarea id= "script-body-content" class="clearfix" rows="5" cols="50"> </textarea> ' +
                 '<label class = "error-message"></label> </div> </div> </div>');
 

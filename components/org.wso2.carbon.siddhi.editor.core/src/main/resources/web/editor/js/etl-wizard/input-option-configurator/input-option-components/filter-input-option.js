@@ -51,11 +51,11 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'attribute
             container.append(`
                 <div style="display: flex; margin-bottom: 5px">
                     <div style="flex: 1">
-                        <h3 style="margin-top: 0; color: #373737">Filter condition</h3>
+                        <h3 style="margin-top: 0; color: #373737">过滤条件</h3>
                     </div>
                     <button id="btn-reverse-filter" class="btn btn-default">
                         <i class="fw ${config.query.filter.reverseFilter ? 'fw-check' : 'fw-error'}"></i>&nbsp;
-                        Exclude events
+                        排除事件
                     </button>    
                 </div>
                 <div style="color: #373737" class="expression-section">
@@ -175,7 +175,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'attribute
                                             leftTypes: ['bool', 'text', 'number'],
                                             rightTypes: ['bool', 'text', 'number'],
                                             symbol: '()',
-                                            description: 'Bracket',
+                                            description: '括号',
                                             isFirst: true,
                                             scope: true
                                         }
@@ -226,7 +226,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'attribute
                         leftTypes: ['bool', 'text', 'number'],
                         rightTypes: ['bool', 'text', 'number'],
                         symbol: '()',
-                        description: 'Bracket',
+                        description: '括号',
                         isFirst: true,
                         scope: true
                     }
@@ -249,7 +249,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'attribute
                         <li id="operand-type-attribute" >
                             <a style="color: #373737">
                                 <div style="padding: 15px; border-bottom: 1px solid rgba(0,0,0,.075);">
-                                    Attribute
+                                    特性
                                 </div>
                             </a>    
                         </li>
@@ -262,7 +262,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'attribute
                         <li id="operand-type-operator" >
                             <a style="color: #373737">
                                 <div style="padding: 15px; border-bottom: 1px solid rgba(0,0,0,.075);">
-                                    Operator
+                                    操作符
                                 </div>
                             </a>    
                         </li>
@@ -289,10 +289,10 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'attribute
                                                 style="display: flex; flex-wrap: wrap; padding: 5px; 
                                                 border-bottom: 1px solid rgba(0,0,0,.075);">
                                                 <div class="description" style="width: 100%;">
-                                                    Add a custom value to the expression 
+                                                    向表达式添加自定义值 
                                                 </div>
                                                 <div style="width: 100%;">
-                                                    Custom Value
+                                                    自定义值
                                                     <select name="" id="custom-val-type">
                                                     </select>
                                                     <input style="display: none; width: 50%" 
@@ -303,7 +303,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'scopeModel', 'attribute
                                                         <option value="false">false</option>
                                                     </select>
                                                     <button style="background-color: #f47b20; padding: 0 6px 0 6px;"
-                                                        class="btn btn-primary btn-custom-val-submit">Add</button>
+                                                        class="btn btn-primary btn-custom-val-submit">添加</button>
                                                 </div>
                                             </div>
                                         </a>    

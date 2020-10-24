@@ -31,10 +31,10 @@ define(['log', 'jquery', 'lodash', 'mapAnnotation', 'payloadOrAttribute', 'jsonV
         var renderAttributeMapping = function () {
             if (!$.trim($('#define-attribute').html()).length) {
                 var attributeDiv = $('<div class="clearfix"> <label id="attribute-map-label">' +
-                    '<input type="checkbox" id="attributeMap-checkBox"> Payload or Attribute Mapping' +
+                    '<input type="checkbox" id="attributeMap-checkBox"> 有效数据或特性映射' +
                     '</label> </div> <div class = "clearfix"> <select id = "attributeMap-type" disabled>' +
-                    '<option value = "payloadMap"> Enter payload as key/value pairs </option>' +
-                    '<option value = "payloadList"> Enter a single payload attribute </option>' +
+                    '<option value = "payloadMap"> 以键值对输入数据 </option>' +
+                    '<option value = "payloadList"> 以单个特性输入数据 </option>' +
                     '</select></div>');
                 $('#define-attribute').html(attributeDiv);
             }

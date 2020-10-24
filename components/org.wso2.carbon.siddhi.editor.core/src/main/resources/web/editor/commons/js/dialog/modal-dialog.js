@@ -90,8 +90,8 @@ define(['require', 'jquery', 'event_channel', 'bootstrap'], function (require, $
         var modalBody = $("<div class='modal-body'></div>");
         var modalFooter = $("<div class='modal-footer'></div>");
         var modalCloseBtnBottom = $("<button type='button' class='btn btn-default btn-file-dialog'" +
-            " data-dismiss='modal'>Close</button>");
-        var modalSubmitBtn = $("<button type='button' class='btn btn-primary btn-file-dialog'>Submit</button>");
+            " data-dismiss='modal'>关闭</button>");
+        var modalSubmitBtn = $("<button type='button' class='btn btn-primary btn-file-dialog'>提交</button>");
         var errorContainer = $("<div class='alert alert-danger errors-container'></div>");
 
         this._$title = modalTitle;

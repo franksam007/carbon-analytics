@@ -71,29 +71,29 @@ define(['require', 'lodash', 'jquery', 'log', 'backbone', 'file_browser', 'boots
                         "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>" +
                         "<i class='fw fw-cancel  about-dialog-close'></i>" +
                         "</button>" +
-                        "<h4 class='modal-title file-dialog-title' id='newConfigModalLabel'>Save To Workspace</h4>" +
+                        "<h4 class='modal-title file-dialog-title' id='newConfigModalLabel'>保存到工作空间</h4>" +
                         "<hr class='style1'>"+
                         "</div>" +
                         "<div class='modal-body'>" +
                         "<div class='container-fluid'>" +
                         "<form class='form-horizontal' onsubmit='return false'>" +
                         "<div class='form-group'>" +
-                        "<label for='configName' class='col-sm-2 file-dialog-label'>File Name :</label>" +
+                        "<label for='configName' class='col-sm-2 file-dialog-label'>文件名 :</label>" +
                         "<div class='col-sm-9' id='saveName'>" +
                         "<input class='file-dialog-form-control' id='configName' name='siddhiAppName' placeholder='"+ providedFileName +"'>" +
                         "</div>" +
                         "</div>" +
                         "<div class='form-group'>" +
                         "<div class='file-dialog-form-btn'>" +
-                        "<button id='saveButton' type='button' class='btn btn-primary'>save" +
+                        "<button id='saveButton' type='button' class='btn btn-primary'>保存" +
                         "</button>" +
                         "<div class='divider'/>" +
-                        "<button type='cancelButton' class='btn btn-default' data-dismiss='modal'>cancel</button>" +
+                        "<button type='cancelButton' class='btn btn-default' data-dismiss='modal'>取消</button>" +
                         "</div>" +
                         "</form>" +
                         "</div>" +
                         "<div id='saveWizardError' class='alert alert-danger'>" +
-                        "<strong>Error!</strong> Something went wrong." +
+                        "<strong>错误！</strong> 某处出错。" +
                         "</div>" +
                         "</div>" +
                         "</div>" +

@@ -34,12 +34,12 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
             container.empty();
             container.append(`
                 <div style="font-size: 1.8rem; margin-bottom:15px">
-                    Order output records<br/>
+                    输出记录排序<br/>
                     <small style="font-size: 1.3rem">
-                        Sort output records based on fields in ascending or descending order
+                        基于字段对记录进行升序或降序排序
                     </small>
                 </div>
-                Order by attributes:
+                排序特性:
                 <button style="background-color: #ee6719" class="btn btn-default btn-circle" 
                     id="btn-add-orderby-property" type="button" data-toggle="dropdown">
                         <i class="fw fw-add"></i>
@@ -113,7 +113,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts'],
                             <div style="width: 40%">
                                 <button id="${orderByOption.attribute.name}-sort" 
                                     style="background: #555; min-width: 70px" class="btn btn-default btn-sort">
-                                    ${orderByOption.sort === 'asc' ? `ASC&nbsp;<i class="fw fw-down">` : `DESC&nbsp;<i class="fw fw-up">`}</i>
+                                    ${orderByOption.sort === 'asc' ? `升&nbsp;<i class="fw fw-down">` : `降&nbsp;<i class="fw fw-up">`}</i>
                                 </button>
                                 <button id="${orderByOption.attribute.name}-delete" 
                                     style="background: #555; min-width: 70px; padding: 8px 12px;" 

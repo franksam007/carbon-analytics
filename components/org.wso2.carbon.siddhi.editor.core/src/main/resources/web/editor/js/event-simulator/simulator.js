@@ -23,9 +23,9 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
             self.app = _.get(config, 'application');
             self.baseUrl = config.application.config.baseUrl;
             self.workspace = self.app.workspaceManager;
-            self.SiddhiAppStatus = "Siddhi App Status : ";
-            self.startAndSendLabel = "Start and Send";
-            self.sendLabel = "Send";
+            self.SiddhiAppStatus = "应用状态 : ";
+            self.startAndSendLabel = "开始并发送";
+            self.sendLabel = "发送";
             var consoleListManager = self.app.outputController;
             self.console = consoleListManager.getGlobalConsole();
             self.defaults = config.defaults;
@@ -34,12 +34,12 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
             $.validator.addMethod("validateIntOrLong", function (value, element) {
                 return this
                     .optional(element) || /^[-+]?[0-9]+$/.test(value);
-            }, "Please provide a valid numerical value.");
+            }, "请提供一个合法的数字型数值");
 
             $.validator.addMethod("validateFloatOrDouble", function (value, element) {
                 return this
                     .optional(element) || /^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$/.test(value);
-            }, "Please provide a valid numerical value.");
+            }, "请提供一个合法的数字型数值");
 
             // add the first single event form and disable the delete button
             self.addSingleEventConfigForm(null, self.$addSingleEventForm);
@@ -121,16 +121,16 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
 
 
                 if (!_.has(formDataMap, 'siddhiAppName')) {
-                    log.error("Siddhi app name is required for single event simulation.");
+                    log.error("应用名称必填");
                 }
                 if (!_.has(formDataMap, 'streamName')) {
-                    log.error("Stream name is required for single event simulation.");
+                    log.error("数据流名必填");
                 }
                 if (_.has(formDataMap, 'timestamp') && parseInt(_.get(formDataMap, 'timestamp')) < 0) {
-                    log.error("Timestamp value must be a positive integer for single event simulation.");
+                    log.error("时间戳必须为正整数");
                 }
                 if (attributes.length === 0) {
-                    log.error("Attribute values are required for single event simulation.");
+                    log.error("特性值必填");
                 }
                 var started = true;
                 if (self.siddhiAppDetailsMap[_.get(formDataMap, 'siddhiAppName')] == "STOP") {
@@ -431,19 +431,19 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
             $form.find('[name="single-event-siddhi-app-name"]').rules('add', {
                 required: true,
                 messages: {
-                    required: "Please select an siddhi app name."
+                    required: "请选择一个应用"
                 }
             });
             $form.find('[name="stream-name"]').rules('add', {
                 required: true,
                 messages: {
-                    required: "Please select a stream name."
+                    required: "请选择一个数据流"
                 }
             });
             $form.find('[name="sim-timestamp"]').rules('add', {
                 digits: true,
                 messages: {
-                    digits: "Timestamp value must be a positive integer."
+                    digits: "时间戳必须是一个正整数"
                 }
             });
         };
@@ -564,9 +564,9 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
         self.refreshSiddhiAppList = function ($siddhiAppSelect, siddhiAppNames) {
             var initialOptionValue = "";
             if(siddhiAppNames.length == 0){
-                initialOptionValue += '<option value = "-1" disabled>-- No saved Siddhi Apps available. --</option>';
+                initialOptionValue += '<option value = "-1" disabled>-- 无可用应用 --</option>';
             } else{
-                initialOptionValue = '<option value = "-1" disabled>-- Please Select a Siddhi App --</option>';
+                initialOptionValue = '<option value = "-1" disabled>-- 请选择一个应用 --</option>';
             }
 
             var newSiddhiApps = self.generateOptions(siddhiAppNames,initialOptionValue);
@@ -609,7 +609,7 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
 // create the stream name drop down
         self.refreshStreamList = function ($streamNameSelect, streamNames) {
             $streamNameSelect.children().first().remove();
-            var initialOptionValue = '<option value = "-1" disabled>-- Please Select a Stream Name --</option>';
+            var initialOptionValue = '<option value = "-1" disabled>-- 请选择一个数据流 --</option>';
             var newStreamOptions = self.generateOptions(streamNames,initialOptionValue);
             $streamNameSelect.html(newStreamOptions);
             $streamNameSelect.find('option[value="-1"]').attr("selected",true);
@@ -643,12 +643,12 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
                 '    <tr>' +
                 '       <th width="80%">' +
                 '           <label>' +
-                '               Attributes<span class="requiredAstrix"> *</span>' +
+                '               特性<span class="requiredAstrix"> *</span>' +
                 '           </label> ' +
                 '       </th>' +
                 '       <th width="10%">' +
                 '           <label>' +
-                '            Is Null' +
+                '            为空' +
                 '           </label>' +
                 '       </th>' +
                 '       <th width="10%">' +
@@ -716,8 +716,8 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
                 '      </label>' +
                 '            <select class="form-control" data-element-type="attribute" name="{{attributeName}}-attr"' +
                 '            data-type ="{{attributeType}}" data-input="bool">' +
-                '               <option value="true">True</option> ' +
-                '               <option value="false">False</option> ' +
+                '               <option value="true">是</option> ' +
+                '               <option value="false">否</option> ' +
                 '           </select>' +
                 '   </td>' +
                 '   <td width="15%" class="align-middle">' +
@@ -799,7 +799,7 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
                     $(ctx).rules('add', {
                         required: true,
                         messages: {
-                            required: "Please specify an attribute value."
+                            required: "请填写特性值"
                         }
                     });
                     break;
@@ -809,7 +809,7 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
                         required: true,
                         validateIntOrLong: true,
                         messages: {
-                            required: "Please specify an attribute value."
+                            required: "请填写特性值"
                         }
                     });
                     break;
@@ -819,7 +819,7 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
                         required: true,
                         validateFloatOrDouble: true,
                         messages: {
-                            required: "Please specify an attribute value."
+                            required: "请填写特性值"
                         }
                     });
                     break;
@@ -975,7 +975,7 @@ define(['jquery', 'log', './constants', './simulator-rest-client', 'lodash', './
             if (!valueFound) {
                 if (1 === siddhiAppNames.find("option").length) {
                     siddhiAppNames.find("option").remove();
-                    siddhiAppNames.append($("<option value = \"-1\" disabled></option>").text("-- Please Select a Siddhi App --"));
+                    siddhiAppNames.append($("<option value = \"-1\" disabled></option>").text("-- 请选择一个应用 --"));
                     siddhiAppNames.find('option[value="-1"]').attr("selected",true);
                 }
                 siddhiAppNames.append($("<option></option>").attr("value", changedSiddhiAppName).text(changedSiddhiAppName));

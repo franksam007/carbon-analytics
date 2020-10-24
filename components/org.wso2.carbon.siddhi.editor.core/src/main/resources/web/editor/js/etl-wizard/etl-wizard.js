@@ -505,9 +505,9 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
             wizardBodyContent.append(`
                 <div style="max-height: ${wizardBodyContent[0].offsetHeight}; overflow: auto" class="content-section">
                     <div style="font-size: 1.8rem">
-                        Transport Properties<br/>
+                        传输属性<br/>
                         <small style="font-size: 1.3rem">
-                            Configure ${type === constants.SOURCE_TYPE ? 'Source' : isStore ? 'Store' : 'Sink'} extension
+                            配置${type === constants.SOURCE_TYPE ? '数据源' : isStore ? '数据存储' : '数据汇'}
                         </small>
                     </div>
                     ${
@@ -517,12 +517,12 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                                     <div style="">
                                         <input class="extension-type" type="radio" id="enableSink" name="extensionOption" 
                                             value="sinkOption">
-                                        <label for="enableSink">Use Sink</label><br>
+                                        <label for="enableSink">使用数据汇</label><br>
                                     </div>
                                     <div style="margin-left: 15px">
                                         <input class="extension-type" type="radio" id="enableStore" name="extensionOption" 
                                             value="storeOption" >
-                                        <label for="enableStore">Use Data Store</label><br>
+                                        <label for="enableStore">使用数据存储库</label><br>
                                     </div>
                                 </div>
                             </div>` : ''
@@ -531,7 +531,7 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                         type !== constants.SOURCE_TYPE && !isStore ?
                             `<div style="display: flex; padding-top:15px">
                                 <div style="padding-top: 5px">
-                                    Store mapping errors
+                                    存储映射错误
                                 </div>
                                 <div style="margin-left: 15px">
                                     <div id="btn-group-enable-on-error" class="btn-group btn-group-toggle" 
@@ -561,10 +561,10 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                     <div style="padding-top: 10px">
                         <div>
                             <label for="extension-type">
-                                ${type === constants.SOURCE_TYPE ? 'Source' : isStore ? 'Store' : 'Sink'} type
+                                ${type === constants.SOURCE_TYPE ? '数据源' : isStore ? '数据存储' : '数据汇'}类型
                             </label>
                             <select name="extension-type" id="extension-type">
-                                <option disabled selected value> -- select an option -- </option>
+                                <option disabled selected value> -- 选择一个选项 -- </option>
                             </select>
                         </div>
 
@@ -573,8 +573,8 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                                 `
                                     <div style="padding-top: 15px" class="extension-properties">
                                         <div>
-                                          ${type === constants.SOURCE_TYPE ? 'Source' 
-                                                                            : isStore ? 'Store' : 'Sink'} properties:
+                                          ${type === constants.SOURCE_TYPE ? '数据源' 
+                                                                            : isStore ? '数据存储' : '数据汇'}属性:
                                             <button style="background-color: #ee6719" 
                                                 class="btn btn-default btn-circle" id="btn-add-transport-property" 
                                                 type="button" data-toggle="dropdown"
@@ -753,7 +753,7 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                 .on('focus', function (evt) {
                     var inputId = $(evt.currentTarget).attr('id');
                     wizardBodyContent.find(`#label-${inputId}`).removeClass('not-visible');
-                    $(evt.currentTarget).attr('placeholder', 'Type here to enter');
+                    $(evt.currentTarget).attr('placeholder', '在此输入');
                 })
                 .on('focusout', function (evt) {
                     if ($(evt.currentTarget).val().length === 0) {
@@ -787,9 +787,9 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
             wizardBodyContent.append(`
                 <div style="max-height: ${wizardBodyContent[0].offsetHeight}; overflow: auto" class="content-section">
                     <div style="font-size: 1.8rem">
-                        Configure Schema<br/>
+                        配置模式<br/>
                         <small style="font-size: 1.3rem">
-                            Configure ${type === constants.SOURCE_TYPE ? 'input' : 'output'} stream definition
+                            配置${type === constants.SOURCE_TYPE ? '输入' : '输出'}流
                         </small>
                     </div>
                     ${
@@ -797,7 +797,7 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                                                         ||(self.__stepIndex === 1 && self.__propertyMap.input.source.type === 'file') ?
                             `<div>
                                 <button style="background-color: #ee6719" class="btn btn-default btn-generate-stream">
-                                    Generate Stream
+                                    生成数据流
                                 </button>
                             </div>` : ''
                     }
@@ -806,7 +806,7 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                             `
                                 <div style="display: flex; padding-top:15px">
                                     <div style="padding-top: 5px">
-                                        Add log sink for testing
+                                        增加测试用Log数据汇
                                     </div>
                                     <div style="margin-left: 15px">
                                         <div id="btn-group-enable-log-sink" class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -836,7 +836,7 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                     <div style="padding-top: 10px">
                         <div>
                             <label for="stream-name-txt">
-                                Enter ${type === constants.SOURCE_TYPE ? 'input' : 'output'} stream name
+                                ${type === constants.SOURCE_TYPE ? '输入' : '输出'}流名称
                             </label>
                             <input id="stream-name-txt" type="text" style="width: 100%; border: none; 
                             background-color: transparent; border-bottom: 1px solid #333" value="${config.name}">
@@ -844,7 +844,7 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                         <div style="padding-top: 10px">
                             <div style="padding-top: 15px" class="attribute-list">
                                 <div>
-                                  ${type === constants.SOURCE_TYPE ? 'input' : 'output'} stream attributes:
+                                  ${type === constants.SOURCE_TYPE ? '输入' : '输出'}流特性:
                                   <button style="background-color: #ee6719" class="btn btn-default btn-circle" 
                                     id="btn-add-stream-attrib" type="button" data-toggle="dropdown">
                                     <i class="fw fw-add"></i>
@@ -896,7 +896,7 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
                             </label>
                             <input id="attribute-name-input-${i}" style="width: 100%; border: none; 
                                 background-color: transparent; border-bottom: 1px solid #333" 
-                                placeholder="Type Attribute name here" type="text" value="${attribute.name}">
+                                placeholder="在此输入特性名称" type="text" value="${attribute.name}">
                         </div>
                         <div style="padding: 20px 5px;">
                             <a title="Delete attribute from schema" style="color: #333">
@@ -977,18 +977,18 @@ define(['require', 'jquery', 'lodash', 'log', 'smart_wizard', 'app/source-editor
             wizardBodyContent.append(`
                 <div style="max-height: ${wizardBodyContent[0].offsetHeight}; overflow: auto" class="content-section">
                     <div style="font-size: 1.8rem">
-                        Configure ${type === constants.SOURCE_TYPE ? 'Input' : 'Output'} Mapping<br/>
+                        配置${type === constants.SOURCE_TYPE ? '输入' : '输出'}映射<br/>
                         <small style="font-size: 1.3rem">
-                            Configure ${type === constants.SOURCE_TYPE ? 'source' : 'sink'} extension mapping
+                            配置${type === constants.SOURCE_TYPE ? '数据源' : '数据汇'}映射
                         </small>
                     </div>
                     <div style="padding-top: 10px">
                         <div>
                             <label for="mapper-type">
-                                ${type === constants.SOURCE_TYPE ? 'Source' : 'Sink'} Mapper type
+                                ${type === constants.SOURCE_TYPE ? '数据源' : '数据汇'}映射类型
                             </label>
                             <select name="mapper-type" id="mapper-type">
-                                <option disabled selected value> -- select an option -- </option>
+                                <option disabled selected value> -- 选择一个选项 -- </option>
                             </select>
                         </div>
                     </div>

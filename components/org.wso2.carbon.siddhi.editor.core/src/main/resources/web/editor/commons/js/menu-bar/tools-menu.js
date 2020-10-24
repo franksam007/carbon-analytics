@@ -4,11 +4,11 @@
 define([],function (){
     var ToolsMenu = {
         id: "tools",
-        label: "Tools",
+        label: "工具",
         items: [
             {
                 id: "toggleFileExplorer",
-                label: "File Explorer",
+                label: "文件浏览器",
                 command: {
                     id: "toggle-file-explorer",
                     shortcuts: {
@@ -26,7 +26,7 @@ define([],function (){
             },
             {
                 id: "extensionInstall",
-                label: "Extension Installer",
+                label: "扩展安装器",
                 command: {
                     id: "extension-install-dialog",
                     shortcuts: {
@@ -44,7 +44,7 @@ define([],function (){
             },
             {
                 id: "toggleEventSimulator",
-                label: "Event Simulator",
+                label: "事件模拟器",
                 command: {
                     id: "toggle-event-simulator",
                     shortcuts: {
@@ -62,7 +62,7 @@ define([],function (){
             },
             {
                 id: "errorHandler",
-                label: "Error Store Explorer",
+                label: "错误浏览器",
                 command: {
                     id: "error-handler-dialog",
                     shortcuts: {
@@ -80,7 +80,7 @@ define([],function (){
             },
             {
                 id: "toggleConsole",
-                label: "Console",
+                label: "控制台",
                 command: {
                     id: "toggle-output-console",
                     shortcuts: {
@@ -98,7 +98,7 @@ define([],function (){
             },
             {
                 id: "sampleEvent",
-                label: "Sample Event Generator",
+                label: "样例事件生成器",
                 command: {
                     id: "sample-event",
                     labels: {
@@ -116,7 +116,7 @@ define([],function (){
             },
             {
                 id: "queryStore",
-                label: "On-Demand Query",
+                label: "按需查询",
                 command: {
                     id: "query-store",
                     labels:{
@@ -132,9 +132,9 @@ define([],function (){
                 },
                 disabled: false
             },
-            {
+            /*{
                 id: 'tour-guide',
-                label: 'Tour guide',
+                label: '使用向导',
                 command: {
                     id: 'tour-guide',
                     shortcuts: {
@@ -149,7 +149,7 @@ define([],function (){
                     }
                 },
                 disabled: false
-            }
+            }*/
         ]
 
     };

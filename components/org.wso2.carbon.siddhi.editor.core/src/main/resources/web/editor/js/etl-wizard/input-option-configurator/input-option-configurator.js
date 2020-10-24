@@ -49,7 +49,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'filterInputOptionCompon
                                     <div class="grey-on-hover" style="padding: 5px; text-align: center;">
                                         <a id="btn-add-filter" class="enable-input-option" style="color: #222">
                                             <div><i class="fw fw-cancel"></i></div
-                                            <div>Cancel</div>
+                                            <div>取消</div>
                                         </a>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'filterInputOptionCompon
                                                         <img src="/editor/images/filter-query.svg" 
                                                             class="tool-image">
                                                         <div style="text-align:center">
-                                                            Apply Filter
+                                                            使用过滤器
                                                         </div>
                                                     </div>
                                                 </a>
@@ -90,7 +90,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'filterInputOptionCompon
                                         <a id="btn-add-${Object.keys(config.query.window).length > 0 ? 
                                             'window' : 'function'}" class="enable-input-option" style="color: #222">
                                             <div><i class="fw fw-cancel"></i></div
-                                            <div>Cancel</div>
+                                            <div>取消</div>
                                         </a>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'filterInputOptionCompon
                                                     <div style="vertical-align:middle">
                                                         <img src="/editor/images/window-query.svg" class="tool-image">
                                                         <div style="text-align:center">
-                                                            Aggregate Input
+                                                            聚合输入
                                                         </div>
                                                     </div>
                                                 </div>
@@ -118,7 +118,7 @@ define(['require', 'jquery', 'lodash', 'log', 'alerts', 'filterInputOptionCompon
                                                     <div style="vertical-align:middle">
                                                         <img src="/editor/images/function-query.svg" class="tool-image">
                                                         <div style="text-align:center">
-                                                            Apply Stream Processor Function
+                                                            使用流处理器函数
                                                         </div>
                                                     </div>
                                                 </div>

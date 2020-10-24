@@ -4,11 +4,11 @@
 define([], function () {
     var EditMenu = {
         id: "edit",
-        label: "Edit",
+        label: "编辑",
         items: [
             {
                 id: "undo",
-                label: "Undo",
+                label: "撤销",
                 command: {
                     id: "undo",
                     shortcuts: {
@@ -26,7 +26,7 @@ define([], function () {
             },
             {
                 id: "redo",
-                label: "Redo",
+                label: "重做",
                 command: {
                     id: "redo",
                     shortcuts: {
@@ -44,7 +44,7 @@ define([], function () {
             },
             {
                 id: "find",
-                label: "Find",
+                label: "查找",
                 command: {
                     id: "find",
                     labels: {
@@ -62,7 +62,7 @@ define([], function () {
             },
             {
                 id: "findAndReplace",
-                label: "Find and Replace",
+                label: "替换",
                 command: {
                     id: "findAndReplace",
                     labels: {
@@ -80,7 +80,7 @@ define([], function () {
             },
             {
                 id: "format",
-                label: "Reformat Code",
+                label: "格式化代码",
                 command: {
                     id: "format",
                     shortcuts: {

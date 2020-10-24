@@ -4,11 +4,11 @@
 define([], function () {
     var FileMenu = {
         id: "file",
-        label: "File",
+        label: "文件",
         items: [
             {
                 id: "new",
-                label: "New",
+                label: "新建",
                 command: {
                     id: "create-new-tab",
                     shortcuts: {
@@ -26,7 +26,7 @@ define([], function () {
             },
             {
                 id: "newETLFlow",
-                label: "New ETL Flow",
+                label: "新ETL处理流",
                 command: {
                     id: "create-new-etl-flow",
                     shortcuts: {
@@ -44,7 +44,7 @@ define([], function () {
             },
             {
                 id: "open",
-                label: "Open File",
+                label: "打开文件",
                 command: {
                     id: "open-file-open-dialog",
                     shortcuts: {
@@ -62,7 +62,7 @@ define([], function () {
             },
             {
                 id: "openSample",
-                label: "Import Sample",
+                label: "打开样例",
                 command: {
                     id: "open-sample-file-open-dialog",
                     shortcuts: {
@@ -80,7 +80,7 @@ define([], function () {
             },
             {
                 id: "save",
-                label: "Save",
+                label: "保存",
                 command: {
                     id: "save",
                     shortcuts: {
@@ -98,7 +98,7 @@ define([], function () {
             },
             {
                 id: "saveAs",
-                label: "Save As",
+                label: "另存为",
                 command: {
                     id: "open-file-save-dialog",
                     shortcuts: {
@@ -116,7 +116,7 @@ define([], function () {
             },
             {
                 id: "import",
-                label: "Import File",
+                label: "导入文件",
                 command: {
                     id: "import-file-import-dialog",
                     shortcuts: {
@@ -134,7 +134,7 @@ define([], function () {
             },
             {
                 id: "export",
-                label: "Export File",
+                label: "导出文件",
                 command: {
                     id: "export",
                     shortcuts: {
@@ -152,7 +152,7 @@ define([], function () {
             },
             {
                 id: "close",
-                label: "Close File",
+                label: "关闭文件",
                 command: {
                     id: "close",
                     shortcuts: {
@@ -170,7 +170,7 @@ define([], function () {
             },
             {
                 id: "closeAll",
-                label: "Close All Files",
+                label: "关闭所有文件",
                 command: {
                     id: "close-all",
                     shortcuts: {
@@ -188,7 +188,7 @@ define([], function () {
             },
             {
                 id: "delete",
-                label: "Delete File",
+                label: "删除文件",
                 command: {
                     id: "delete-file-delete-dialog",
                     shortcuts: {
@@ -206,7 +206,7 @@ define([], function () {
             },
             {
                 id: "settings",
-                label: "Settings",
+                label: "设置",
                 command: {
                     id: "open-settings-dialog",
                     shortcuts: {

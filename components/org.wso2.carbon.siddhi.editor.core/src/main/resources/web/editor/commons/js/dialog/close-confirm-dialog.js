@@ -17,11 +17,11 @@ define(['jquery', './modal-dialog'], function ($, ModalDialog) {
             return;
         }
 
-        var saveBtn = $("<button type='button' class='btn btn-primary'>Save</button>");
+        var saveBtn = $("<button type='button' class='btn btn-primary'>保存</button>");
         var dontSaveBtn = $("<button type='button' class='btn btn-default" +
-            " close-file-confirm-dialog-btn'>Close without Saving</button>");
+            " close-file-confirm-dialog-btn'>放弃修改并关闭</button>");
         var cancelBtn = $("<button type='button' class='btn btn-default'" +
-            " data-dismiss='modal'>Cancel</button>");
+            " data-dismiss='modal'>取消</button>");
         this._saveBtn = saveBtn;
         this._dontSaveBtn = dontSaveBtn;
 
@@ -38,12 +38,12 @@ define(['jquery', './modal-dialog'], function ($, ModalDialog) {
         this.init();
 
         var name = options.file.getName();
-        this.setTitle("Save Changes?");
+        this.setTitle("保存修改？");
 
         var body = this.getBody();
         body.empty();
-        body.append($("<p><br>File '" + name + "' contains changes, do you want to save them ? <br>Your changes will " +
-            "be lost if you close this file without saving.</p>"))
+        body.append($("<p><br>文件 '" + name + "' 已经修改, 是否保存？ <br>如果不保存关闭，" +
+            "所做修改将丢失。</p>"))
 
         this._saveBtn.unbind('click');
         this._dontSaveBtn.unbind('click');
